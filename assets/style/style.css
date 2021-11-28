@@ -1,0 +1,42 @@
+/* kiyannne universal selector eka kiyalada ethakota */
+* {
+    margin: 0;
+}
+
+#main_titleHello {
+    margin-top: 0;
+    left: 150px;
+    font-family: 'Rosarivo', serif;
+    font-size: 96px;
+}
+
+#main_titleName {
+    left: 150px;
+    top: 170px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 96px;
+}
+
+.top_bar {
+    background-color: #DEDEDE;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px;
+
+
+}
+
+.nav-link {
+    font-size: 30px;
+    padding-bottom: 0;
+    /*padding-inline-start: 20px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#main_page{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

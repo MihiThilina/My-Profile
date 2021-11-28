@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title> Personal WebSite </title>
-    <!--    <base href="https://ijse.lk/">--> <!--can set a base url for the site-->
     <link href="assets/images/web icon.ico" rel="icon">
     <meta content="MihiThilina,Software Engineer" name="keywords">
     <meta content="This is for testing Personal WebSite" name="description">
     <meta content="width=device-width initial-scale=1" name="viewport">
     <meta content="" name="theme-color">
+    <link href="assets/style/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
+
 <!-- MENU BAR -->
 <header>
-    <div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#Home">Home</a>
-            <a href="#project">Project</a>
-            <a href="#education">Education</a>
-            <a href="#comment">Comment</a>
+    <div class="top_bar">
+        <nav  class="nav-link">
+                <a href="#about" >About</a>
+                <a href="#skills" >Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#Home">Home</a>
+                <a href="#project" >Project</a>
+                <a href="#education">Education</a>
+                <a href="#comment">Comment</a>
         </nav>
     </div>
 </header>
@@ -31,11 +36,16 @@
 
 <main>
     <!-- INFO -->
-    <section>
-        <div>
+    <section >
+        <div id="main_page">
+            <a><img src="assets/images/MainPic.jpg" alt="" width="1350" ></a>
+            <div id="main_titleHello">
+                Hello
+            </div>
+            <div id="main_titleName">
+                I Am Thilina
+            </div>
 
-            <h1>Hello</h1>
-            <h2>I Am Thilina</h2>
             <nav>
                 <a href="#" target="_blank"><img src="assets/images/instagram.png" alt="instagram" width=""></a>
                 <a href="https://github.com/Thilina342" target="_blank"><img src="assets/images/github.png"
@@ -76,7 +86,7 @@
     <!-- SKILLS -->
     <section>
         <div>
-
+            <a><img src="assets/images/SkilsSide%20Pic.png" alt="" width="1364" height="130"></a>
             <div>
                 <dfn id="skills"><h2> SKILLS </h2></dfn>
             </div>
@@ -87,19 +97,19 @@
 
         <nav>
             <div>
-                <a href="#java"><img src="assets/images/java.png" alt="java Img" width=""></a>
+                <a href="#java"><img src="assets/images/java.png" alt="java Img" width="100"></a>
             </div>
             <div>
-                <a href="#mysql"><img src="assets/images/mysql-.png" alt="Mysql Img" width=""></a>
+                <a href="#mysql"><img src="assets/images/mysql-.png" alt="Mysql Img" width="100"></a>
             </div>
             <div>
-                <a href="#nodejs"><img src="assets/images/nodejs.png" alt="Nodejs Img" width=""></a>
+                <a href="#nodejs"><img src="assets/images/nodejs.png" alt="Nodejs Img" width="100"></a>
             </div>
             <div>
-                <a href="#html-5"><img src="assets/images/html-5.png" alt="Html-5 Img" width=""></a>
+                <a href="#html-5"><img src="assets/images/html-5.png" alt="Html-5 Img" width="100"></a>
             </div>
             <div>
-                <a href="#hibernate"><img src="assets/images/hibernate.jpg" alt="Hibernate Img" width="110"></a>
+                <a href="#hibernate"><img src="assets/images/hibernate.jpg" alt="Hibernate Img" width="90"></a>
             </div>
         </nav>
 
@@ -120,23 +130,24 @@
     <!-- Project -->
     <section>
         <div>
+            <a><img src="assets/images/ProjectSide%20pic.png" alt="" width="1364" height="150"></a>
             <div>
                 <dfn id="project"><h2> PROJECT </h2></dfn>
             </div>
         </div>
         <figure>
             <img src="assets/images/supermarket%20(1).jpg" alt="Education is the most powerful
-                         weapon which you can use to change the world">
+                       weapon which you can use to change the world" width="200">
             <figcaption></figcaption>
         </figure>
         <figure>
             <img src="assets/images/Hotel.jpg" alt="Education is the most powerful
-                         weapon which you can use to change the world">
+                         weapon which you can use to change the world" width="200" height="150">
             <figcaption></figcaption>
         </figure>
         <figure>
             <img src="assets/images/carParking.jpg" alt="Education is the most powerful
-                         weapon which you can use to change the world">
+                         weapon which you can use to change the world" width="200">
             <figcaption></figcaption>
         </figure>
 
@@ -152,14 +163,20 @@
     <!-- Education -->
     <section>
         <div>
+            <a><img src="assets/images/Education%20sidepic%20(2).png" alt="" width="1364" height="170"></a>
+            <div>
             <dfn id="education"><h2> EDUCATION </h2></dfn>
+        </div>
         </div>
 
     </section>
 
     <!-- Comment  -->
     <div>
+        <a><img src="assets/images/ComentSidepic.png" alt="" width="1360" height="150" ></a>
+    <div>
         <dfn id="comment"><h2> Comment </h2></dfn>
+    </div>
     </div>
     <section>
         <input type="text" placeholder="E-mail"><br><br>
@@ -173,6 +190,7 @@
     <section>
         <h4>Location</h4>
         <p>Chilaw,Madampe,Galmuruwa</p>
+
 
         <h4>Contact Me</h4>
         <p>+94710745822</p>
