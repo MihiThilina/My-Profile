@@ -1,6 +1,7 @@
 /* kiyannne universal selector eka kiyalada ethakota */
 * {
     margin: 0;
+    padding: 0;
 }
 
 #main_titleHello {
@@ -19,24 +20,45 @@
 
 .top_bar {
     background-color: #DEDEDE;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin: 0px;
-
-
+    position: fixed;
 }
 
 .nav-link {
-    font-size: 30px;
-    padding-bottom: 0;
-    /*padding-inline-start: 20px;*/
-    padding-left: 20px;
-    padding-right: 20px;
+   font-size: 28.6px;
+
+
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    margin:  30px;
+    position: revert;
+}
+.nav-link ul li a{
+    text-decoration:none;
+    color: black;
 
 }
 
+.nav-link ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-link ul li:hover:after{
+    width: 100%;
+}
 #main_page{
-    height: 100%;
-    background-repeat: no-repeat;
+   height: 100%;
+    width: 100vh;
     background-size: cover;
+    background-position: center;
 }
+
