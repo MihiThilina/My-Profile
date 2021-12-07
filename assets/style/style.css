@@ -7,37 +7,54 @@ body{
     max-width: 100vw ;
 }
 /*---------------------------MENU BAR--------------------------*/
-.top_bar nav{
+.top_bar{
     position: fixed;
+    background-color: rgba(222,222,222,1);
+    width: 100vw;
+}
+
+
+.nav-link{
     list-style: none;
-    background-color: rgba(222,222,222,0.93);
-    height: 80px;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.nav-link li{
+    font-family: 'Rasa', serif;
+
 }
 
-
-.nav-link ul{
-    text-align : center ;
-    margin-right: 20px;
-}
-
-.nav-link ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin:  0 36px;
-}
-
-.nav-link ul li a{
+.nav-link li a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    transition: 0.5s;
+    font-size: 28px;
+
 }
 
 /*-------------------------------INFO----------------------------*/
 
+#main_titleHello{
+    font-family: 'Rosarivo', serif;
+    font-size: 96px;
+}
+#main_titleName{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 96px;
+
+
+}
+#main_page{
+   /* background-image: url('../images/MainPic.jpg');*/
+
+    /*background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 100vh;*/
+}
+
+/*
 #main_titleHello {
     margin-top: 0;
     left: 150px;
@@ -65,7 +82,7 @@ body{
     top: 60%;
     left: 23%;
     text-align: center;
-}
+}*/
 
 /*
 
