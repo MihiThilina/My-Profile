@@ -1,0 +1,242 @@
+div{
+    position: absolute;
+    height: 50%;
+    width: 50vh;
+}
+div:nth-child(1){
+    width: 50%;
+    background-color: red;
+}
+
+div:nth-child(1)>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+div:nth-child(1)>div>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 0;
+}
+
+div:nth-child(2){
+    right: 0;
+    width: 50%;
+    background-color: green;
+}
+
+
+div:nth-child(2)>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+div:nth-child(2)>div>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 0;
+}
+
+div:nth-child(3){
+    bottom: 0;
+    width: 50%;
+    background-color: orange;
+}
+
+div:nth-child(3)>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+div:nth-child(3)>div>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 0;
+}
+
+div:nth-child(4){
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-color: deeppink;
+}
+
+div:nth-child(4)>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+   bottom: 0;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+div:nth-child(4)>div>div{
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 0;
+}
+
+div:nth-child(5){
+    background-color: white;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    top: -80px;
+    left: -80px;
+
+}
+
+div:nth-child(6){
+    background-color: white;
+    border-radius: 100%;
+    width: 100px;
+    height: 150px;
+    top: -80px;
+    right: -80px;
+  /*  border: 1px solid black;*/
+}
+
+div:nth-child(7){
+    background-color: white;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    bottom: -80px;
+    left: -80px;
+  /*  border: 1px solid black;*/
+}
+
+div:nth-child(8){
+    background-color: white;
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    bottom: -80px;
+    right: -80px;
+    /*border: 1px solid black;*/
+}
+
+
+div:nth-child(9){
+    background-color: white;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    bottom: -80px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+
+div:nth-child(10){
+    background-color: white;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    top: -80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+div:nth-child(11){
+    background-color: white;
+    border-radius: 0;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+div:nth-child(11)>div {
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+div:nth-child(11)>div{
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+*/

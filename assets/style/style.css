@@ -1,5 +1,6 @@
 /* kiyannne universal selector eka kiyalada ethakota */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,32 +9,64 @@ body{
 }
 /*---------------------------MENU BAR--------------------------*/
 .top_bar{
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 10;
+    align-items: center;
     position: fixed;
     background-color: rgba(222,222,222,1);
     width: 100vw;
 }
 
-
 .nav-link{
-    list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
+    list-style: none;
+    justify-content: center;
+   /* !*padding: 20px 0px;*!*/
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
+
 .nav-link li{
     font-family: 'Rasa', serif;
-
+    list-style: none;
+    margin: 0 50px;
 }
+
 
 .nav-link li a{
     text-decoration: none;
     color: black;
     font-size: 28px;
+    letter-spacing: 1px;
+}
+header .nav-link li:hover #about{
+    letter-spacing: 2px;
 
 }
 
 /*-------------------------------INFO----------------------------*/
 
+#main_page {
+    background-image: url('../images/MainPic.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:100%;
+}
+
+
+
+
+
+
+
+
+
+/*
 #main_titleHello{
     font-family: 'Rosarivo', serif;
     font-size: 96px;
@@ -45,14 +78,17 @@ body{
 
 }
 #main_page{
-   /* background-image: url('../images/MainPic.jpg');*/
-
-    /*background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    min-height: 100vh;*/
+    background-image: url('../images/MainPic.jpg');
+   !* background-color: transparent;*!
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    float: left;
+    !*background-repeat: no-repeat;*!
+    !*vertical-align: middle;*!
+    min-height: 100vh;
 }
+*/
 
 /*
 #main_titleHello {
