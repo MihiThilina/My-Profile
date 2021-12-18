@@ -6,7 +6,7 @@
 
     <style>
 
-        #card{
+        .card{
           top: 10px;
             position: relative;
             left: 20px;
@@ -36,6 +36,34 @@
             top: 0;
         }
 
+        #secondPage{
+            height: max-content;
+            background-color: #2da4d8;
+        }
+
+        #secondPage div{
+            background-color: #0776d8;
+            height: 50px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+        }
+/*
+        #thirdPage{
+            height: max-content;
+            background-color: #575757;
+        }
+
+        #thirdPage div{
+            background-color: #353535;
+            height: 50px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+        }*/
+
+
+
     </style>
 
 
@@ -46,22 +74,22 @@
 
 <body>
 <section id="firstPage">
-<div> <h3 id="card"> Card 1 </h3> </div>
+<div> <h3 class="card"> Card 1 </h3> </div>
     <h1>Hello</h1>
 </section>
 
-<section>
-    <div></div>
+<section id="secondPage">
+    <div> <h3 class="card"> Card 2 </h3> </div>
     <h1>How</h1>
 </section>
 
-<section>
-    <div></div>
+<section id="thirdPage">
+    <div> <h3 class="card"> Card 3 </h3> </div>
     <h1>Are</h1>
 </section>
 
-<section>
-    <div></div>
+<section id="fourthPage">
+    <div> <h3 class="card"> Card 4 </h3> </div>
     <h1>You..???</h1>
 </section>
 </body>
