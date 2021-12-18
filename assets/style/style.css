@@ -59,7 +59,9 @@ header .nav-link li:hover #about{
 }
 
 
-
+#hero_text{
+    position: absolute;
+}
 
 
 
