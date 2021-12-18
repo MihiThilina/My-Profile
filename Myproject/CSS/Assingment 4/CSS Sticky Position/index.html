@@ -3,14 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Sticky Position</title>
+
+    <style>
+
+        #card{
+          top: 10px;
+            position: relative;
+            left: 20px;
+            color: white;
+        }
+
+        h1{
+            margin: auto;
+            height: max-content;
+            width: max-content;
+            padding: 250px;
+            font-size: 100px;
+        }
+
+        #firstPage{
+            height: max-content;
+            background-color: white;
+        }
+
+
+
+        #firstPage div{
+            background-color: red;
+            height: 50px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+        }
+
+    </style>
+
+
 </head>
 
 
 
 
 <body>
-<section>
-<div></div>
+<section id="firstPage">
+<div> <h3 id="card"> Card 1 </h3> </div>
     <h1>Hello</h1>
 </section>
 
