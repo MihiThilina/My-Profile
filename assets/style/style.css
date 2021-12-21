@@ -8,10 +8,9 @@ body{
     max-width: 100vw ;
 }
 /*---------------------------MENU BAR--------------------------*/
+
 .top_bar{
     justify-content: space-around;
-    top: 0;
-    left: 0;
     display: flex;
     z-index: 10;
     align-items: center;
@@ -24,7 +23,7 @@ body{
     display: flex;
     list-style: none;
     justify-content: center;
-   /* !*padding: 20px 0px;*!*/
+    /* !*padding: 20px 0px;*!*/
     flex-wrap: wrap;
     margin: 20px 0;
 }
@@ -46,7 +45,6 @@ header .nav-link li:hover #about{
     letter-spacing: 2px;
 
 }
-
 /*-------------------------------INFO----------------------------*/
 
 #main_page {
@@ -59,12 +57,27 @@ header .nav-link li:hover #about{
 }
 
 
-#hero_text{
+#main_titleHello{
     position: absolute;
+    left:210px;
+    top:38vh;
+    font-family: 'Rosarivo', serif;
+    font-size: 96px;
 }
 
+#main_titleName{
+    position: absolute;
+    left:120px;
+    top:55vh;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 96px;
+}
 
-
+#social-media-icon{
+    position: absolute;
+    left:232px;
+    top:75vh;
+}
 
 
 

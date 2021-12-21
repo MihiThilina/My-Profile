@@ -5,14 +5,12 @@
     <title>CSS Fixed Layout</title>
 
     <style>
-
         #scale{
             height: 300px;
             width: 300px;
             border: 25px solid grey;
             border-radius: 100%;
             position: fixed;
-            justify-content: center;
             margin: auto;
             left: 0;
             right: 0;
@@ -34,11 +32,10 @@
         }
 
         .main_scale{
-            position: relative;
+            position:relative;
             height: 600px;
             width: 100%;
         }
-
 
         #scale1 {
             position: absolute;
@@ -90,10 +87,18 @@
             top: 0;
             bottom: 0;
         }
+
+
     </style>
 
 </head>
 <body>
+
+
+
+<section id="scale">
+    <div class="scale2"></div>
+</section>
 
 <section class="main_scale">
     <div id="scale1">
@@ -113,9 +118,6 @@
     </div>
 </section>
 
-<section id="scale">
-    <div class="scale2"></div>
-</section>
 
 </body>
 </html>
