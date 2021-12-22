@@ -101,7 +101,6 @@ header .nav-link li:hover #about {
 }
 
 .CONYACTbtn {
-    position: relative;
     left: 150vh;
     top: 80px;
     background-color: #660058;
@@ -118,7 +117,6 @@ header .nav-link li:hover #about {
 }
 
 .DOWNLOADDbtn {
-    position: relative;
     left: 150vh;
     top: 80px;
     background-color: #660058;
@@ -172,3 +170,27 @@ header .nav-link li:hover #about {
 */
 
 
+/*------------------------------SKILLS-------------------------------------------*/
+
+.skills-section{
+    position: absolute;
+    top: 200vh;
+}
+
+#section-cover-pic{
+    background-image: url('../images/SkilsSide Pic.png');
+    width: 98.5vw;
+    height:20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#Skills-pic{
+    background-image: url('../images/Skils Pic.png');
+    width: 9vw;
+    height:20vh;
+    background-repeat: no-repeat;
+    background-attachment: revert;
+    background-position: right;
+}
