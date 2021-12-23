@@ -95,9 +95,16 @@ header .nav-link li:hover #about {
     position: relative;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     top: 70px;
-    padding:revert;
-    margin: 10px 50px 24px 10px;
-    text-indent: 45px;
+    text-align:justify;
+    padding:0px 200px 100px 200px
+
+}
+
+#about-section-button{
+    margin:auto;
+    position:absolute;
+    /*     right:6px; */
+    left:70%;
 }
 
 .CONYACTbtn {
@@ -174,23 +181,35 @@ header .nav-link li:hover #about {
 
 .skills-section{
     position: absolute;
-    top: 200vh;
+    top: 205vh;
 }
 
-#section-cover-pic{
-    background-image: url('../images/SkilsSide Pic.png');
+.section-cover-pic{
     width: 98.5vw;
     height:20vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
+    position: relative;
+    top: 0;
+    left: 0
 }
 
-#Skills-pic{
-    background-image: url('../images/Skils Pic.png');
-    width: 9vw;
-    height:20vh;
+.Skills-pic{
+    height:40vh;
     background-repeat: no-repeat;
     background-attachment: revert;
     background-position: right;
+    position: absolute;
+    top: 30px;
+    right:190px;
+}
+
+#skills{
+    position: absolute;
+    right:42vh;
+    font-family: 'Rosarivo', serif;
+    font-size: 30px;
+    text-decoration: none;
+    font-style: normal;
 }

@@ -1,7 +1,7 @@
 
 
 /*------------------------------Responsive--------------------------------------*/
-@media all  and (min-width: 375px) and (max-width: 812px)  {
+@media all  and (min-width:  375px) and (max-width: 812px)  {
 
     header{
         position: relative;
@@ -78,6 +78,5 @@
         bottom: -127px;
         width: 98vw;
         height: 10vh;
-
     }
 }
