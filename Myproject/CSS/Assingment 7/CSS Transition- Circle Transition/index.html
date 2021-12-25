@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            background-color: deepskyblue;
+           /* overflow: hidden;*/
+        }
+        #circle{
+            position: absolute;
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+            border-radius: 100%;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          /*  transition: linear 500ms;*/
+        }
+        #circle>h1{
+            position: absolute;
+            height: max-content;
+            width: max-content;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            color: #fff;
+        }
+
+    #circle::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border: 10px solid white;
+            border-radius: 100%;
+            border-top:10px solid red;
+            transition: all 500ms;
+        }
+
+        #circle:hover:after{
+            transition: all 500ms;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+<div id="circle">
+    <h1>RWAD</h1>
+</div>
+</body>
+</html>

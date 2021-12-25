@@ -213,3 +213,20 @@ header .nav-link li:hover #about {
     text-decoration: none;
     font-style: normal;
 }
+
+.skills-section h4{
+    position:absolute;
+    font-size: 30px;
+    text-decoration:none;
+    bottom:-200px;
+}
+/*
+
+#second_topic_skills{
+    position:absolute;
+    font-size: 30px;
+    text-decoration:none;
+    left:100px;
+
+
+}*/
