@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<style>
+
+    #rectangle{
+        height: 100px;
+        width: 200px;
+        border-radius: 20px;
+        background-color: blue;
+        animation-name: myAni;
+        animation-duration: 5s;
+        animation-direction:alternate;
+        animation-iteration-count: infinite;
+        position: absolute;
+    }
+    @keyframes myAni {
+        0% {
+            margin: 0 0 0 0;
+            background-color: red;
+        }
+        25% {
+            margin: 0 0 0 80vw;
+            background-color: green;
+            transform: rotate(180deg);
+        }
+        50% {
+            margin: 75vh 0 0 80vw;
+            background-color: yellow;
+            transform: rotate(0deg);
+        }
+        75% {
+            margin: 75vh 80vw 0 0;
+            background-color: brown;
+            transform: rotate(180deg);
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+<section id="rectangle"></section>
+</body>
+</html>
+
+
+
+
+
+

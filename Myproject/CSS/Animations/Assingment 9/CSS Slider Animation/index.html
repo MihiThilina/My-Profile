@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+
+        body{
+          overflow: hidden;
+        }
+
+        section{
+            width: 500%;
+            display: flex;
+            animation: my 20s infinite;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        section>div:nth-child(1){
+            background-position: center;
+            background-size: cover;
+            background:url('assets/images/1.jpg');
+        }
+        section>div:nth-child(2){
+            background-position: center;
+            background-size: cover;
+            background:url('assets/images/2.jpg');
+        }
+        section>div:nth-child(3){
+            background-position: center;
+            background-size: cover;
+            background:url('assets/images/3.jpg');
+        }
+        section>div:nth-child(4){
+            background-position: center;
+            background-size: cover;
+            background:url('assets/images/4.jpg');
+        }
+        section>div:nth-child(5){
+            background-position: center;
+            background-size: cover;
+            background:url('assets/images/5.jpg');
+        }
+        section{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes my{
+            /*from{
+
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-75%);
+            }*/
+            0%,15%{
+                transform: translateX(0);
+            }
+            25%,40%{
+                transform: translateX(-20%);
+            }
+            50%,65%{
+                transform: translateX(-40%);
+            }
+            75%,90%{
+                transform: translateX(-60%);
+            }
+            100%{
+                transform: translateX(-80%);
+            }
+        }
+
+
+
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>
