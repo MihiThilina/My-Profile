@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -180,8 +181,11 @@ header .nav-link li:hover #about {
 /*------------------------------SKILLS-------------------------------------------*/
 
 .skills-section{
-    position: absolute;
-    top: 205vh;
+    height: 900px;
+    border: 1px solid red;
+    position: relative;
+    top: 100vh;
+
 }
 
 .section-cover-pic{
@@ -202,31 +206,149 @@ header .nav-link li:hover #about {
     background-position: right;
     position: absolute;
     top: 30px;
+    box-shadow: black;
     right:190px;
 }
 
 #skills{
     position: absolute;
-    right:42vh;
+    right:40vh;
     font-family: 'Rosarivo', serif;
     font-size: 30px;
     text-decoration: none;
     font-style: normal;
 }
-
 .skills-section h4{
-    position:absolute;
+    position: relative;
     font-size: 30px;
-    text-decoration:none;
-    bottom:-200px;
+    top:80px;
 }
-/*
 
-#second_topic_skills{
+
+/*Skills Nav Bar*/
+.skills-nav-bar{
+    position: relative;
+    height: 100%;
+}
+
+.mySwiper {
     position:absolute;
+    width: 320px;
+    height: 300px;
+    margin: 0;
+    left:80vh;
+    padding: 0;
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    top:200px;
+    width: 320px;
+    height: 300px;
+    background: rgba(234,234,234,0.22);
+}
+.testimonialBox .quote{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+   /* opacity: 0.2;*/
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.skills-nav-bar{
+
+}
+
+#skills-flex-box{
+
+}
+
+
+
+/*--------------------Assignment Section----------------------------------*/
+
+
+.assignment-section{
+    height: 900px;
+    border: 1px solid red;
+    background-color:#EFEFEF;
+    position: relative;
+    top: 100vh;
+}
+
+#assigment-second-section{
+    position:absolute;
+    background-color:#ffff;
+    top:100px;
+    left:120px;
+    width:80vw;
+    height:50vh;
+
+}
+
+#assigment-cover-image{
+    position: absolute;
+    right:78vh;
+    top:60px;
+    height:17vh;
+    width:28vw;
+    z-index: 1;
+    background-color:#EFEFEF;
+}
+
+#assigment{
+    font-family: 'Rosarivo', serif;
     font-size: 30px;
-    text-decoration:none;
-    left:100px;
+    text-decoration: none;
+    font-style: normal;
+}
+#assigment h2{
+    position:relative;
+    left:12vh;
+    top:30px;
+
+}
+
+#assigment-cover-image img{
+    /* position: absolute;
+     width:8vw;
+
+     height:15vh;
+     left:320px;
+     top:8px;
+     transform: rotate(270deg);*/
+}
+
+#side1{
+    position: absolute;
+    width:8vw;
+    height:15vh;
+    left:320px;
+    top:8px;
+    transform: rotate(270deg);
+}
+
+#side2{
+    position:relative;
+    width:8vw;
+    height:15vh;
+    left:-10px;
+    top:-45px;
+    transform: rotate(90deg);
+}
 
 
-}*/
+/*---------------------project*/
+.project-section{
+    height: 900px;
+    border: 1px solid red;
+    background-color:#EFEFEF;
+    position: relative;
+    top: 100vh;
+}
+
+

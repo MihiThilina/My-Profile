@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
@@ -107,40 +109,66 @@
 
             <h4> Skills & endorsements </h4>
 
-           <!-- <nav>
-                <div>
-                    <a href="#java"><img src="assets/images/java.png" alt="java Img"></a>
-                </div>
-                <div>
-                    <a href="#mysql"><img src="assets/images/mysql-.png" alt="Mysql Img"></a>
-                </div>
-                <div>
-                    <a href="#nodejs"><img src="assets/images/nodejs.png" alt="Nodejs Img"></a>
-                </div>
-                <div>
-                    <a href="#html-5"><img src="assets/images/html-5.png" alt="Html-5 Img" ></a>
-                </div>
-                <div>
-                    <a href="#hibernate"><img src="assets/images/hibernate.jpg" alt="Hibernate Img"></a>
-                </div>
-            </nav>-->
+            <nav class="skills-nav-bar">
+                <section id="skills-flex-box">
+                    <div class="mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonialBox"><img src="" class="quote"></div>
+                                <div class="testimonialBox"><img src="" class="quote"></div>
+                                <div class="testimonialBox"><img src="" class="quote"></div>
+                                <div class="testimonialBox"><img src="" class="quote"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </section>
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        effect: "coverflow",
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: "auto",
+                        coverflowEffect: {
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 2,
+                            slideShadows: true,
+                        },
+                        loop:true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                    });
+                </script>
+            </nav>
         </section>
 
-        <!-- Experience -->
-       <!-- <div>
-            <section>
-                <div>
-                    <dfn id="experience"><h2> EXPERIENCE </h2></dfn>
-                </div>
+        <!-- Assignment -->
 
-                <p>I am still a student in education so I have<b> </b>b no experience in the field of software..</p>
+            <section class="assignment-section">
+
+                <div id="assigment-cover-image">
+                    <img id="side1" src="assets/images/simple.png">
+                    <dfn id="assigment"><h2> Assignment </h2></dfn>
+                    <img id="side2" src="assets/images/simple.png">
+                </div>
+                <section id="assigment-second-section">
+
+                </section>
+
+
 
             </section>
-        </div>
 
-        &lt;!&ndash; Project &ndash;&gt;
-        <section>
-            &lt;!&ndash; <div>
+
+        <!-- Project -->
+        <section class="project-section">
+            <!-- <div>
             <a><img src="assets/images/ProjectSide%20pic.png" alt=""></a>
             <div>
                 <dfn id="project"><h2> PROJECT </h2></dfn>
@@ -161,17 +189,16 @@
                          weapon which you can use to change the world" width="200">
             <figcaption></figcaption>
         </figure>
-&ndash;&gt;
             <nav>
 
 
                 <button><a href="#All Project">All Project</a></button>
-            </nav>
+            </nav>-->
 
 
         </section>
 
-        &lt;!&ndash; Education &ndash;&gt;
+       <!-- &lt;!&ndash; Education &ndash;&gt;
         <section>
             <div>
                 &lt;!&ndash; <a><img src="assets/images/Education%20sidepic%20(2).png" alt="" width="1364" height="170"></a>&ndash;&gt;
@@ -226,9 +253,7 @@
         <small>Debug Your Problems And Update Yourself</small><br>
         <small>Copyright © 2020 Thilina. All rights reserved</small>
 
-    </footer>
--->
-
+    </footer>-->
 </body>
 
 </html>
