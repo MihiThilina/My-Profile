@@ -238,44 +238,45 @@ body {
 }
 
 /*Skills Nav Bar*/
-.skills-nav-bar{
-    height: 30vh;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -280px;
-    top: 0;
-    margin: auto;
-    overflow: hidden;
-}
+
 #skills-flex-box{
-    width: 150%;
-    height: 100%;
+    top: 200px;
+    height: 200px;
+    position: relative;
     display: flex;
-    justify-content:space-around;
+    align-items: center; /*cross axis (center | flex-start | flex-end)*/
+    justify-content: space-evenly;
+    overflow: hidden;
+   
+    background-color: white;
 }
 
 #skills-flex-box div{
-    flex-basis: 300px;
-    background-color: #EAEAEA;
+    background-color: rgba(222, 222, 222, 1);
+    display: flex;
+    height: 20vh;
+    margin: 40px;
+    width: 10vw;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
 #java{
-    position:relative;
     left:200px;
 }
 #html{
-    position:relative;
+   
     left:200px;
 }
 
 #node{
-    position:relative;
+  
     left:200px;
 
 }
 
 #mysql{
-    position:relative;
+   
     left:190px;
     height:15vh;
 
