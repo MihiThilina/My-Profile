@@ -440,11 +440,50 @@ body {
     position:absolute;
     left:700px;
     top:215px;
-    border-left: 15px solid #660058;
+    width:15px;
+    height:20px;
+    color:#EFEFEF;
+    border:1px solid black;
     height: 500px;
+    border-radius:25px;
+
 }
 
 #first{
+    width:300px;
+    height:5px;
+    top:10px;
+    right:10px;
+    position:absolute;
+    background-color:black
+}
+
+#secal{
+    position:absolute;
+    border-radius:360px;
+    border:6px solid black;
+    top:40px;
+}
+
+#secal2{
+    position:absolute;
+    border-radius:360px;
+    border:6px solid black;
+    top:170px;
+
+}
+#secal3{
+    position:absolute;
+    border-radius:360px;
+    border:6px solid black;
+    top:300px;
+}
+
+#secal4{
+    position:absolute;
+    border-radius:360px;
+    border:6px solid black;
+    top:430px;
 
 }
 
