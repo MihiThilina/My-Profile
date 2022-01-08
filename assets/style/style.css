@@ -387,6 +387,7 @@ body {
 
 /*-----------education*/
 
+
 .education-section{
     height: 900px;
     border: 1px solid red;
@@ -442,7 +443,7 @@ body {
     top:215px;
     width:15px;
     height:20px;
-    color:#EFEFEF;
+    background-color: rgba(222, 222, 222, 1);
     border:1px solid black;
     height: 500px;
     border-radius:25px;
@@ -487,13 +488,135 @@ body {
 
 }
 
-#second{
+#first{
+    width:150px;
+    height:5px;
+    top:43px;
+    left:10px;
+    position:absolute;
+    background-color:black
+}
+
+#first-section{
+    position:relative;
+    width:340px;
+    height:140px;
+    background-color: rgba(222, 222, 222, 1);
+    left:153px;
+    top:-70px;
+
 
 }
 
+#second{
+    width:150px;
+    height:5px;
+    top:173px;
+    right:1px;
+    position:absolute;
+    background-color:black
+}
+#second-section{
+    position:relative;
+    width:340px;
+    height:140px;
+    background-color: rgba(222, 222, 222, 1);
+    right:341px;
+    top:-70px;
+
+}
 #third{
+    width:150px;
+    height:5px;
+    top:304px;
+    left:1px;
+    position:absolute;
+    background-color:black
+}
+#third-section{
+    position:relative;
+    width:340px;
+    height:140px;
+    background-color: rgba(222, 222, 222, 1);
+    left:153px;
+    top:-70px;
+
 
 }
 #forth{
+    width:150px;
+    height:5px;
+    top:433px;
+    right:1px;
+    position:absolute;
+    background-color:black
 
 }
+
+#forth-section{
+    position:relative;
+    width:340px;
+    height:140px;
+    background-color: rgba(222, 222, 222, 1);
+    right:341px;
+    top:-70px;
+
+
+}
+
+
+
+/*------------------------comment-section*/
+
+.comment-section{
+    height: 900px;
+    border: 1px solid red;
+    background-color:#EFEFEF;
+    position: relative;
+    top: 0;
+
+}
+
+.comment-section-side-pic{
+    width: 98.7vw;
+    height:20vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#comment-section-main-topic{
+    position: absolute;
+    left:23vh;
+    top:76px;
+    height:10vh;
+    width:23vw;
+    z-index: 1;
+    background-color:#EFEFEF;
+}
+
+#comment{
+    font-family: 'Rosarivo', serif;
+    font-size: 28px;
+    text-decoration: none;
+    font-style: normal;
+}
+#comment h2{
+    position:relative;
+    left:10vh;
+    top:20px;
+}
+
+#comment-side1{
+    position: absolute;
+    width:4vw;
+    height:10vh;
+    right:0;
+    top:12px;
+    transform: rotate(360deg);
+}
+
+
