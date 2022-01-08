@@ -118,36 +118,55 @@ body {
     position:absolute;
     left:70%;
 }
+
 .CONYACTbtn {
     position:relative;
-    top:270px;
+    top:262px;
     left:24px;
     background-color: #660058;
     border: none;
     color: white;
+    height: 40px;
+    width: 10vw;
     padding: 13px 23px 12px 23px;
-    text-align: center;
     font-size: 16px;
     cursor: pointer;
     margin: 4px 2px;
-    text-decoration: none;
-    border-radius: 10% 10% 10% 10%;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 1px 2px #5e5d5b;
 }
 
+.DOWNLOADDbtn img{
+    position: relative;
+    top:-3px;
+    left: -10px;
+    height: 3vh;;
+}
 .DOWNLOADDbtn {
     position:relative;
+    height: 40px;
     top:270px;
     left:25px;
     background-color: #660058;
     border: none;
     color: white;
     padding: 13px 23px 12px 23px;
-    text-align: center;
     font-size: 16px;
     cursor: pointer;
     margin: 4px 28px;
-    text-decoration: none;
-    border-radius: 10% 10% 10% 10%;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 1px 2px #5e5d5b;
+}
+
+.DOWNLOADDbtn span{
+    position: relative;
+    top: -10px;
+}
+.CONYACTbtn span{
+    position: relative;
+    top: -2px;
 }
 
 #about {
