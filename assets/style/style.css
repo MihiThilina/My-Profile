@@ -577,6 +577,14 @@ body {
 
 }
 
+#left-side-pic{
+    position: absolute;
+    height: 100vh;
+    top: 160px;
+    right: 0;
+    
+
+}
 .comment-section-side-pic{
     width: 98.7vw;
     height:20vh;
@@ -619,4 +627,23 @@ body {
     transform: rotate(360deg);
 }
 
+/* contact section */
 
+.contact-section{
+    height: 90px;
+    border: 1px solid red;
+    background-color:#EFEFEF;
+    position: relative;
+    top: 0;
+}
+
+
+/* footer section */
+
+.footer-section{
+    height: 90px;
+    border: 1px solid red;
+    background-color:#EFEFEF;
+    position: relative;
+    top: 0;
+}
