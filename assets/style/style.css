@@ -193,7 +193,6 @@ body {
 /*------------------------------SKILLS-------------------------------------------*/
 
 .skills-section{
-    border: 1px solid red;
     height: 750px;
     position: relative;
     top: 0;
@@ -285,7 +284,7 @@ body {
 
 
 .assignment-section{
-    height: 800px;
+    height: 720px;
     border: 1px solid red;
     background-color:#eeecec;
     position: relative;
@@ -315,6 +314,13 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     z-index: 1;
 }
+#assignment-side1{
+    position: absolute;
+    left: 550px;
+    top: 220px;
+    width: 10vw;
+    z-index: 2;
+}
 
 #second-rectangle{
     position: absolute;
@@ -326,6 +332,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
    
 }
+
+#assignment-side2{
+    position: absolute;
+    right: 550px;
+    top: 150px;
+    width: 10vw;
+    z-index: 2;
+}
 #thrid-rectangle{
     position: absolute;
     height: 400px;
@@ -336,8 +350,27 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
    
 }
+#assignment-side3{
+    position: absolute;
+    right: 250px;
+    top: 60px;
+    width: 10vw;
+    z-index: 2;
+}
 
+.view-button{
+    position: absolute;
+    top:80vh;
+    left:150vh;
+    padding: 13px 23px 12px 23px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px 28px;
+    box-shadow:0 1px 2px #5e5d5b;
+    border: none;
+    background-color:#C4C4C4;
 
+}
 /*---------------------project*/
 .project-section{
     height: 900px;
