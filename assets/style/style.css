@@ -287,29 +287,9 @@ body {
 .assignment-section{
     height: 800px;
     border: 1px solid red;
-    background-color:#EFEFEF;
+    background-color:#eeecec;
     position: relative;
     top: 0;
-}
-
-#assigment-second-section{
-    position:absolute;
-    background-color:#ffff;
-    top:100px;
-    left:120px;
-    width:80vw;
-    height:80vh;
-
-}
-
-#assigment-cover-image{
-    position: absolute;
-    right:78vh;
-    top:60px;
-    height:17vh;
-    width:28vw;
-    z-index: 1;
-    background-color:#EFEFEF;
 }
 
 #assigment{
@@ -320,27 +300,41 @@ body {
 }
 #assigment h2{
     position:relative;
-    left:12vh;
+    left:30vh;
     top:30px;
 
 }
 
-#side1{
+#first-rectangle{
     position: absolute;
-    width:8vw;
-    height:15vh;
-    left:320px;
-    top:8px;
-    transform: rotate(270deg);
+    height: 400px;
+    width: 300px;
+    top:250px;
+    left: 360px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    z-index: 1;
 }
 
-#side2{
-    position:relative;
-    width:8vw;
-    height:15vh;
-    left:-10px;
-    top:-45px;
-    transform: rotate(90deg);
+#second-rectangle{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top:180px;
+    right:580px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+   
+}
+#thrid-rectangle{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top:100px;
+    right:310px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+   
 }
 
 
