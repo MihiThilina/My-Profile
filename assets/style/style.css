@@ -674,15 +674,14 @@ body .entries .entry:nth-child(2n) .title.big::before{
 /* contact section */
 
 .contact-section{
-    height: 90px;
+    height: 250px;
     width: 600px;
-    border: 1px solid red;
-    left: 100px;
-    right: 100px;
+    left: 450px;
     background-color:#EFEFEF;
     position: relative;
-    top: 10px;
+    top: 130px;
     z-index: 1;
+    border-radius: 4px;
 }
 
 
