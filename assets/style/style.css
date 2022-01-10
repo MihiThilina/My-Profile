@@ -535,6 +535,36 @@ body {
     right: -73px;
     z-index: 1000;
 }
+body .entries .entry .title.big::before{
+    width: 24px;
+    height: 24px;
+    transform: translate(8px, -50%);
+}
+body .entries .entry .body{
+    color:#000000;
+}
+
+body .entries .entry .body p{
+    color:rgb(0, 0, 0);
+}
+
+body .entries .entry .body p{
+   line-height: 1.4em;
+}
+
+body .entries .entry:nth-child(2n){
+   text-align:left ;
+   float: right;
+}
+
+body .entries .entry:nth-child(2n) .title::before{
+    left: -63px;
+}
+
+
+body .entries .entry:nth-child(2n) .title.big::before{
+    transform: translate(-8px ,-50%);
+}
 
 
 /*------------------------comment-section*/
