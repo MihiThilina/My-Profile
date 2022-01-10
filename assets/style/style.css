@@ -505,19 +505,19 @@ body {
     max-width: 800px;
     margin: auto;
     position: relative;
-    left: -5px;
+    left:-15px ;
 }
 .entry{
     width: calc(50% - 80px);
     float: left;
     clear: both;
-    padding: 20px;
+    padding: 10px;
     text-align: right;
 }
 
 .title{
     font-size: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 1px;
     position: relative;
     color: white;
 }
@@ -532,12 +532,13 @@ body {
     border-radius: 100%;
     top:50%;
     transform: translate(-50%);
-    right: -73px;
-    z-index: 1000;
+    right: -50px;
+   
 }
 body .entries .entry .title.big::before{
     width: 24px;
     height: 24px;
+    right: -113px;
     transform: translate(8px, -50%);
 }
 body .entries .entry .body{
@@ -572,7 +573,7 @@ body .entries .entry:nth-child(2n) .title.big::before{
 .comment-section{
     height: 900px;
     border: 1px solid red;
-    background-color:#EFEFEF;
+    background-color:white;
     position: relative;
     top: 0;
 
@@ -628,6 +629,48 @@ body .entries .entry:nth-child(2n) .title.big::before{
     transform: rotate(360deg);
 }
 
+.place-holder-section{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#email-place-holder{
+  color: #C4C4C4;
+  background-color:  #EFEFEF;
+  width: 25vw;
+  height: 8vh;
+  border-radius:4px;
+  border: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: black;
+  }
+
+
+
+#name-place-holder{
+ background-color: #EFEFEF;
+  width: 25vw;
+  height: 8vh;
+  border-radius:4px;
+  
+    border: none;
+
+}
+
+#massge-place-holder{
+    background-color:  #EFEFEF;;
+    color: #C4C4C4;
+    width: 30vw;
+    height: 30vh;
+    border-radius:4px;
+    border: none;
+    
+
+}
+
 /* contact section */
 
 .contact-section{
@@ -642,9 +685,19 @@ body .entries .entry:nth-child(2n) .title.big::before{
 /* footer section */
 
 .footer-section{
-    height: 90px;
-    border: 1px solid red;
-    background-color:#EFEFEF;
+    height: 160px;
+    background-color: black;
     position: relative;
     top: 0;
+  
+}
+
+.footer-rectangle{
+    position: absolute;
+    right: 680px;
+     top:50px;
+    width: 10vw;
+    height: 10vh;
+    border: 1px solid white;
+    
 }
