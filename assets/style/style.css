@@ -571,8 +571,7 @@ body .entries .entry:nth-child(2n) .title.big::before{
 /*------------------------comment-section*/
 
 .comment-section{
-    height: 900px;
-    border: 1px solid red;
+    height: 950px;
     background-color:white;
     position: relative;
     top: 0;
@@ -595,6 +594,7 @@ body .entries .entry:nth-child(2n) .title.big::before{
     background-position: 100%;
     position: relative;
     top: 0;
+  
     left: 0;
 }
 
@@ -674,17 +674,33 @@ body .entries .entry:nth-child(2n) .title.big::before{
 /* contact section */
 
 .contact-section{
-    height: 250px;
+    height: 200px;
     width: 600px;
     left: 450px;
     background-color:#EFEFEF;
     position: relative;
-    top: 130px;
+    top: 230px;
     z-index: 1;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
+#location{
+    position: relative;
+    left: 260px;
+    top: 30px;
+    font-size: 25px;
+}
+.address{
+    position: relative;
+    top:60px;
+}
 
+#contact-me{
+    position: relative;
+    top:100px;
+  left: 250px;
+  font-size: 25px;
+}
 /* footer section */
 
 .footer-section{
