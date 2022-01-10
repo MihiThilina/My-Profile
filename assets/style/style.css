@@ -10,8 +10,8 @@ body {
 
 }
 
-
-/*---------------------------MENU BAR--------------------------*/
+/* 
+/---------------------------MENU BAR--------------------------/ */
 
 .top_bar {
     justify-content: space-around;
@@ -51,7 +51,7 @@ body {
 
 
 
-/*-------------------------------INFO----------------------------*/
+/* /-------------------------------INFO----------------------------/ */
 
 #hero-section{
     top:0;
@@ -90,7 +90,7 @@ body {
 }
 
 
-/*---------------------------------------ABOUT PAGE -----------------------------------------------*/
+/* /---------------------------------------ABOUT PAGE -----------------------------------------------/ */
 .about-section {
     position: relative;
     top: 0;
@@ -189,8 +189,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-/*------------------------------SKILLS-------------------------------------------*/
+/* 
+/------------------------------SKILLS-------------------------------------------/ */
 
 .skills-section{
     height: 750px;
@@ -236,17 +236,16 @@ body {
 
 }
 
-/*Skills Nav Bar*/
+/* /Skills Nav Bar/ */
 
 #skills-flex-box{
     top: 200px;
     height: 200px;
     position: relative;
     display: flex;
-    align-items: center; /*cross axis (center | flex-start | flex-end)*/
+    align-items: center; 
     justify-content: space-evenly;
     overflow: hidden;
-   
     background-color: white;
 }
 
@@ -280,16 +279,28 @@ body {
     height:15vh;
 
 }
-/*--------------------Assignment Section----------------------------------*/
+/* /--------------------Assignment Section----------------------------------/ */
 
 
 .assignment-section{
+    border: 2px solid blue;
     height: 720px;
     background-color:#eeecec;
     position: relative;
     top: 0;
 }
 
+#assigment-second-section{
+    position: relative;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 680px;
+}
+#assigment-second-section>div{
+    position: absolute;
+}
 #assigment{
     font-family: 'Rosarivo', serif;
     font-size: 30px;
@@ -306,25 +317,25 @@ body {
     height: 400px;
     width: 300px;
     top:250px;
-    left: 360px;
+    left: 500px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    z-index: 1;
+    z-index: 5;
 }
 #assignment-side1{
     position: absolute;
-    left: 550px;
-    top: 220px;
-    width: 10vw;
-    z-index: 2;
+    left: 697px;
+    top: 244px;
+    width: 6vw;
+    z-index: 7;
 }
 
 #second-rectangle{
     position: absolute;
     height: 400px;
     width: 300px;
-    top:180px;
-    right:580px;
+    top:138px;
+    left:781px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
    
@@ -332,26 +343,26 @@ body {
 
 #assignment-side2{
     position: absolute;
-    right: 550px;
-    top: 150px;
-    width: 10vw;
-    z-index: 2;
+    left: 981px;
+    top: 88px;
+    width: 6vw;
+    z-index: 1;
 }
 #thrid-rectangle{
     position: absolute;
     height: 400px;
     width: 300px;
-    top:100px;
-    right:310px;
+    left: 1062px;
+    top: 29px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
    
 }
 #assignment-side3{
     position: absolute;
-    right: 250px;
-    top: 60px;
-    width: 10vw;
+    left: 1269px;
+    top: -30px;
+    width: 6vw;
     z-index: 2;
 }
 
@@ -368,7 +379,7 @@ body {
     background-color:#C4C4C4;
 
 }
-/*---------------------project*/
+/* /---------------------project/ */
 .project-section{
     height: 900px;
     border: 1px solid red;
@@ -429,7 +440,7 @@ body {
 }
 
 
-/*-----------education*/
+/* /-----------education/ */
 
 
 .education-section{
@@ -501,7 +512,7 @@ body {
     background-color: white;
 }
 .entries{
-    width: calc(100% -80px);
+    width: calc(100% - 80px);
     max-width: 800px;
     margin: auto;
     position: relative;
@@ -568,7 +579,7 @@ body .entries .entry:nth-child(2n) .title.big::before{
 }
 
 
-/*------------------------comment-section*/
+/* /------------------------comment-section/ */
 
 .comment-section{
     height: 950px;
@@ -690,56 +701,63 @@ body .entries .entry:nth-child(2n) .title.big::before{
 /* contact section */
 
 .contact-section{
+
+    position: relative;
+    z-index: 1;
+    margin-top: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-section>div{
+    background-color: #8e8a8a;
+    border-radius: 10px;
     height: 200px;
     width: 600px;
-    left: 450px;
-    background-color:#EFEFEF;
-    position: relative;
-    top: 230px;
-    z-index: 1;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #location{
-    position: relative;
-    left: 250px;
-    top: 25px;
-    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    font-size: 30px;
+
 }
 .address{
-    position: relative;
-    top:40px;
-    left: 185px;
-    font-size: 18px;
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
 }
 
 #contact-me{
-    position: relative;
-    top:80px;
-    left: 235px;
-    font-size: 25px;
+    position: absolute;
+    font-size: 30px;
 }
 
 .number{
-    position: relative;
-    top:90px;
-    left: 240px;
-    font-size: 18px;
+    position: absolute;
+    top: 120px;
+    font-size: 20px;
 }
-/* footer section */
+ /* /footer section/ */
 
 .footer-section{
     height: 160px;
-    background-color: black;
+    background-color: #000000;
     position: relative;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   
 }
 
 .footer-rectangle{
     position: absolute;
-    right: 550px;
-    top:70px;
+
     width: 30vw;
     height: 6vh;
     border: 1px solid white;
