@@ -27,7 +27,7 @@ body {
     display: flex;
     list-style: none;
     justify-content: center;
-    /* !*padding: 20px 0px;*!*/
+   
     flex-wrap: wrap;
     margin: 20px 0;
 }
@@ -285,7 +285,6 @@ body {
 
 .assignment-section{
     height: 720px;
-    border: 1px solid red;
     background-color:#eeecec;
     position: relative;
     top: 0;
@@ -297,12 +296,10 @@ body {
     text-decoration: none;
     font-style: normal;
 }
-#assigment h2{
+/* #assigment h2{
     position:relative;
-    left:30vh;
     top:30px;
-
-}
+} */
 
 #first-rectangle{
     position: absolute;
@@ -375,7 +372,7 @@ body {
 .project-section{
     height: 900px;
     border: 1px solid red;
-    background-color:#EFEFEF;
+    background-color:white;
     position: relative;
     top: 0;
 }
@@ -451,6 +448,7 @@ body {
     background-position: 100%;
     position: relative;
     top: 0;
+    z-index: 1;
     left: 0;
 }
 .education-section-main-topic{
@@ -459,7 +457,7 @@ body {
     top:60px;
     height:12vh;
     width:23vw;
-    z-index: 1;
+    z-index: 2;
     background-color:#EFEFEF;
 }
 
@@ -484,133 +482,59 @@ body {
     transform: rotate(180deg);
 }
 
-.vl{
-    position:absolute;
-    left:700px;
-    top:215px;
-    width:15px;
-    height:20px;
-    background-color: rgba(222, 222, 222, 1);
-    border:1px solid black;
-    height: 500px;
-    border-radius:25px;
-
+#body{
+    min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
 }
 
-#first{
-    width:300px;
-    height:5px;
-    top:10px;
-    right:10px;
-    position:absolute;
-    background-color:black
-}
-
-#secal{
-    position:absolute;
-    border-radius:360px;
-    border:6px solid black;
-    top:40px;
-}
-
-#secal2{
-    position:absolute;
-    border-radius:360px;
-    border:6px solid black;
+#body::before{
+    content: '';
+    position: absolute;
     top:170px;
-
+    left:50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    width: 4px;
+    height: 700px;
+    background-color: white;
 }
-#secal3{
-    position:absolute;
-    border-radius:360px;
-    border:6px solid black;
-    top:300px;
+.entries{
+    width: calc(100% -80px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    left: -5px;
 }
-
-#secal4{
-    position:absolute;
-    border-radius:360px;
-    border:6px solid black;
-    top:430px;
-
-}
-
-#first{
-    width:150px;
-    height:5px;
-    top:43px;
-    left:10px;
-    position:absolute;
-    background-color:black
+.entry{
+    width: calc(50% - 80px);
+    float: left;
+    clear: both;
+    padding: 20px;
+    text-align: right;
 }
 
-#first-section{
-    position:relative;
-    width:340px;
-    height:140px;
-    background-color: rgba(222, 222, 222, 1);
-    left:153px;
-    top:-70px;
-
-
+.title{
+    font-size: 32px;
+    margin-bottom: 12px;
+    position: relative;
+    color: white;
 }
 
-#second{
-    width:150px;
-    height:5px;
-    top:173px;
-    right:1px;
-    position:absolute;
-    background-color:black
+.title::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #ffffff;
+    background-color: #1d1d1d;
+    border-radius: 100%;
+    top:50%;
+    transform: translate(-50%);
+    right: -73px;
+    z-index: 1000;
 }
-#second-section{
-    position:relative;
-    width:340px;
-    height:140px;
-    background-color: rgba(222, 222, 222, 1);
-    right:341px;
-    top:-70px;
-
-}
-#third{
-    width:150px;
-    height:5px;
-    top:304px;
-    left:1px;
-    position:absolute;
-    background-color:black
-}
-#third-section{
-    position:relative;
-    width:340px;
-    height:140px;
-    background-color: rgba(222, 222, 222, 1);
-    left:153px;
-    top:-70px;
-
-
-}
-#forth{
-    width:150px;
-    height:5px;
-    top:433px;
-    right:1px;
-    position:absolute;
-    background-color:black
-
-}
-
-#forth-section{
-    position:relative;
-    width:340px;
-    height:140px;
-    background-color: rgba(222, 222, 222, 1);
-    right:341px;
-    top:-70px;
-
-
-}
-
 
 
 /*------------------------comment-section*/
