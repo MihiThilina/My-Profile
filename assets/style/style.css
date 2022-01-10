@@ -671,6 +671,22 @@ body .entries .entry:nth-child(2n) .title.big::before{
 
 }
 
+.SAVEbtn{
+    position:relative;
+    width: 160px;
+    top:40px;
+    left:280px;
+    background-color: #660058;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:10px;
+    box-shadow:0 1px 2px #5e5d5b;
+
+}
+
 /* contact section */
 
 .contact-section{
