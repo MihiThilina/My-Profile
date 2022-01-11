@@ -362,6 +362,7 @@ body {
 
 
 
+
 #assignment-side2{
     position: absolute;
     left: 825px;
@@ -387,6 +388,28 @@ body {
     width: 13vw;
    
 }
+
+#first-rectangle img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+     transition: 0.5s;
+ }
+ 
+
+#second-rectangle img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+     transition: 0.5s;
+ }
+ 
+
+#thrid-rectangle img:hover{
+   cursor: pointer;
+   transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
 
 
 #assignment-side3{
