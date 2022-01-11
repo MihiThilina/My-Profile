@@ -7,7 +7,6 @@
 
 body {
     max-width:100vw;
-
 }
 
 /* 
@@ -196,6 +195,7 @@ body {
     height: 750px;
     position: relative;
     top: 0;
+    border: 1px solid red;
 }
 
 .section-cover-pic{
@@ -314,28 +314,28 @@ body {
 
 #first-rectangle{
     position: absolute;
-    height: 400px;
+    height: 370px;
     width: 300px;
     top:250px;
-    left: 500px;
+    left:380px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     z-index: 5;
 }
 #assignment-side1{
     position: absolute;
-    left: 697px;
-    top: 244px;
-    width: 6vw;
+    left: 560px;
+    top: 220px;
+    width: 10vw;
     z-index: 7;
 }
 
 #second-rectangle{
     position: absolute;
-    height: 400px;
+    height: 370px;
     width: 300px;
     top:138px;
-    left:781px;
+    left:656px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
    
@@ -343,16 +343,16 @@ body {
 
 #assignment-side2{
     position: absolute;
-    left: 981px;
-    top: 88px;
-    width: 6vw;
+    left: 850px;
+    top: 93px;
+    width: 10vw;
     z-index: 1;
 }
 #thrid-rectangle{
     position: absolute;
-    height: 400px;
+    height: 370px;
     width: 300px;
-    left: 1062px;
+    left: 940px;
     top: 29px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -360,9 +360,9 @@ body {
 }
 #assignment-side3{
     position: absolute;
-    left: 1269px;
-    top: -30px;
-    width: 6vw;
+    left: 1140px;
+    top: 0px;
+    width: 10vw;
     z-index: 2;
 }
 
@@ -641,7 +641,7 @@ body .entries .entry:nth-child(2n) .title.big::before{
 }
 
 .place-holder-section{
-    position: relative;
+    position: absolute;
     top: 100px;
     left: 100px;
 }
@@ -655,19 +655,18 @@ body .entries .entry:nth-child(2n) .title.big::before{
   border: none;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
     color: black;
   }
 
 
 
 #name-place-holder{
- background-color: #EFEFEF;
+  background-color: #EFEFEF;
   width: 25vw;
   height: 8vh;
   border-radius:4px;
-  
-    border: none;
+  border: none;
 
 }
 
@@ -678,8 +677,6 @@ body .entries .entry:nth-child(2n) .title.big::before{
     height: 30vh;
     border-radius:4px;
     border: none;
-    
-
 }
 
 .SAVEbtn{
