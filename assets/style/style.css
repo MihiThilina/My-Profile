@@ -551,13 +551,16 @@ body {
 .timeline-section{
 	min-height: 100vh;
 	padding: 100px 15px;
+   
 }
 .timeline-items{
 	max-width: 1000px;
 	margin:auto;
 	display: flex;
 	flex-wrap: wrap;
+    top:-60px;
 	position: relative;
+    border: 1px solid rebeccapurple;
 }
 .timeline-items::before{
 	content: '';
@@ -580,6 +583,24 @@ body {
     padding-right: calc(50% + 30px);
 	text-align: right;
 }
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+
 
 
 /* /------------------------comment-section/ */
