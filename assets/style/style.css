@@ -195,7 +195,6 @@ body {
     height: 750px;
     position: relative;
     top: 0;
-    border: 1px solid red;
 }
 
 .section-cover-pic{
@@ -283,16 +282,22 @@ body {
 
 
 .assignment-section{
-    border: 2px solid blue;
     height: 720px;
     background-color:#eeecec;
     position: relative;
     top: 0;
 }
-
+#assigment{
+    font-family: 'Rosarivo', serif;
+    font-size: 30px;
+    font-style: normal;
+    top: 70px;
+    left: 60px;
+    position: absolute;
+   
+}
 #assigment-second-section{
     position: relative;
-    border: 2px solid blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,12 +306,7 @@ body {
 #assigment-second-section>div{
     position: absolute;
 }
-#assigment{
-    font-family: 'Rosarivo', serif;
-    font-size: 30px;
-    text-decoration: none;
-    font-style: normal;
-}
+
 /* #assigment h2{
     position:relative;
     top:30px;
@@ -317,14 +317,25 @@ body {
     height: 370px;
     width: 300px;
     top:250px;
-    left:380px;
+    left:340px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     z-index: 5;
 }
+
+#first-rectangle img{
+    position: relative;
+    top:90px;
+    left: 50px;
+    width: 13vw;
+   
+}
+
+
+
 #assignment-side1{
     position: absolute;
-    left: 560px;
+    left: 530px;
     top: 220px;
     width: 10vw;
     z-index: 7;
@@ -335,15 +346,25 @@ body {
     height: 370px;
     width: 300px;
     top:138px;
-    left:656px;
+    left:626px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
    
 }
 
+#second-rectangle img{
+    position: relative;
+    top:90px;
+    left: 50px;
+    width: 13vw;
+   
+}
+
+
+
 #assignment-side2{
     position: absolute;
-    left: 850px;
+    left: 825px;
     top: 93px;
     width: 10vw;
     z-index: 1;
@@ -352,15 +373,25 @@ body {
     position: absolute;
     height: 370px;
     width: 300px;
-    left: 940px;
+    left: 920px;
     top: 29px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
    
 }
+
+#thrid-rectangle img{
+    position: relative;
+    top:90px;
+    left: 50px;
+    width: 13vw;
+   
+}
+
+
 #assignment-side3{
     position: absolute;
-    left: 1140px;
+    left: 1120px;
     top: 0px;
     width: 10vw;
     z-index: 2;
@@ -368,7 +399,7 @@ body {
 
 .view-button{
     position: absolute;
-    top:80vh;
+    top:85vh;
     left:150vh;
     padding: 13px 23px 12px 23px;
     font-size: 16px;
