@@ -619,11 +619,11 @@ body {
 /* /------------------------comment-section/ */
 
 .comment-section{
-    height: 950px;
+    height: 750px;
     background-color:white;
     position: relative;
+    
     top: 0;
-
 }
 
 #left-side-pic{
@@ -631,8 +631,7 @@ body {
     height: 100vh;
     top: 160px;
     right: 0;
-    
-
+    z-index: 1;
 }
 .comment-section-side-pic{
     width: 98.7vw;
@@ -641,8 +640,8 @@ body {
     background-repeat: no-repeat;
     background-position: 100%;
     position: relative;
+   
     top: 0;
-  
     left: 0;
 }
 
@@ -653,12 +652,14 @@ body {
     height:10vh;
     width:23vw;
     z-index: 1;
+    
     background-color:#EFEFEF;
 }
 
 #comment{
     font-family: 'Rosarivo', serif;
     font-size: 28px;
+    
     text-decoration: none;
     font-style: normal;
 }
@@ -673,21 +674,23 @@ body {
     width:4vw;
     height:10vh;
     right:0;
-    top:12px;
+    top:0.4px;
     transform: rotate(360deg);
 }
 
 .place-holder-section{
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 280px;
 }
 
 #email-place-holder{
   color: #C4C4C4;
   background-color:  #EFEFEF;
-  width: 25vw;
-  height: 8vh;
+  width: 35vw;
+  height: 5vh;
+  left: 450px;
+  top: 120px;
+  position: relative;
   border-radius:4px;
   border: none;
 }
@@ -700,27 +703,32 @@ body {
 
 #name-place-holder{
   background-color: #EFEFEF;
-  width: 25vw;
-  height: 8vh;
+  width: 35vw;
+  left: 450px;
+  position: relative;
+  height: 5vh;
+  top: 120px;
   border-radius:4px;
   border: none;
-
 }
 
 #massge-place-holder{
     background-color:  #EFEFEF;;
     color: #C4C4C4;
-    width: 30vw;
-    height: 30vh;
+    width: 35vw;
+    left: 450px;
+    position: relative;
+    top: 120px;
+    height: 20vh;
     border-radius:4px;
     border: none;
 }
 
 .SAVEbtn{
     position:relative;
-    width: 160px;
-    top:40px;
-    left:280px;
+    width: 540px;
+    top:140px;
+    left:450px;
     background-color: #660058;
     border: none;
     color: white;
