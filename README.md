@@ -2,7 +2,7 @@
 
 My Information - https://www.linkedin.com/in/mihithilina-bandara-956387211/
 
-My Personal Web Site Map :
+My Personal Web Site Map :https://www.gloomaps.com/AYRieNphvr
 
 My Personal Web Wire Frame : https://wireframe.cc/1BsWUI
 
