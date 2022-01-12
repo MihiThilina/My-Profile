@@ -1,0 +1,22 @@
+
+@media all  and (min-width:  375px) and (max-width: 667px)  {
+    
+.top_bar {
+    width: 350vw;
+}
+
+
+.nav-link li {
+    margin: 0 40px;
+}
+
+
+    /*  */
+    #main_page {
+        width: 350%;
+    }
+
+    
+    
+
+}

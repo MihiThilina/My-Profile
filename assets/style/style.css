@@ -26,7 +26,6 @@ body {
     display: flex;
     list-style: none;
     justify-content: center;
-   
     flex-wrap: wrap;
     margin: 20px 0;
 }
