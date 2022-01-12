@@ -74,10 +74,47 @@
     #skills-flex-box{
         left: -4%;
         width: 350%;
+        position: absolute;
+        top:52%;
     }
 
     #skills-flex-box div{
         width: 10%;
+    }
+    /*  */
+    .assignment-section{
+        width: 350%;
+    }
+
+    #first-rectangle{
+        top:44%;
+        left:18%;
+    }
+    #assignment-side1{
+        left: 34%;
+        top: 35%;
+        width: 20vh;
+    }
+
+    #second-rectangle{
+        top: 28%;
+        left: 38%;
+        
+    }
+
+    #assignment-side2{
+        left: 52%;
+        top:18%;
+        width: 20vh;
+    }
+
+    #thrid-rectangle{
+        left: 57%;
+    }
+
+    #assignment-side3{
+        left: 74%;
+        width: 20vh;
     }
 
 }
