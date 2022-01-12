@@ -56,6 +56,28 @@
     }
 
 
-    
+    .section-cover-pic{
+        width: 350%;
+    }
+
+    .Skills-pic{
+       left: 230%;
+    }
+
+    #skills{
+        left: 258%;
+    }
+
+    .skills-section h4{
+        width: 100%;
+    }
+    #skills-flex-box{
+        left: -4%;
+        width: 350%;
+    }
+
+    #skills-flex-box div{
+        width: 10%;
+    }
 
 }
