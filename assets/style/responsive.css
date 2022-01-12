@@ -28,6 +28,34 @@
         left: 218px;
         letter-spacing: 10px;
     }
+
+
+    /* About section */
+
+    #about {
+        left: 550px;
+        top:50px;
+    }
+    #profile_pic img {
+        left: 510px;
+    }
+    .about-section p {
+     width:220%;
+    }
+
+    .CONYACTbtn{
+        left: 450%;
+        width: 100%;
+    }
+
+    .DOWNLOADDbtn{
+
+        top:310px;
+        left: 310%;
+        width: 100%;
+    }
+
+
     
 
 }
