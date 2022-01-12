@@ -13,10 +13,21 @@
 
     /*  */
     #main_page {
+        position: relative;
         width: 350%;
     }
 
-    
+    #main_titleName  {
+        left: 10%;
+        top: 55vh;
+        font-size: 90px;
+    }
+
+    #social-media-icon {
+        position: absolute;
+        left: 218px;
+        letter-spacing: 10px;
+    }
     
 
 }
