@@ -14,9 +14,7 @@ body {
 
 .top_bar {
     justify-content: space-around;
-    display: flex;
     z-index: 10;
-    align-items: center;
     position: fixed;
     background-color: rgba(222, 222, 222, 1);
     width: 100vw;
@@ -24,7 +22,6 @@ body {
 
 .nav-link {
     display: flex;
-    list-style: none;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px 0;
@@ -44,7 +41,7 @@ body {
 }
 
 .nav-link li:hover{
-    text-underline: black;
+   
 }
 
 
@@ -92,6 +89,7 @@ body {
 .about-section {
     position: relative;
     top: 0;
+    border: 1px solid red;
     height:650px;
     display:flex;
     justify-content:center;
@@ -100,6 +98,7 @@ body {
 
 .about-section p {
     position:absolute;
+    border: 1px solid red;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     top: 430px;
     left:200px;
@@ -191,7 +190,7 @@ body {
 /------------------------------SKILLS-------------------------------------------/ */
 
 .skills-section{
-    height: 750px;
+    height: 700px;
     position: relative;
     top: 0;
 }
@@ -208,7 +207,7 @@ body {
 }
 
 .Skills-pic{
-    height:40vh;
+    height:40vh; 
     background-repeat: no-repeat;
     background-attachment: revert;
     background-position: right;
@@ -220,19 +219,13 @@ body {
 
 #skills{
     position: absolute;
-    right:40vh;
     font-family: 'Rosarivo', serif;
     font-size: 30px;
-    text-decoration: none;
+    left: 72%;
+    letter-spacing: 8px; 
     font-style: normal;
 }
-.skills-section h4{
-    position: absolute;
-    font-size: 30px;
-    top:250px;
-    left:150px;
 
-}
 
 /* /Skills Nav Bar/ */
 
@@ -244,17 +237,16 @@ body {
     align-items: center; 
     justify-content: space-evenly;
     overflow: hidden;
-    background-color: white;
 }
 
 #skills-flex-box div{
-    background-color: rgba(222, 222, 222, 1);
+    background-color: white;
     display: flex;
     height: 20vh;
     margin: 40px;
-    width: 10vw;
-    border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 20vw;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #java{
@@ -281,12 +273,14 @@ body {
 
 
 .assignment-section{
+    border: 1px solid blue;
     height: 720px;
     background-color:#eeecec;
     position: relative;
     top: 0;
 }
 #assigment{
+    border: 1px solid blue;
     font-family: 'Rosarivo', serif;
     font-size: 30px;
     font-style: normal;
@@ -295,131 +289,13 @@ body {
     position: absolute;
    
 }
-#assigment-second-section{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 680px;
-}
-#assigment-second-section>div{
-    position: absolute;
-}
-
-/* #assigment h2{
-    position:relative;
-    top:30px;
-} */
-
-#first-rectangle{
-    position: absolute;
-    height: 370px;
-    width: 300px;
-    top:250px;
-    left:340px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    z-index: 5;
-}
-
-#first-rectangle img{
-    position: relative;
-    top:90px;
-    left: 50px;
-    width: 13vw;
-   
-}
-
-
-
-#assignment-side1{
-    position: absolute;
-    left: 530px;
-    top: 220px;
-    width: 10vw;
-    z-index: 7;
-}
-
-#second-rectangle{
-    position: absolute;
-    height: 370px;
-    width: 300px;
-    top:138px;
-    left:626px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-   
-}
-
-#second-rectangle img{
-    position: relative;
-    top:90px;
-    left: 50px;
-    width: 13vw;
-   
-}
-
-
-
-
-#assignment-side2{
-    position: absolute;
-    left: 825px;
-    top: 93px;
-    width: 10vw;
-    z-index: 1;
-}
-#thrid-rectangle{
-    position: absolute;
-    height: 370px;
-    width: 300px;
-    left: 920px;
-    top: 29px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-   
-}
-
-#thrid-rectangle img{
-    position: relative;
-    top:90px;
-    left: 50px;
-    width: 13vw;
-   
-}
-
-#first-rectangle img:hover{
+/* #first-rectangle img:hover{
     cursor: pointer;
     transform: scale(1.2);
      transition: 0.5s;
  }
- 
-
-#second-rectangle img:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-     transition: 0.5s;
- }
- 
-
-#thrid-rectangle img:hover{
-   cursor: pointer;
-   transform: scale(1.2);
-    transition: 0.5s;
-}
-
-
-
-
-#assignment-side3{
-    position: absolute;
-    left: 1120px;
-    top: 0px;
-    width: 10vw;
-    z-index: 2;
-}
-
-.view-button{
+  */
+/* .view-button{
     position: absolute;
     top:85vh;
     left:150vh;
@@ -430,9 +306,10 @@ body {
     box-shadow:0 1px 2px #5e5d5b;
     border: none;
     background-color:#C4C4C4;
+} */
 
-}
 /* /---------------------project/ */
+
 .project-section{
     height: 900px;
     border: 1px solid red;
@@ -441,57 +318,13 @@ body {
     top: 0;
 }
 
-.project-section-side-pic{
-    width: 98.7vw;
-    height:20vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.project-section-main-topic{
-    position: absolute;
-    left:30px;
-    top:90px;
-    height:12vh;
-    width:28vw;
-    z-index: 1;
-    background-color:#EFEFEF;
-
-}
 #project{
     font-family: 'Rosarivo', serif;
     font-size: 28px;
-    text-decoration: none;
     font-style: normal;
-}
-#project h2{
+    top:35px; 
     position:relative;
-    left:18vh;
-    top:35px;
 }
-
-#project-side1{
-    position: absolute;
-    width:5vw;
-    height:12vh;
-    right:1px;
-    top:-6px;
-    transform: rotate(270deg);
-}
-
-#project-side2{
-    position:relative;
-    width:5vw;
-    height:12vh;
-    right:-5px;
-    top:-37px;
-    transform: rotate(90deg);
-}
-
 
 /* /-----------education/ */
 
@@ -503,46 +336,10 @@ body {
     top: 0;
 }
 
-.education-section-side-pic{
-    width: 98.7vw;
-    height:20vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    position: relative;
-    top: 0;
-    z-index: 1;
-    left: 0;
-}
-.education-section-main-topic{
-    position: absolute;
-    left:150vh;
-    top:60px;
-    height:12vh;
-    width:23vw;
-    z-index: 2;
-    background-color:#EFEFEF;
-}
-
 #education{
     font-family: 'Rosarivo', serif;
     font-size: 28px;
-    text-decoration: none;
     font-style: normal;
-}
-#education h2{
-    position:relative;
-    left:10vh;
-    top:35px;
-}
-
-#education-side1{
-    position: absolute;
-    width:5vw;
-    height:12vh;
-    left:0;
-    top:-6px;
-    transform: rotate(180deg);
 }
 
 .timeline-section{
@@ -593,7 +390,7 @@ body {
 	color: #2e2e2e;
 	margin:6px 0 15px;
 }
-.timeline-content{
+ .timeline-content{
     background-color: #DEDEDE;
 	padding: 30px;
 	border-radius: 5px;
@@ -605,184 +402,7 @@ body {
 	text-transform: capitalize;
 	font-weight: 1500;
 }
-.timeline-content p{
-    color: black;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 22px;
-}
-
-
-
-
 /* /------------------------comment-section/ */
-
-.comment-section{
-    height: 750px;
-    background-color:white;
-    position: relative;
-    
-    top: 0;
-}
-
-#left-side-pic{
-    position: absolute;
-    height: 100vh;
-    top: 160px;
-    right: 0;
-    z-index: 1;
-}
-.comment-section-side-pic{
-    width: 98.7vw;
-    height:20vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    position: relative;
-   
-    top: 0;
-    left: 0;
-}
-
-#comment-section-main-topic{
-    position: absolute;
-    left:23vh;
-    top:76px;
-    height:10vh;
-    width:23vw;
-    z-index: 1;
-    
-    background-color:#EFEFEF;
-}
-
-#comment{
-    font-family: 'Rosarivo', serif;
-    font-size: 28px;
-    
-    text-decoration: none;
-    font-style: normal;
-}
-#comment h2{
-    position:relative;
-    left:10vh;
-    top:20px;
-}
-
-#comment-side1{
-    position: absolute;
-    width:4vw;
-    height:10vh;
-    right:0;
-    top:0.4px;
-    transform: rotate(360deg);
-}
-
-.place-holder-section{
-    position: absolute;
-    top: 280px;
-}
-
-#email-place-holder{
-  color: #C4C4C4;
-  background-color:  #EFEFEF;
-  width: 35vw;
-  height: 5vh;
-  left: 450px;
-  top: 120px;
-  position: relative;
-  border-radius:4px;
-  border: none;
-}
-
-::-webkit-input-placeholder {
-    color: black;
-  }
-
-
-
-#name-place-holder{
-  background-color: #EFEFEF;
-  width: 35vw;
-  left: 450px;
-  position: relative;
-  height: 5vh;
-  top: 120px;
-  border-radius:4px;
-  border: none;
-}
-
-#massge-place-holder{
-    background-color:  #EFEFEF;;
-    color: #C4C4C4;
-    width: 35vw;
-    left: 450px;
-    position: relative;
-    top: 120px;
-    height: 20vh;
-    border-radius:4px;
-    border: none;
-}
-
-.SAVEbtn{
-    position:relative;
-    width: 540px;
-    top:140px;
-    left:450px;
-    background-color: #660058;
-    border: none;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius:10px;
-    box-shadow:0 1px 2px #5e5d5b;
-
-}
-
-/* contact section */
-
-/* .contact-section{
-
-    position: relative;
-    z-index: 1;
-    margin-top: 150px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contact-section>div{
-    background-color: #8e8a8a;
-    border-radius: 10px;
-    height: 200px;
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#location{
-    position: absolute;
-    top: 20px;
-    font-size: 30px;
-
-}
-.address{
-    position: absolute;
-    top: 50px;
-    font-size: 20px;
-}
-
-#contact-me{
-    position: absolute;
-    font-size: 30px;
-}
-
-.number{
-    position: absolute;
-    top: 120px;
-    font-size: 20px;
-} */
  /* /footer section/ */
 
 .footer-section{
@@ -796,19 +416,4 @@ body {
   
 }
 
-.footer-rectangle{
-    position: absolute;
 
-    width: 30vw;
-    height: 6vh;
-    border: 1px solid white;
-    
-}
-
-#footer{
-    color: white;
-    position: absolute;
-    top:10px;
-    left: 55px;
-    font-size: 18px;
-}
