@@ -399,7 +399,6 @@ body {
 
 .project-section{
     height: 900px;
-    border: 1px solid red;
     background-color:white;
     position: relative;
     top: 0;
@@ -447,11 +446,11 @@ body {
     width: 0;
     height: 0;
     position: relative;
-    left: 10px;
-    top: 8px;
-	border-top: 15px solid transparent;
-	border-left: 30px solid white;
-	border-bottom: 15px solid transparent;
+    left: 14px;
+    top: 13px;
+	border-top: 10px solid transparent;
+	border-left: 20px solid white;
+	border-bottom: 10px solid transparent;
 }
 .navigation-bar2{
     position: absolute;
@@ -465,8 +464,8 @@ body {
     width: 0;
 	height: 0;
     position: relative;
-    right: -7px;
-    top: 9px;
+    left: 10px;
+    top: 13px;
 	border-top: 10px solid transparent;
 	border-right: 20px solid white;
 	border-bottom:10px solid transparent;
@@ -478,7 +477,7 @@ body {
 
 
 .education-section{
-    height: 1150px;
+    height: 1000px;
     background-color:#EFEFEF;
     position: relative;
     top: 0;
@@ -488,6 +487,11 @@ body {
     font-family: 'Rosarivo', serif;
     font-size: 28px;
     font-style: normal;
+    position: relative;
+    position: absolute ;
+    top: 5%;
+    left: 2%;
+    letter-spacing: 4px;
 }
 
 .timeline-section{
@@ -495,7 +499,8 @@ body {
 	padding: 100px 15px;
 }
 .timeline-items{
-	max-width: 1000px;
+  
+	max-width: 80%;
 	margin:auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -503,6 +508,7 @@ body {
 }
 .timeline-items::before{
 	content: '';
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	position: absolute;
 	width: 4px;
 	height: 100%;
@@ -510,6 +516,7 @@ body {
 	left: calc(50% - 1px);
 }
 .timeline-item{
+  
 	margin-bottom: 40px;
 	width: 100%;
 	position: relative;
@@ -534,12 +541,14 @@ body {
 	top:10px;
 }
 .timeline-date{
-	font-size: 18px;
+	font-size: 23px;
+    font-weight: 1000;
 	color: #2e2e2e;
 	margin:6px 0 15px;
 }
  .timeline-content{
-    background-color: #DEDEDE;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding: 30px;
 	border-radius: 5px;
 }
