@@ -592,37 +592,50 @@ body {
     top: 0;
 
 }
+#links{
+    display: flex;
+    justify-content: center;
+    top:18%;
+    position:relative;
+   
+
+}
+#links div{
+    width: 2%;
+    height: 12%;
+    border-radius:100%;
+    background-color: white;
+    margin: 5px;  
+}
 
 .footer-section h5{
     text-align: center;
 }
 .first{
     position: relative;
-    top: 110px;
+    top: 27%;
     color: #EFEFEF;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 14px;
     font-family: 'Rosarivo', serif;
-    letter-spacing: 4px;
 }
 .secound{
     position: relative;
-    top: 130px;
     color: #EFEFEF;
-    font-size: 16px;
-    font-style: normal;
+    top: 32%;
+    font-size: 14px;
     font-family: 'Rosarivo', serif;
-    letter-spacing: 4px;
+    
 }
-
 
 
 
 #name-Thilina{
-    position:absolute;
-    left: 42%;
+    text-align: center;
+    list-style: none;
+    position: relative;
     top: 10%;
 }
+
 
 
 #name-Thilina a{
@@ -631,6 +644,7 @@ body {
     font-family: 'Reenie Beanie', cursive;
     font-size: 60px;  
     letter-spacing: 8px;
+   
 }
 
 
@@ -644,21 +658,21 @@ body {
     filter: drop-shadow(0 0 0.75rem black);
 }
 
-
-.footer-section .nav-link{
-  position: absolute;
-  display: flex;
-  color: #FFFFFF ;
-  top: 110px;
-  left: 30%;
-
+.nav-link2{
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+   
 }
-.footer-section .nav-link> li{
-    justify-content: space-evenly;
+.nav-link2 li{
     margin: 15px;
-   text-align: center;
+    list-style: none;
+    top: 40%;
+    
 }
-.footer-section .nav-link> li>a{
-    color: #FFFFFF;
-    font-size: 18px;
+.nav-link2 li>a{
+    text-decoration: none;
+    color: #EFEFEF;
+    position: relative;
+    top: 280%;
 }
