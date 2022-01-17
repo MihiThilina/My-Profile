@@ -611,6 +611,7 @@ body {
  /* /footer section/ */
 
 .footer-section{
+  
     height: 350px;
     background-color: #1B1B1B;
     position: relative;
@@ -622,17 +623,20 @@ body {
     justify-content: center;
     top:18%;
     position:relative;
-   
-
 }
 #links div{
-    width: 2%;
-    height: 12%;
-    border-radius:100%;
-    background-color: white;
-    margin: 5px;  
+    height: 48px;
+    width: 48px; 
+    border-radius:50%;
+    background-color: #C4C4C4;
+    margin: 15px;  
 }
 
+#links div img{
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
 .footer-section h5{
     text-align: center;
 }
