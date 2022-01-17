@@ -39,12 +39,58 @@ body {
     text-decoration: none;
     color: black;
     font-size: 28px;
+   
     letter-spacing: 1px;
 }
 
-.nav-link li:hover{
+
+.underline {
+    
+    --color: #2b3044;
+    text-decoration: none;
+    color: var(--color);
+    position: relative;
+    font-size: 0;
    
-}
+  }
+  .underline span {
+    background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: var(--background-size, 100%) 1.5px;
+    transition: background-size 0.2s linear var(--background-delay, 0.1s);
+    font-size: 26px;
+    line-height: 20px;
+    transform: translateZ(0);
+  }
+  .underline svg {
+    vertical-align: top;
+    display:inline-flex;
+    top: 5px;
+    line-height: 1;
+    width: 13px;
+    height: 20px;
+    position: relative;
+    left: -2px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+    stroke: var(--line);
+    stroke-dasharray: 7.95 30;
+    stroke-dashoffset: var(--stroke-dashoffset, 46);
+    transition: stroke-dashoffset var(--stroke-duration, 0.15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+  }
+  .underline:hover {
+    --line: #646b8c;
+    --background-size: 0%;
+    --background-delay: 0s;
+    --stroke-dashoffset: 26;
+    --stroke-duration: 0.3s;
+    --stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
+    --stroke-delay: 0.195s;
+  }
+   
 
 #home_rectangle{
     width: 5vw;
@@ -54,10 +100,6 @@ body {
     background-color: white;
 }
 
-#home_rectangle li{
-  
-     
- }
 #home_rectangle li>a{
    position: absolute;
    transform: rotate(313deg);
@@ -694,14 +736,14 @@ body {
    
 }
 .nav-link2 li{
+   
     margin: 15px;
     list-style: none;
-    top: 40%;
-    
 }
 .nav-link2 li>a{
+    font-size: 18px;
     text-decoration: none;
     color: #EFEFEF;
     position: relative;
-    top: 280%;
+    top: 300%;
 }
