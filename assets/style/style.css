@@ -7,6 +7,7 @@
 
 body {
     max-width:100vw;
+
 }
 
 /* 
@@ -18,8 +19,6 @@ body {
     position: fixed;
     background-color: rgba(222, 222, 222, 1);
     width: 100vw;
-  
-
 }
 
 .nav-link {
@@ -39,14 +38,12 @@ body {
     text-decoration: none;
     color: black;
     font-size: 28px;
-   
     letter-spacing: 1px;
 }
 
 
 .underline {
-    
-    --color: #2b3044;
+    --color: #295803;
     text-decoration: none;
     color: var(--color);
     position: relative;
@@ -57,7 +54,7 @@ body {
     background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-size: var(--background-size, 100%) 1.5px;
+    background-size: var(--background-size, 100%) 2.5px;
     transition: background-size 0.2s linear var(--background-delay, 0.1s);
     font-size: 26px;
     line-height: 20px;
@@ -82,7 +79,7 @@ body {
     transition: stroke-dashoffset var(--stroke-duration, 0.15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
   }
   .underline:hover {
-    --line: #646b8c;
+    --line: #53b304;
     --background-size: 0%;
     --background-delay: 0s;
     --stroke-dashoffset: 26;
@@ -103,16 +100,18 @@ body {
 #home_rectangle li>a{
    position: absolute;
    transform: rotate(313deg);
-   top: 20px;
-   right: 6px;
-   bottom: 20px;
-   left: 6px;  
+   top: 17px;
+   right: 0;
+   bottom: 17px;
+   left: 0;  
 }
 
 /* /-------------------------------INFO----------------------------/ */
 
 #hero-section{
-    height: 838px;
+    position: relative;
+    height: 713px;
+    top: 0;
 }
 
 #main_page {
@@ -144,11 +143,20 @@ body {
 
 #social-media-icon {
     position: absolute;
-    left: 232px;
+    left: 212px;
     top: 75vh;
 }
 
+#social-media-icon img:nth-child(1):hover{
+    cursor: pointer;
+    transform: scale(1.6);
+    transition: 0.5s;
+    
+}
 
+#social-media-icon img{
+    padding: 6px;
+}
 /* /---------------------------------------ABOUT PAGE -----------------------------------------------/ */
 .about-section {
     position: relative;
@@ -173,7 +181,6 @@ body {
 #about-section-button{
     margin:auto;
     position:absolute;
-
     left:70%;
 }
 
@@ -289,8 +296,11 @@ body {
 #skills h2{
     font-family: 'Rosarivo', serif;
     font-size: 50px;
-    letter-spacing: 8px; 
+    letter-spacing: 4px; 
     font-style: normal;
+    position: relative;
+    left: 9px;
+    top: -18px;
 }
 
 
@@ -367,7 +377,7 @@ body {
 
 .vertical-line{
     position:absolute;
-    right: 8.1%;
+    right: 120px;
     top: 48%;
     height: 14%;
     background-color: black;
@@ -378,7 +388,7 @@ body {
     position:absolute;
     top: 115%;
     height: 14%;
-    left: -7px;
+    right: -6px;
     border-radius: 100%;
     background-color: black;
     border: 6px solid black;
@@ -451,12 +461,11 @@ body {
   */
 .view-button{
     position: absolute;
-    bottom: 20%;
-    right:37.5%;
+    bottom: 140px;
+    left: 605px;
     padding: 13px 23px 12px 23px;
     font-size: 16px;
     cursor: pointer;
-    margin: 4px 28px;
     box-shadow:0 1px 2px #5e5d5b;
     border: none;
     background-color:#C4C4C4;
