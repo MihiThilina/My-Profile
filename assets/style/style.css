@@ -622,12 +622,17 @@ body {
 	color: #2e2e2e;
 	margin:6px 0 15px;
 }
+.timeline-date:hover{
+    cursor: pointer;
+    color: #8f6900;
+}
  .timeline-content{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding: 30px;
 	border-radius: 5px;
 }
+
 .timeline-content h3{
     font-size: 20px;
 	color: black;
