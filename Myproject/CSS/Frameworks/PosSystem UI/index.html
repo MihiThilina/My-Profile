@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/bootstrap/Style/style.css" rel="stylesheet">
+    <link href="assets/bootstrap/js/bootstrap.bundle.min.js" rel="stylesheet">
 </head>
 <body>
 
@@ -34,57 +35,144 @@
         </div>
       </nav>
 <!-- Main Sections -->
-      <main>
-        <form>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
+      <!-- <main>
+ 
+      <section class="invoice_Details container-sm border">
+        <form class="row g-2">
+          <div class="form-row col-6">
+            <div class="col-md-4 mb-4 mt-1">
               <label for="validationDefault01">  <b>Order Id :</b></label>
               <input type="text" class="form-control" id="validationDefault01" placeholder="Order ID" value="O-001" required>
             </div>
           </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
+          <div class="date  col-6" >
+            <div class="col-md-8 p-1" >
               <label for="validationDefault01">  <b>Date :</b></label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="" value="2022.0.0" required>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="" value="2022.0.0" required>
             </div>
           </div>
-          <div class="form-group">
-            <label for="validationDefault01">  <b>Customer Id :</b></label>
+          <div class="form-group col-md-2 mb-4">
+            <label for="validationDefault01"> <b>Customer Id :</b></label>
             <select class="form-control">
-              <option></option>
+              <option>C-0001</option>
               <option></option>
               <option></option>
               <option></option>
               <option></option>
             </select>
           </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
+          <div class=" name form-row  col-6">
+            <div class="col-md-7 mb-4">
               <label for="validationDefault01">  <b>Name :</b></label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="Order ID" value="O-001" required>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="Name" value="Thilina Bandara" required>
             </div>
           </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
+          <div class="form-row  col-6">
+            <div class="col-md-5">
               <label for="validationDefault01">  <b>Salary :</b></label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="Order ID" value="O-001" required>
+              <input type="text" class="form-control" id="validationDefault04" placeholder="Salary" value="50000.00" required>
             </div>
           </div>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
+          <div class=" address form-row  col-6">
+            <div class="col-md-7">
               <label for="validationDefault01">  <b>Address :</b></label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="Order ID" value="O-001" required>
+              <input type="text" class="form-control" id="validationDefault05" placeholder="Address" value="Colombo" required>
             </div>
           </div>
         </form>
-      </main>
+      </section>  
+      </main> -->
 
-    
-    
-     
-        
- 
-      
+
+      <main class="container-fluid">
+        <section class="row">
+
+      <!-- Invoice section -->
+           <div class="col-4" style="border: 1px solid red;">
+            <form class="row g-2 pt-5 mt-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Date :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                <label for="validationDefault01"> <b>Customer Id :</b></label>
+                <select class="form-control">
+                  <option>C-0001</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+  
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Address :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+            </form>
+           </div>
+
+
+      <!-- Item Section -->
+           <div class="col-4" style="border: 1px solid red;">
+            <form class="row g-2 pt-5 mt-3 mb-lg-5">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Date :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6 mb-4">
+                <label for="validationDefault01"> <b>Customer Id :</b></label>
+                <select class="form-control">
+                  <option>C-0001</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+  
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Address :</b></label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+            </form>  
+           </div>
+
+        </section>
+
+
+
+
+        <section>
+
+        </section>
+
+    </main>
+
 
 </body>
 </html>
