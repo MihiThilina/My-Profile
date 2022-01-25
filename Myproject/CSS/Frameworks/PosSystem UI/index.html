@@ -10,168 +10,215 @@
     <link href="assets/bootstrap/Style/style.css" rel="stylesheet">
     <link href="assets/bootstrap/js/bootstrap.bundle.min.js" rel="stylesheet">
 </head>
-<body>
+<header>
 
 <!-- Header  -->
-    <nav class="navbar navbar-expand-lg  navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><b><span>I</span>nter<span>W</span>est</b></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link" href="#Orders">Orders</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Items</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Others</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-<!-- Main Sections -->
-      <!-- <main>
- 
-      <section class="invoice_Details container-sm border">
-        <form class="row g-2">
-          <div class="form-row col-6">
-            <div class="col-md-4 mb-4 mt-1">
-              <label for="validationDefault01">  <b>Order Id :</b></label>
-              <input type="text" class="form-control" id="validationDefault01" placeholder="Order ID" value="O-001" required>
-            </div>
-          </div>
-          <div class="date  col-6" >
-            <div class="col-md-8 p-1" >
-              <label for="validationDefault01">  <b>Date :</b></label>
-              <input type="text" class="form-control" id="validationDefault02" placeholder="" value="2022.0.0" required>
-            </div>
-          </div>
-          <div class="form-group col-md-2 mb-4">
-            <label for="validationDefault01"> <b>Customer Id :</b></label>
-            <select class="form-control">
-              <option>C-0001</option>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
-            </select>
-          </div>
-          <div class=" name form-row  col-6">
-            <div class="col-md-7 mb-4">
-              <label for="validationDefault01">  <b>Name :</b></label>
-              <input type="text" class="form-control" id="validationDefault03" placeholder="Name" value="Thilina Bandara" required>
-            </div>
-          </div>
-          <div class="form-row  col-6">
-            <div class="col-md-5">
-              <label for="validationDefault01">  <b>Salary :</b></label>
-              <input type="text" class="form-control" id="validationDefault04" placeholder="Salary" value="50000.00" required>
-            </div>
-          </div>
-          <div class=" address form-row  col-6">
-            <div class="col-md-7">
-              <label for="validationDefault01">  <b>Address :</b></label>
-              <input type="text" class="form-control" id="validationDefault05" placeholder="Address" value="Colombo" required>
-            </div>
-          </div>
-        </form>
-      </section>  
-      </main> -->
+
+<nav class="navbar navbar-expand-lg  navbar-light shadow p-3 mb-5" style="background-color:#FFF7E8">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><b><span style="color:#FF5C00;">I</span>nter<span style="color: #FF5C00;">W</span>est</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link" href="#Orders">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Others</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
 
 
+<body>
       <main class="container-fluid">
         <section class="row">
+          <div class="col-xl-8 col-12" >
+            <div class="row px-2">
+              <div class="col-12 col-xl-6">
+                
+                <form class="row g-2 pt-2 pb-3"  style="background-color:#FDFCFB; border:1px solid #9e9e9e; width: 110%; border-radius:18px; left: 10px; position: relative; ">
+                  <h2 style="text-align: center;">Invoice Details</h2>
 
-      <!-- Invoice section -->
-           <div class="col-4" style="border: 1px solid red;">
-            <form class="row g-2 pt-5 mt-3">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
+                  <div class="px-4 col-md-4 mt-3">
+                    <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
+                    <input type="email" class="form-control rounded-3" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                  <div class="col-md-7 mt-3">
+                    <label for="iDate" class="form-label" ><b>Date :</b></label>
+                    <input type="datetime-local" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                  <div class="form-group px-4 col-md-4 mt-3">
+                    <label for="validationDefault01" class=""> <b>Customer Id :</b></label>
+                    <select class="form-control" style="height:33px; border: 1px solid #aaaaaa;">
+                      <option>C-0001</option>
+                      <option>C-0002</option>
+                      <option>C-0003</option>
+                      <option>C-0004</option>
+                      <option>C-0005</option>
+                    </select>
+                  </div>
+                  <div class="col-md-7 ">
+                    <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
+                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                  <div class="col-md-4 px-4">
+                    <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
+                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+      
+                  <div class="col-md-7 px-1">
+                    <label for="inputEmail4" class="form-label"><b>Address :</b></label>
+                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                </form>
               </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Date :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="form-group col-md-6 mb-4">
-                <label for="validationDefault01"> <b>Customer Id :</b></label>
-                <select class="form-control">
-                  <option>C-0001</option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-  
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Address :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-            </form>
-           </div>
+
+               <div class="col-12 col-xl-6">
+                
+                <form class="row g-2 pt-1 px-4 pb-2 "  style="background-color:#FDFCFB; border:1px solid #9e9e9e; width: 110%; height:102.5%; border-radius:18px; position: relative; left: 50px;">
+                  <h2 style="text-align: center;">Select Item</h2>
+                  <div class="col-md-4 mt-3">
+                    <label for="inputEmail4" class="form-label"><b>Item Code :</b></label>
+                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                  <div class="col-md-8 px-4 mt-3">
+                    <label for="inputEmail4" class="form-label"><b>Item Name :</b></label>
+                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputEmail4" class="form-label"><b>Price :</b></label>
+                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                 
+                  <div class="col-md-5 px-4">
+                    <label for="inputEmail4" class="form-label"> <b>Qty On Hand :</b></label>
+                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                  <div class="col-4">
+                    <label for="inputEmail4" class="form-label"><b>Order Qty :</b></label>
+                    <input type="number" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="inputEmail4">
+                  </div>
+                 
+                  <div class="col-6 mt-4 px-5">
+                    <button type="button" class=" btn navbar-light shadow" style="width: 140%; border-radius:8px; position: relative; color:#ffff; background-color:#24BCD0; left: 60px;"><b>Add To Cart</b></button>
+                  </div>
+                
+                </form>
+               </div>
+
+               
+               
+               <div class="col-12 border mx-5 mt-3">
+                     <div class="row">
+                          <div class="col  mx-5 mb-4 ">
+
+                            <div class="input-group mt-2">
+                              <div class="form-outline" >
+                               
+                                <input type="search" id="form1" class="form-control"/>
+                              </div>
+                            </div>
+            
+                            <table class="table mt-2">
+                              <thead>
+                                <tr>
+                                  <th>Order Id</th>
+                                  <th>Item Name</th>
+                                  <th>Quantity</th>
+                                  <th>Price</th>
+                                  <th>Total</th>
+                                  <th>Delete</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>I001</th>
+                                  <td>Mouse</td>
+                                  <td>2000</td>
+                                  <td>1</td>
+                                  <td>2000</td>
+                                  <td><button type="button" class=" btn-sm border btn-danger">Danger</button></td>
+                                </tr>
+                                <tr>
+                                  <th>I001</th>
+                                  <td>Mouse</td>
+                                  <td>2000</td>
+                                  <td>1</td>
+                                  <td>2000</td>
+                                  <td><button type="button" class=" btn-sm border btn-danger">Danger</button></td>
+                                </tr><tr>
+                                  <th>I001</th>
+                                  <td>Mouse</td>
+                                  <td>2000</td>
+                                  <td>1</td>
+                                  <td>2000</td>
+                                  <td><button type="button" class="  btn-sm border btn-danger">Danger</button></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                           </div> 
+                          </div>
+                     </div>
+            </div>
+          </div>
 
 
-      <!-- Item Section -->
-           <div class="col-4" style="border: 1px solid red;">
-            <form class="row g-2 pt-5 mt-3 mb-lg-5">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Date :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="form-group col-md-6 mb-4">
-                <label for="validationDefault01"> <b>Customer Id :</b></label>
-                <select class="form-control">
-                  <option>C-0001</option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-  
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><b>Address :</b></label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-            </form>  
+           <div class="col-xl-4 col-4 w-25" style="left:100px; top:-10px; position: relative; border-radius:18px; border:1px solid #9e9e9e">
+               <div class="row">
+                     <div class="col mt-2">
+                      <div class="text-center">
+                        <img src="assets/images/17.png" class="rounded w-25" alt="...">
+                        <p class="mt-4 h4"><b>Check Out</b></p>
+                      </div>
+                     </div>
+               </div>
+               <div class="row">
+                <div class="col-12">
+                  <div class="col-md-12 mt-2 px-5">
+                    <label for="inputEmail4" class="form-label"><b>Chash :</b></label>
+                    <input type="email" class="form-control h-25" id="inputEmail4">
+                  </div>
+                  <div class="col-md-12 mt-2 px-5">
+                    <label for="inputEmail4" class="form-label"><b>Discount :</b></label>
+                    <input type="email" class="form-control h-25" id="inputEmail4">
+                  </div>
+                  <div class="col-md-12 mt-2  px-5">
+                    <label for="inputEmail4" class="form-label"><b>Balance :</b></label>
+                    <input type="email" class="form-control h-25" id="inputEmail4">
+                  </div>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 mt-4 px-5">
+                    <p class=
+                    "h2 px-3">Sub Total :</p>
+                    <p class="h2  px-3">Total :</p>
+                  </div> 
+                  </div>
+                <div class="row">
+                  <div class="col-6"></div>
+                  <div class="col-6">
+                    <button type="button" class="w-100 btn" style="border-radius:8px; background-color:#B8D935; color: #ffff; position: relative; right: 10px;" >Comfirm Order</button>
+                  </div>
+                </div>  
            </div>
 
         </section>
-
-
-
-
-        <section>
-
-        </section>
-
     </main>
+
+
+   
 
 
 </body>
