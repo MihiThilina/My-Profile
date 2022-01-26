@@ -15,7 +15,7 @@
 
 <!-- Header  -->
 
-<nav class="navbar navbar-expand-lg  navbar-light shadow p-3 mb-5" style="background-color:#FFF7E8">
+<nav class="navbar navbar-expand-lg  navbar-light shadow p-3 mb-5" style="background-color:#FDD85F">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><b><span style="color:#FF5C00;">I</span>nter<span style="color: #FF5C00;">W</span>est</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,10 +40,17 @@
   </div>
 </nav>
 
+<style>
+  body{
+  background-image:url(assets/images/057c1154e83f813aaa50206c27c0278f.webp); 
+  }
+</style>
+
 </header>
 
 
 <body>
+   <div id="background">
       <main class="container-fluid placeorder">
         <section class="row">
           <div class="col-xl-8 col-12" >
@@ -122,12 +129,12 @@
 
                
                
-               <div class="col-12  mx-5  mt-3" style=" top: 21px; position: relative;">
+               <div class="col-12  mx-5" style="background-color: rgb(248, 242, 242); top: 21px; position: relative; border-radius: 10px;">
                 <div class="row ">
-                  <div class="col-8 mt-1" style="position: relative; left:71px;" >
-                      <label for="formGroupExampleInput" class="form-label px-2" style="left: 90%;position: relative;"><h5>Search :</h5></label>
+                  <div class="col-8 mt-1" style="position: relative;  left:71px;  " >
+                      <label for="formGroupExampleInput" class="form-label px-2" style="top: 11px; left: 90%;position: relative;"><h5>Search :</h5></label>
                   </div>
-                  <div class="col-3" style="position: relative; left:78px;">
+                  <div class="col-3" style="position: relative; left:78px; top: 10px;">
                       <input type="text" class="form-control" id="inputEmail4">
                   </div>
               </div>
@@ -239,7 +246,7 @@
     <!-- -------------------------------------------------------------------- -->
 
     <section class="container-fluid customerDetails " style="position: relative; top: -20px;">
-      <div class="" style="background-color: rgb(248, 242, 242); z-index: 10;  border-top: 3px solid rgb(250, 139, 48);" >
+      <div class="" style=" z-index: 10;" >
       <div class="row shadow-none mb-4 bg-white rounded" style="background-color: rgb(248, 242, 242);">
           <div class="col-10 pt-2 px-4" >
               <label for="formGroupExampleInput" class="form-label px-2"><h5>Customer Details</h5></label>
@@ -254,10 +261,10 @@
 
       <div class="row ">
           <div class="col-8 mt-1" style="position: relative; left:94px;" >
-              <label for="formGroupExampleInput" class="form-label px-2" style="left: 94%;position: relative;"><h5>Search :</h5></label>
           </div>
-          <div class="col-3" style="position: relative; left:94px;">
+          <div class="col-3" style="position: relative; left:94px; top: 50px;" >
               <input type="text" class="form-control" id="inputEmail4">
+              <label for="formGroupExampleInput" class="form-label px-2" style="left: 4%; top:-30px; position: relative;"><h5>Search </h5></label>
           </div>
       </div>
 
@@ -272,7 +279,7 @@
                      <th scope="col">Price</th>
                      <th scope="col">Qty On Hand</th>
                      <th scope="col">Order Qty</th>
-                     <th scope="col">Delete</th>
+                     <th scope="col">Option</th>
                    </tr>
                  </thead>
                  <tbody>
@@ -352,7 +359,7 @@
       </div>
 
 
-      <div class="col" style="position: relative; top: -30px;">
+      <div class="col" style="position: relative; top: -70px;">
         <nav class="mt-2">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
@@ -380,7 +387,7 @@
 
 
 <section class="container-fluid itemDetails" style="position: relative; top: -20px;">
-  <div class="" style="background-color: rgb(248, 242, 242); z-index: 10;  border-top: 3px solid rgb(250, 139, 48);" >
+  <div class="" style="z-index: 10;" >
   <div class="row shadow-none mb-4 bg-white rounded" style="background-color: rgb(248, 242, 242);">
       <div class="col-10 pt-2 px-4" >
           <label for="formGroupExampleInput" class="form-label px-2"><h5>Item Details</h5></label>
@@ -395,11 +402,11 @@
 
   <div class="row ">
       <div class="col-8 mt-1" style="position: relative; left:94px;" >
-          <label for="formGroupExampleInput" class="form-label px-2" style="left: 94%;position: relative;"><h5>Search :</h5></label>
       </div>
-      <div class="col-3" style="position: relative; left:94px;">
-          <input type="text" class="form-control" id="inputEmail4">
-      </div>
+      <div class="col-3" style="position: relative; left:94px; top: 50px;" >
+        <input type="text" class="form-control" id="inputEmail4">
+        <label for="formGroupExampleInput" class="form-label px-2" style="left: 4%; top:-30px; position: relative;"><h5>Search </h5></label>
+    </div>
   </div>
 
 
@@ -490,7 +497,7 @@
   </div>
 
 
-  <div class="col" style="position: relative; top: -30px;">
+  <div class="col" style="position: relative; top: -70px;">
     <nav class="mt-2">
         <ul class="pagination justify-content-center">
             <li class="page-item disabled">
@@ -513,7 +520,7 @@
 <script src="assets/js/script.js"> </script>
 
 </section>
-
+</div>
 </body>
 </html>
 
