@@ -1,142 +1,262 @@
 
+
 @media all  and (min-width:  375px) and (max-width: 667px)  {
     
-.top_bar {
-    width: 350vw;
-}
-
-
-.nav-link li {
-    margin: 0 40px;
-}
-
-
-    /*  */
-    #main_page {
+    .top_bar {
+        width: 350vw;
+    }
+    
+    
+    .nav-link li {
+        margin: 0 40px;
+    }
+    
+    
+      
+        #main_page {
+            position: relative;
+            width: 350%;
+        }
+    
+        #main_titleName  {
+            left: 10%;
+            top: 55vh;
+            font-size: 90px;
+        }
+    
+        #social-media-icon {
+            position: absolute;
+            left: 218px;
+            letter-spacing: 10px;
+        }
+    
+        #home_rectangle{
+        width: 18vw;
+       }
+    
+        #home_rectangle li>a{
+           position:absolute;
+           top:30%;
+           left:-14px;
+           bottom:102px;
+        }
+    
+    
+        /* About section */
+    
+        #about {
+            left: 550px;
+            top:50px;
+        }
+        #profile_pic img {
+            left: 510px;
+        }
+        .about-section p {
+         width:220%;
+        }
+    
+        .CONYACTbtn{
+            top:252px;
+            left: 450%;
+            width: 100%;
+        }
+    
+        .DOWNLOADDbtn{
+            top:300px;
+            left: 310%;
+            width: 100%;
+        }
+    
+    
+        
+    
+        /* skills */
+    
+        .section-cover-pic{
+            width: 350%;
+        }
+    
+        .skills-section{
+           height: 600px;
+         }
+    
+        .Skills-pic{
+           left: 230%;
+        }
+    
+        #skills{
+            left: 251.5%;
+            top:150px;
+        }
+    
+        .skills-section h4{
+            width: 100%;
+        }
+        #skills-flex-box{
+            left: -4%;
+            width: 350%;
+            position: absolute;
+            top:40%;
+        }
+    
+        #skills-flex-box div{
+            width: 100%;
+        }
+    
+        #skills-flex-box div img{
+        width: 25vw;
+        height: 15vh;
         position: relative;
-        width: 350%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        }
+       
+    
+        /* assignment  */
+        .assignment-section{
+            width: 350%;
+        }
+    
+       
+        .assigment-cover-background > div > img:nth-child(1){
+        top: 30px;
     }
-
-    #main_titleName  {
-        left: 10%;
-        top: 55vh;
-        font-size: 90px;
+    
+    .assigment-cover-background > div > img:nth-child(2){
+     
+        top: 30px;
+     
     }
-
-    #social-media-icon {
+    .assigment-cover-background > div > img:nth-child(3){
+        
+        bottom: 56px;
+         
+    }
+    .assigment-cover-background > div > img:nth-child(4){
+        bottom: 56px;
+    }
+    
+    .view-button{
+         bottom: 140px;
+        left: 650px;
+    }
+    
+    
+    /* project */
+    
+    .project-section{
+        height: 800px;
+    }
+    .project-section h4{
+        left:480px;
+        font-size: 15px;
+    
+    }
+    
+     #project{
+        left:480px;
+    }
+    
+    .project-section nav{
         position: absolute;
-        left: 218px;
-        letter-spacing: 10px;
+        width: 220%;
+        right: -185%;
+        top: 25%;
     }
-
-
-    /* About section */
-
-    #about {
-        left: 550px;
-        top:50px;
+    
+    
+    
+    .navigation-bar1 div{
+        width: 0;
+        height: 0;
+        position: relative;
+        left: 10px;
+        top: 12px;
+        border-top: 8px solid transparent;
+        border-left: 18px solid white;
+        border-bottom: 8px solid transparent;
     }
-    #profile_pic img {
-        left: 510px;
+    
+    
+    .navigation-bar2 div{
+        width: 0;
+        height: 0;
+        position: relative;
+        left: 6px;
+        top: 12px;
+        border-top: 8px solid transparent;
+        border-right: 18px solid white;
+        border-bottom:8px solid transparent;
     }
-    .about-section p {
-     width:220%;
+     
+    /* education */
+    .education-section{
+        height: 1000px;
+        width:350%;
     }
-
-    .CONYACTbtn{
-        left: 450%;
-        width: 100%;
+    .timeline-items{
+        top:60px;
     }
-
-    .DOWNLOADDbtn{
-
-        top:310px;
-        left: 310%;
-        width: 100%;
+    
+    /* masssage  */
+    .contact-section{
+        height: 250px;
+        width:350%;
+       
     }
-
-
-    .section-cover-pic{
-        width: 350%;
-    }
-
-    .Skills-pic{
-       left: 230%;
-    }
-
-    #skills{
-        left: 258%;
-    }
-
-    .skills-section h4{
-        width: 100%;
-    }
-    #skills-flex-box{
-        left: -4%;
-        width: 350%;
-        position: absolute;
-        top:52%;
-    }
-
-    #skills-flex-box div{
-        width: 10%;
-    }
-    /*  */
-    .assignment-section{
-        width: 350%;
-    }
-
-    #first-rectangle{
-        top:44%;
-        left:18%;
-    }
-    #assignment-side1{
-        left: 34%;
-        top: 35%;
-        width: 20vh;
-    }
-
-    #second-rectangle{
-        top: 28%;
-        left: 38%;
+    
+    
+    
+    /* footer */
+    .footer-section{
+        height: 450px;
+       width:350%;
         
     }
-
-    #assignment-side2{
-        left: 52%;
-        top:18%;
-        width: 20vh;
+    
     }
-
-    #thrid-rectangle{
-        left: 57%;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media(max-width: 767px){
+        .timeline-items::before{
+            left: 7px;
+        }
+        .timeline-item:nth-child(odd){
+            padding-right: 0;
+            text-align: left;
+        }
+        .timeline-item:nth-child(odd),
+        .timeline-item:nth-child(even){
+            padding-left: 37px;
+        }
+        .timeline-dot{
+            left:0;
+        }
     }
-
-    #assignment-side3{
-        left: 74%;
-        width: 20vh;
-    }
-
-
-
-}
-
-
-
-
-@media(max-width: 767px){
-	.timeline-items::before{
-		left: 7px;
-	}
-	.timeline-item:nth-child(odd){
-		padding-right: 0;
-		text-align: left;
-	}
-	.timeline-item:nth-child(odd),
-	.timeline-item:nth-child(even){
-		padding-left: 37px;
-	}
-	.timeline-dot{
-		left:0;
-	}
-}
