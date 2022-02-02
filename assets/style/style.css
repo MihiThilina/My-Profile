@@ -406,6 +406,7 @@ body {
     position: absolute;
     top:10%;
     left: 20%;
+  
     width:160%;
     height: 120%;
     background-color:white;
@@ -413,33 +414,33 @@ body {
 }
 
 .assigment-cover-background > div > img:nth-child(1){
-    width: 35%;
+    width: 37%;
     position: absolute;
-    top: 26px;
+    top: 28px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    left: 40px;
+    left: 50px;
 }
 
 .assigment-cover-background > div > img:nth-child(2){
-    width: 35%;
+    width: 37%;
     position: absolute;
-    top: 26px;
-    right: 40px;
+    top: 28px;
+    right: 50px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .assigment-cover-background > div > img:nth-child(3){
-    width: 35%;
+    width: 37%;
     position: absolute;
-    bottom: 26px;
-    left: 40px;
+    bottom: 28px;
+    left: 50px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .assigment-cover-background > div > img:nth-child(4){
 
-    width: 35%;
+    width: 37%;
     position: absolute;
-    bottom: 26px;
-    right: 40px;
+    bottom: 28px;
+    right: 50px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -462,7 +463,7 @@ body {
 .view-button{
     position: absolute;
     bottom: 140px;
-    left: 605px;
+    right: 575px;
     padding: 13px 23px 12px 23px;
     font-size: 16px;
     cursor: pointer;
@@ -677,7 +678,7 @@ body {
 #links{
     display: flex;
     justify-content: center;
-    top:18%;
+    top:25%;
     position:relative;
 }
 #links div{
@@ -698,7 +699,7 @@ body {
 }
 .first{
     position: relative;
-    top: 27%;
+    top: 32%;
     color: #EFEFEF;
     font-size: 14px;
     font-family: 'Rosarivo', serif;
@@ -706,7 +707,7 @@ body {
 .secound{
     position: relative;
     color: #EFEFEF;
-    top: 32%;
+    top: 38%;
     font-size: 14px;
     font-family: 'Rosarivo', serif;
     
@@ -737,7 +738,7 @@ body {
     position: absolute;
     width: 80%;
     height: 6px;
-    top: 30%;
+    top: 35%;
     left: 10%;
     background-color: #2F2C2C;
     filter: drop-shadow(0 0 0.75rem black);

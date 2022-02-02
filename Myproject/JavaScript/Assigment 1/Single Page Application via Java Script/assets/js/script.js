@@ -15,3 +15,14 @@ document.getElementById("btn-item").addEventListener("click",function(){
     document.getElementsByClassName("placeorder")[0].style.display="none"
     document.getElementsByClassName("customerDetails")[0].style.display="none"
 })
+
+
+
+
+
+
+// ----------------------------------------------------
+
+$().click(function(){
+    
+})
