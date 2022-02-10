@@ -17,12 +17,18 @@ document.getElementById("btn-item").addEventListener("click",function(){
 })
 
 
-
-
-
-
 // ----------------------------------------------------
-
-$().click(function(){
+$("#btnAddtoCart").click(function (e) {
+    e.preventDefault();
+    let orderid =  $("#orderID").val();
+    let itemName=   $("#itemName").val();
+    let quantity =  $("#orderQty").val();
+    let price =  $("#price").val();
+  
+    var data = `<tr><td>`+orderid>+`</td>`+
+               `<td>`+itemName+`</td>`+
+                  `<td>`+quantity+`</td>`+
+                  `<td>`+price+`</td></tr>`;
+                  $('#cartTable').append(data);
     
-})
+  });
