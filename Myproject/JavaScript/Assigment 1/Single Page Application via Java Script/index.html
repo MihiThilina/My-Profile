@@ -272,25 +272,25 @@
                     <form>
                       <div class="form-group px-2 p-2"  style="width: 100%; ">
                         <label for="exampleInputEmail1">Customer Id</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="C0001">
+                        <input type="email" class="form-control" id="custormerID" aria-describedby="emailHelp" placeholder="C0001">
                       </div>
                       <div class="form-group px-2 p-2" style="width: 100%;">
                         <label for="exampleInputEmail1">Address</label>
-                        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Colombo">
+                        <input type="email" class="form-control" id="customerAddress"  aria-describedby="emailHelp" placeholder="Colombo">
                       </div>
                       <div class="form-group px-2 p-2"  style="width: 100%;">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Thilina">
+                        <input type="email" class="form-control" id="customerName" aria-describedby="emailHelp" placeholder="Thilina">
                       </div>
                       <div class="form-group px-2  p-2"  style="width: 100%;">
                         <label for="exampleInputEmail1">Salary</label>
-                        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="50000.00">
+                        <input type="email" class="form-control"  id="custormerSalary" aria-describedby="emailHelp" placeholder="50000.00">
                       </div>
                       <div class="form-group px-2  p-2"  style="width: 100%;">
                         <label for="exampleInputEmail1">Phone Number</label>
-                        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="0774914870">
+                        <input type="email" class="form-control" id="cusphoneNumber" aria-describedby="emailHelp" placeholder="0774914870">
                       </div>
-                      <button type="submit" class="btn mt-5 " style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
+                      <button type="submit"  id="saveCustormer" class="btn mt-5 " style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
                     </form>  
                   </div>
               </div> 
@@ -313,7 +313,7 @@
 
       <div class="row p-5   px-5">
           <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded" style="background-color: rgba(248, 242, 242, 0.829); top: -30px; position: relative;" >
-              <table class="table mt-5">
+              <table class="table mt-5" id="custormerTable">
                  <thead>
                    <tr>
                      <th scope="col">Customer Id</th>
@@ -455,23 +455,23 @@
                     <form>
                       <div class="form-group px-2 p-2"  style="width: 100%; ">
                         <label for="exampleInputEmail1">Item Code</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="I-0001">
+                        <input type="email" class="form-control" id="itemcode" aria-describedby="emailHelp" placeholder="I-0001">
                       </div>
                       <div class="form-group px-2 p-2" style="width: 100%;">
                         <label for="exampleInputEmail1">Item Name</label>
-                        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Thilina Bandara">
+                        <input type="email" class="form-control" id="itemNames"  aria-describedby="emailHelp" placeholder="Thilina Bandara">
                       </div>
                       <div class="form-group px-2 p-2"  style="width: 100%;">
                         <label for="exampleInputEmail1">Price</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="10000.00">
+                        <input type="email" class="form-control" id="Itemprice" aria-describedby="emailHelp" placeholder="10000.00">
                       </div>
                       <div class="form-group px-2  p-2"  style="width: 100%;">
                         <label for="exampleInputEmail1">Qty On Hand</label>
-                        <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="45">
+                        <input type="email" class="form-control" id="QtyonHand"  aria-describedby="emailHelp" placeholder="45">
                       </div>
                       
                     
-                      <button type="submit" class="btn mt-5 " style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
+                      <button type="submit" class="btn mt-5 " id="saveItems" style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
 
 
                     </form>  
@@ -497,7 +497,7 @@
 
   <div class="row p-5   px-5">
       <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded" style="background-color: rgba(248, 242, 242, 0.829); top: -30px; position: relative;" >
-          <table class="table mt-5">
+          <table class="table mt-5" id="ItemTable">
              <thead>
                <tr>
                 <th scope="col">Item Code</th>

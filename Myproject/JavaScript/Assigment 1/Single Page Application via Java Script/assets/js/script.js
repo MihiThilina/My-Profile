@@ -32,3 +32,40 @@ $("#btnAddtoCart").click(function (e) {
                   $('#cartTable').append(data);
     
   });
+
+
+
+  //-------------------------------------------------------------
+
+  $("#saveCustormer").click(function (e){
+      e.preventDefault();
+      let customerid = $("#custormerID").val();
+      let customerAddress =$("#customerAddress").val();
+      let customerName =$("#customerName").val();
+      let salary=$("#custormerSalary").val();
+      let phoneNumber=$("#cusphoneNumber").val();
+
+      let data = `<tr><td>`+customerid+`</td>`+
+                `<td>`+customerAddress+`</td>`+
+                `<td>`+customerName+`</td>`+
+                `<td>`+salary+`</td>`+
+                `<td>`+phoneNumber+`</td></tr>`;
+                $("#custormerTable").append(data);
+  })
+  
+  //--------------------------------------------------------------
+
+
+  $("#saveItems").click(function(e){
+      e.preventDefault();
+      let itemCode = $("#itemcode").val();
+      let itemName =$("#itemNames").val();
+      let price =$("#Itemprice").val();
+      let  qtyOnHand =$("#QtyonHand").val();
+
+      let data = `<tr><td>`+itemCode+`</td>`+
+      `<td>`+itemName+`</td>`+
+      `<td>`+price+`</td>`+
+      `<td>`+qtyOnHand+`</td></tr>`;
+      $("#ItemTable").append(data);
+  })
