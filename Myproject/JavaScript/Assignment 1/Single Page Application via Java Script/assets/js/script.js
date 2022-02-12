@@ -94,61 +94,70 @@ $("#btnAddtoCart").click(function (e) {
 
 //   ---------------------------------Validation  Item Details-----------------------
 
+  
+     function isEmpty(){
+         $("")
+     }
+  
+
+
 var regExItemID = /^(I00-)[0-9]{3,4}$/;
+var regExItemName = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
+var regExPrice = /^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/
+var regqty =  /^[0-9]{3,4}$/;
 
     $(".validation1").keyup(function () {
         let input = $("#itemcode").val();
         if (regExItemID.test(input)) {
             $("#itemcode").css('border', '2px solid green');
             $("#itemNames").css('border', '2px solid red');
-            $("#error").text("");
         } else{
             $("#itemcode").css('border', '2px solid red');
-            $("#error").text("Wrong format : C00-001");
+            
         }
   
     });
 
-var regExItemName = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
-     
+
 $(".validation2").keyup(function () {
     let input = $("#itemNames").val();
     if (regExItemName.test(input)) {
         $("#itemNames").css('border', '2px solid green');
         $("#Itemprice").css('border', '2px solid red');
-        $("#error").text("");
+     
+      
     } else{
         $("#itemNames").css('border', '2px solid red');
-        $("#error").text("Wrong format : C00-001");
+        $("#saveItems").attr("disabled",true)
+     
+      
     }
 });
 
-
-var regExPrice = /^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/
 $(".validation3").keyup(function () {
     let input = $("#Itemprice").val();
     if (regExPrice.test(input)) {
         $("#Itemprice").css('border', '2px solid green');
-        $("#QtyonHand").css('border', '2px solid red');
-        $("#error").text("");
+       
+        
     } else{
+        
         $("#Itemprice").css('border', '2px solid red');
-        $("#error").text("Wrong format : C00-001");
+        $("#saveItems").attr("disabled",true)
     }
 
 });
 
-
-var regqty =  /^[0-9]{3,4}$/;
 
 $(".validation4").keyup(function () {
     let input = $("#QtyonHand").val();
     if (regqty.test(input)) {
         $("#QtyonHand").css('border', '2px solid green');
         $("#error").text("");
+       
     } else{
         $("#QtyonHand").css('border', '2px solid red');
-        $("#error").text("Wrong format : C00-001");
+        $("#saveItems").attr("disabled",true)
     }
 });
 
