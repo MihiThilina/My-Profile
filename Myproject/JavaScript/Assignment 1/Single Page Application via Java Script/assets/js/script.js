@@ -17,9 +17,9 @@ document.getElementById("btn-item").addEventListener("click",function(){
 })
 
 
-// ----------------------------------------------------
+// ---------------------------------Place Order-------------------
 $("#btnAddtoCart").click(function (e) {
-    e.preventDefault();
+  
     let orderid =  $("#orderID").val();
     let itemName=   $("#itemName").val();
     let quantity =  $("#orderQty").val();
@@ -37,42 +37,115 @@ $("#btnAddtoCart").click(function (e) {
 
   //-----------------Customer Details--------------------------------------------
 
-  $("#saveCustormer").click(function (e){
-      e.preventDefault();
-      let customerid = $("#custormerID").val();
-      let customerAddress =$("#customerAddress").val();
-      let customerName =$("#customerName").val();
-      let salary=$("#custormerSalary").val();
-      let phoneNumber=$("#cusphoneNumber").val();
 
-      let data = `<tr><td>`+customerid+`</td>`+
-                `<td>`+customerAddress+`</td>`+
-                `<td>`+customerName+`</td>`+
-                `<td>`+salary+`</td>`+
-                `<td>`+phoneNumber+`</td>
-                <td><button type="button" class="btn-sm btn-danger">Delete</button></td>
-                </tr>`;
-                $("#custormerTable").append(data);
+  $("#saveCustormer").click(function (e){
+    loadAllCustomers();
+    saveCustormers();
   })
   
-  //--------------------------------------------------------------
+  function saveCustormers(){
+    let customerid = $("#custormerID").val();
+    let customerAddress =$("#customerAddress").val();
+    let customerName =$("#customerName").val();
+    let salary=$("#custormerSalary").val();
+    let phoneNumber=$("#cusphoneNumber").val();
+     var customerObject = {
+         id : customerid,
+         address : customerAddress,
+         Name : customerName,
+         salarys : salary,
+         Number: phoneNumber
+     }
+     customerDB.push(customerObject);
+     console.log(customerObject);
+  }
+
+  function loadAllCustomers(){
+         $("#custormerTable").empty();
+        for(var i of customerDB){
+           let row = `<tr><td>${i.id}</td><td>${i.address}</td><td>${i.Name}</td><td>${i.salarys}</td><td>${i.Number}</td>
+           <td><button type="button" class="btn-sm btn-danger">Delete</button>
+           <button type="button" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             width="24" height="20"
+             viewBox="0 0 172 172"
+            style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
+           </tr>`;
+          
+           $("#custormerTable").append(row);
+        }
+         
+  }
 
 
-  $("#saveItems").click(function(e){
-      e.preventDefault();
-      let itemCode = $("#itemcode").val();
+
+    function deleteCustomer(){
+       //write the code
+    }
+
+    function updateCustomer(){
+      //write the code
+    }
+
+    function searchCustomer(){
+
+    }
+  
+
+
+  //-----------------------item details---------------------------------------
+
+  $("#saveItems").click(function(){
+    saveItem();
+    loadAllItems();
+  })
+
+  function saveItem(){
+    let itemCode = $("#itemcode").val();
       let itemName =$("#itemNames").val();
       let price =$("#Itemprice").val();
       let  qtyOnHand =$("#QtyonHand").val();
      
-      let data = `<tr><td>`+itemCode+`</td>`+
-      `<td>`+itemName+`</td>`+
-      `<td>`+price+`</td>`+
-      `<td>`+qtyOnHand+`</td>  
-       <td><button type="button" class="btn-sm btn-danger">Delete</button></td>
-      </tr>`;
-      $("#ItemTable").append(data);
-  })
+      var itemObject = {
+         id : itemCode,
+         name : itemName,
+         prices : price,
+         qty : qtyOnHand 
+      };
+      ItemDB.push(itemObject);
+      console.log(itemObject);
+  }
+
+  function loadAllItems(){
+    $("#ItemTable").empty();
+    for(var i of ItemDB ){
+        let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.prices}</td><td>${i.qty}</td>
+        <td><button type="button" class="btn-sm btn-danger">Delete</button>
+        <button type="button" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="24" height="20"
+          viewBox="0 0 172 172"
+         style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
+        </tr>`;
+        $("#ItemTable").append(row);
+    }
+  }
+
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
  
 
@@ -95,9 +168,7 @@ $("#btnAddtoCart").click(function (e) {
 //   ---------------------------------Validation  Item Details-----------------------
 
   
-     function isEmpty(){
-         $("")
-     }
+     
   
 
 
@@ -106,11 +177,19 @@ var regExItemName = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
 var regExPrice = /^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/
 var regqty =  /^[0-9]{3,4}$/;
 
-    $(".validation1").keyup(function () {
+
+
+
+    $(".validation1").keyup(function (event) {
         let input = $("#itemcode").val();
         if (regExItemID.test(input)) {
             $("#itemcode").css('border', '2px solid green');
             $("#itemNames").css('border', '2px solid red');
+
+            // if(event.key=="Enter"){
+            //     $("#itemNames").focus();
+            //   }          
+           
         } else{
             $("#itemcode").css('border', '2px solid red');
             
@@ -124,8 +203,7 @@ $(".validation2").keyup(function () {
     if (regExItemName.test(input)) {
         $("#itemNames").css('border', '2px solid green');
         $("#Itemprice").css('border', '2px solid red');
-     
-      
+        $("#saveItems").attr("disabled",false)
     } else{
         $("#itemNames").css('border', '2px solid red');
         $("#saveItems").attr("disabled",true)
@@ -138,10 +216,10 @@ $(".validation3").keyup(function () {
     let input = $("#Itemprice").val();
     if (regExPrice.test(input)) {
         $("#Itemprice").css('border', '2px solid green');
-       
+        $("#saveItems").attr("disabled",false)
         
-    } else{
         
+    } else{        
         $("#Itemprice").css('border', '2px solid red');
         $("#saveItems").attr("disabled",true)
     }
@@ -154,10 +232,11 @@ $(".validation4").keyup(function () {
     if (regqty.test(input)) {
         $("#QtyonHand").css('border', '2px solid green');
         $("#error").text("");
-       
+        $("#saveItems").attr("disabled",false)
     } else{
         $("#QtyonHand").css('border', '2px solid red');
         $("#saveItems").attr("disabled",true)
+        
     }
 });
 
