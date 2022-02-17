@@ -61,34 +61,31 @@ $("#btnAddtoCart").click(function (e) {
   }
 
   function loadAllCustomers(){
-         $("#custormerTable").empty();
+        $("#custormerTable").empty();
         for(var i of customerDB){
-           let row = `<tr><td>${i.id}</td><td>${i.address}</td><td>${i.Name}</td><td>${i.salarys}</td><td>${i.Number}</td>
+           let row = `<tr><td>${i.id}</td>
+           <td>${i.address}</td><td>${i.Name}</td><td>${i.salarys}</td><td>${i.Number}</td>
            <td><button type="button" class="btn-sm btn-danger">Delete</button>
            <button type="button" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
              width="24" height="20"
              viewBox="0 0 172 172"
-            style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
+            style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button>
+            </td>
            </tr>`;
-          
            $("#custormerTable").append(row);
-        }
-         
+           console.log(row)
+        }   
   }
 
 
 
-    function deleteCustomer(){
-       //write the code
-    }
+  
 
     function updateCustomer(){
       //write the code
     }
 
-    function searchCustomer(){
-
-    }
+    function searchCustomer(){}
   
 
 
@@ -119,8 +116,8 @@ $("#btnAddtoCart").click(function (e) {
     $("#ItemTable").empty();
     for(var i of ItemDB ){
         let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.prices}</td><td>${i.qty}</td>
-        <td><button type="button" class="btn-sm btn-danger">Delete</button>
-        <button type="button" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        <td><button type="button" class="btn-sm  btnDeleteItem btn-danger">Delete</button>
+        <button type="button" data-bs-toggle="modal data-bs-target="#exampleModal" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="24" height="20"
           viewBox="0 0 172 172"
          style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
@@ -129,7 +126,14 @@ $("#btnAddtoCart").click(function (e) {
     }
   }
 
+
   
+         $("#ItemTable").on('click','.btnDeleteItem' , function(){
+             $(this).closest('tr').remove();
+         })
+  
+
+       
 
 
 

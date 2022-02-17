@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue</title>
+    <style>
+        body{
+           background-color: cadetblue;
+        }
+
+        h1{
+          text-align: center;
+          color: rgb(255, 255, 255);
+          position: relative;
+          top: 100px;
+        }
+
+        .row{
+            display: flex;
+        }
+        .row>div{
+            border: 1px solid rgb(255, 255, 255);
+            width: 130px;
+            border-radius: 10%;
+            height: 56px;
+            position: relative;
+            top:158px;
+            left: 440px;
+            margin: 1%;
+        }
+
+        #line-1{
+            border-top: 2px solid white;
+            position: relative;
+            top:200px;
+            width: 60%;
+            left: 20%;
+        }
+
+        #line-2{
+            border-bottom: 2px solid white;
+            position: relative;
+            top:170px;
+            width: 60%;
+            left: 20%;
+        }
+
+        #first-box{
+            width: 14%;
+            height: 55px;
+            border-radius: 10%;
+            border: 1px solid white;
+            position: relative;
+            top: -66px;
+        }
+
+        #secound-box{
+            width: 14%;
+            height: 55px;
+            border-radius: 10%;
+            border: 1px solid white;
+            position: absolute;
+            right:0;
+            top: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1> Java Script Queue</h1>
+
+<div class="main">
+    <div id="line-1">
+        <div id="first-box" class=""> </div>
+    </div>
+ 
+    <div class="row">
+        <div id="one"> </div>
+        <div id="two"> </div>
+        <div id="three"> </div>
+        <div id="four"> </div>
+    </div>
+    
+    <div id="line-2">
+        <div id="secound-box"> </div>
+    </div>
+  
+</div>
+
+<script src="asstes/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+
+    let colors;
+
+    setInterval(changeColors,200);
+
+    let count=0;
+
+    function changeColors(){
+
+        var  colors = ["blue", "pink", "green", "orange", "red", "purple"];
+      
+
+        for(var i=0; i<colors.length; i++){
+            if(i==[i]){
+                $("#first-box").css('background-color',colors[i]);
+             }else{
+            count++;
+           }
+        }
+
+     $("#first-box").css('background-color',colors[i]);
+     $("#one").css('background-color',colors[i]);
+     $("#two").css('background-color',colors[i]);
+     $("#three").css('background-color',colors[i]);
+     $("#four").css('background-color',colors[i]);
+     $("#secound-box").css('background-color',colors[i]);
+       
+
+    }
+
+   
+
+</script>
+</body>
+</html>

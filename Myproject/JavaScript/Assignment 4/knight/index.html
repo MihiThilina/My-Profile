@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        body{
+            background-color: black;
+        }
+
+        body > main {
+           position: relative;
+           top: 200px;
+           left: 280px;
+           border-top: 1px solid rgb(255, 255, 255);
+           border-bottom: 1px solid rgb(255, 255, 255);
+           width: 60%;
+           height: 120px;
+
+        }
+        body > main > section {
+            display: flex;
+            
+        }
+
+        body > main > section > div {
+            border: 1px solid black;
+            width: 150px;
+            border-radius: 10%;
+            height: 56px;
+            position: relative;
+            top:30px;
+            margin: 1%;
+        }
+
+        #start{
+            position: relative;
+            width: 15%;
+            height: 30%;
+            top: 60%;
+            left: 33%; 
+            color: aliceblue;
+            border: none;
+            background-color: blue; 
+        }  
+
+        #stop{
+            position: relative;
+            width: 15%;
+            height: 30%;
+            left: 35%;
+            top: 60%;
+            color: aliceblue;
+            border: none;
+            background-color: red;
+        }  
+
+    </style>
+</head>
+<body>
+<main>
+  
+    <section id="main">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+    </section>
+
+    <button id="start">Strat</button>
+    <button id="stop">Stop</button>
+
+    
+</main>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script>
+      
+            let id;
+            
+            $("#start").click(function(){
+            clearInterval(id);
+            id = setInterval(Colors,100); 
+            });
+                
+            $("#stop").click(function(){
+                clearInterval(id);
+            });
+
+            let count = 0;
+
+         let colorArray=["#cc0000","#990000","#993333","#d98c8c","#ecc6c6"];
+            
+            function Colors(event){
+
+        if(count==1){
+            $("#one").css('background-color','#cc0000');
+        }
+
+        if(count==2){
+            $("#one").css('background-color','#990000');
+            $("#two").css('background-color','#cc0000');
+        }
+        if(count==3){
+            $("#one").css('background-color','#993333');
+            $("#two").css('background-color','#990000');
+            $("#three").css('background-color','#cc0000');
+        }
+        if(count==4){
+            $("#one").css('background-color','#ecc6c6');
+            $("#two").css('background-color','#993333');
+            $("#three").css('background-color','#990000');
+            $("#four").css('background-color','#cc0000');
+            $("#six").css('background-color','#cc0000');
+
+        }
+        if(count==5){
+            $("#one").css('background-color','#ecc6c6');
+            $("#two").css('background-color','#d98c8c');
+            $("#three").css('background-color','#993333');
+            $("#four").css('background-color','#990000');
+            $("#five").css('background-color','#cc0000');
+            $("#six").css('background-color','#cc0000');
+        }
+        if(count==6){
+            $("#one").css('background-color','white');
+            $("#two").css('background-color','white');
+            $("#three").css('background-color','white');
+            $("#four").css('background-color','white');
+            $("#five").css('background-color','white');
+            $("#six").css('background-color','white');
+        }
+
+        if(count==7){
+            $("#five").css('background-color','#cc0000');
+        }
+        if(count==8){
+            $("#five").css('background-color','#990000');
+            $("#four").css('background-color','#cc0000');
+            $("#six").css('background-color','#cc0000');
+        }
+        if(count==9){
+            $("#six").css('background-color','#cc0000');
+            $("#five").css('background-color','#993333');
+            $("#four").css('background-color','#990000');
+            $("#three").css('background-color','#cc0000');
+        }
+        if(count==10){
+            $("#six").css('background-color','#cc0000');
+            $("#five").css('background-color','#d98c8c');
+            $("#four").css('background-color','#993333');
+            $("#three").css('background-color','#990000');
+            $("#two").css('background-color','#cc0000');
+        }
+        if(count==11){
+            $("#six").css('background-color','#cc0000');
+            $("#five").css('background-color','#ecc6c6');
+            $("#four").css('background-color','#d98c8c');
+            $("#three").css('background-color','#993333');
+            $("#two").css('background-color','#990000');
+            $("#one").css('background-color','#cc0000');
+        }
+        if(count==12){
+            $("#one").css('background-color','white');
+            $("#four").css('background-color','white');
+            $("#three").css('background-color','white');
+            $("#four").css('background-color','white');
+            $("#five").css('background-color','white');
+            $("#six").css('background-color','white');
+        
+        }
+
+
+        if(count>12){
+            count=-1;
+        }
+        count++;
+        }
+
+
+</script>
+
+
+
+</body>
+</html>
