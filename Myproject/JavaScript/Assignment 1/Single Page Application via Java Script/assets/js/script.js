@@ -66,7 +66,7 @@ $("#btnAddtoCart").click(function (e) {
            let row = `<tr><td>${i.id}</td>
            <td>${i.address}</td><td>${i.Name}</td><td>${i.salarys}</td><td>${i.Number}</td>
            <td><button type="button" class="btn-sm btn-danger">Delete</button>
-           <button type="button" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+           <button type="button"  class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
              width="24" height="20"
              viewBox="0 0 172 172"
             style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button>
@@ -94,44 +94,93 @@ $("#btnAddtoCart").click(function (e) {
   $("#saveItems").click(function(){
     saveItem();
     loadAllItems();
+    clear();
+  
   })
 
-  function saveItem(){
-    let itemCode = $("#itemcode").val();
-      let itemName =$("#itemNames").val();
-      let price =$("#Itemprice").val();
-      let  qtyOnHand =$("#QtyonHand").val();
-     
-      var itemObject = {
-         id : itemCode,
-         name : itemName,
-         prices : price,
-         qty : qtyOnHand 
-      };
-      ItemDB.push(itemObject);
-      console.log(itemObject);
-  }
+     $("#updateItem").click(function(){
 
-  function loadAllItems(){
-    $("#ItemTable").empty();
-    for(var i of ItemDB ){
-        let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.prices}</td><td>${i.qty}</td>
-        <td><button type="button" class="btn-sm  btnDeleteItem btn-danger">Delete</button>
-        <button type="button" data-bs-toggle="modal data-bs-target="#exampleModal" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="24" height="20"
-          viewBox="0 0 172 172"
-         style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
-        </tr>`;
-        $("#ItemTable").append(row);
-    }
-  }
+        $("#ItemTable>tr").click(function(){
+            let itemCode = $(this).children(":eq(0)").text();
+            let itemName = $(this).children(":eq(1)").text();
+            let price = $(this).children(":eq(2)").text();
+            let  qtyOnHand = $(this).children(":eq(3)").text();
 
+            console.log(itemCode);
+            $("#itemcode").val(itemCode);
+            $("#itemNames").val(itemName);
+            $("#Itemprice").val(price);
+            $("#QtyonHand").val(qtyOnHand);
+        })
 
+    });
+  
+ 
+
+            function saveItem(){
+                let itemCode = $("#itemcode").val();
+                let itemName =$("#itemNames").val();
+                let price =$("#Itemprice").val();
+                let  qtyOnHand =$("#QtyonHand").val();
+                
+                var itemObject = {
+                    id : itemCode,
+                    name : itemName,
+                    prices : price,
+                    qty : qtyOnHand 
+                };
+                ItemDB.push(itemObject);
+                console.log(ItemDB);
+
+            }
+
+        function loadAllItems(){
+            $("#ItemTable").empty();
+            for(var i of ItemDB ){
+                let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.prices}</td><td>${i.qty}</td>
+                <td><button type="button" class="btn-sm  btnDeleteItem btn-danger">Delete</button>
+                <button type="button" id="updateItem" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="20"
+                viewBox="0 0 172 172"
+                style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
+                </tr>`;
+                $("#ItemTable").append(row);
+            }
+        }
+
+                function clear(){
+                $("#itemcode").val("");
+                $("#itemNames").val("");
+                $("#Itemprice").val("");
+                $("#QtyonHand").val("");
+                }
+
+                
+
+       
+          
+          
   
          $("#ItemTable").on('click','.btnDeleteItem' , function(){
-             $(this).closest('tr').remove();
+                var index = 0;
+                for(var i=0; i<ItemDB.length; i++){
+                    if( $("#itemcode").val() ==ItemDB[i].id){
+                        index = i;
+                    }
+                }
+                   ItemDB.splice(index,1);
+                   $("#itemcode").val("");
+                   $("#itemNames").val("");
+                   $("#Itemprice").val("");
+                   $("#QtyonHand").val("");
+                   $(this).closest('tr').remove();    
          })
-  
+
+       
+      
+    
+        
+
 
        
 

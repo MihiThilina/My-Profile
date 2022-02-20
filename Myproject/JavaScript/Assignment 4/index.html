@@ -91,32 +91,45 @@
 <script src="asstes/jQuery/jquery-3.6.0.min.js"></script>
 <script>
 
-    let colors;
+   // let colors;
 
     setInterval(changeColors,200);
+    console.log(changeColors);
 
     let count=0;
 
     function changeColors(){
+        if(count==0){
+            colors = ["blue", "pink", "green", "orange", "red", "purple"];
 
-        var  colors = ["blue", "pink", "green", "orange", "red", "purple"];
-      
+        }else if(count==1){
+            colors = ["pink", "green", "orange", "red", "purple", "blue"];
 
-        for(var i=0; i<colors.length; i++){
-            if(i==[i]){
-                $("#first-box").css('background-color',colors[i]);
-             }else{
-            count++;
-           }
+        }else if(count==2){
+            colors = ["green", "orange", "red", "purple", "blue", "pink"];
+
+        }else if(count==3){
+            colors = ["orange", "red", "purple", "blue", "pink", "green"];
+
+        }else if(count==4){
+            colors = ["red", "purple", "blue", "pink", "green", "orange"];
+
+        }else if(count==5){
+            colors = ["purple", "blue", "pink", "green", "orange", "red"];
+
+        }else{
+            count=1;
         }
 
-     $("#first-box").css('background-color',colors[i]);
-     $("#one").css('background-color',colors[i]);
-     $("#two").css('background-color',colors[i]);
-     $("#three").css('background-color',colors[i]);
-     $("#four").css('background-color',colors[i]);
-     $("#secound-box").css('background-color',colors[i]);
-       
+        count++;
+
+        $("#first-box").css('background-color',colors[1]);
+        $("#one").css('background-color',colors[2]);
+        $("#two").css('background-color',colors[3]);
+        $("#three").css('background-color',colors[4]);
+        $("#four").css('background-color',colors[5]);
+        $("#secound-box").css('background-color',colors[0]);
+
 
     }
 

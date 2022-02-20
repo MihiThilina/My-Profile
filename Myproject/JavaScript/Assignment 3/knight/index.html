@@ -17,7 +17,6 @@
            border-bottom: 1px solid rgb(255, 255, 255);
            width: 60%;
            height: 120px;
-
         }
         body > main > section {
             display: flex;
@@ -39,6 +38,7 @@
             width: 15%;
             height: 30%;
             top: 60%;
+            cursor: pointer;
             left: 33%; 
             color: aliceblue;
             border: none;
@@ -50,6 +50,7 @@
             width: 15%;
             height: 30%;
             left: 35%;
+            cursor: pointer;
             top: 60%;
             color: aliceblue;
             border: none;
@@ -82,6 +83,7 @@
 <script>
       
             let id;
+
             
             $("#start").click(function(){
             clearInterval(id);
@@ -94,9 +96,8 @@
 
             let count = 0;
 
-         let colorArray=["#cc0000","#990000","#993333","#d98c8c","#ecc6c6"];
             
-            function Colors(event){
+            function Colors(){
 
         if(count==1){
             $("#one").css('background-color','#cc0000');
@@ -117,7 +118,6 @@
             $("#three").css('background-color','#990000');
             $("#four").css('background-color','#cc0000');
             $("#six").css('background-color','#cc0000');
-
         }
         if(count==5){
             $("#one").css('background-color','#ecc6c6');
@@ -135,6 +135,7 @@
             $("#five").css('background-color','white');
             $("#six").css('background-color','white');
         }
+
 
         if(count==7){
             $("#five").css('background-color','#cc0000');
@@ -172,7 +173,6 @@
             $("#four").css('background-color','white');
             $("#five").css('background-color','white');
             $("#six").css('background-color','white');
-        
         }
 
 
@@ -181,6 +181,57 @@
         }
         count++;
         }
+  
+    // var colorArray = ["#ff0000", "#ff3333", "#ff5c5c", "#ff7575", "#ff9999", "#fac3c3"];
+    // var idArray = [$("#one"), $("#two"), $("#three"), $("#four"), $("#five"), $("#six")];
+
+ 
+
+    // function clearColor() {
+    //     for (var i = 0; i < idArray.length; i++) {
+    //         idArray[i].css("background-color", "white");
+    //     }
+    // }
+
+
+    // let IntervalX;
+    // var i= 0;
+
+    // function forward() {
+    //     clearColor();
+    //     idArray[i].css("background-color", colorArray[0]);
+    //     i++;
+    //     if (i == 6) {
+    //         i=0;
+    //         clearInterval(intervalF);
+    //         IntervalX = setInterval(backward,300);
+    //     }
+    // }
+
+
+    // x = 5
+
+    // function backward() {
+    //     clearColor();
+    //     idArray[x].css("background-color", colorArray[0]);
+    //     x--;
+    //     if (x == -1) {
+    //         x=5;
+    //         clearInterval(IntervalX);
+    //         start();
+    //     }
+    // }
+
+    // function start() {
+    //     intervalF = setInterval(forward, 300);
+    // }
+
+    
+    // let intervalF = setInterval(forward, 300);
+
+
+
+
 
 
 </script>
