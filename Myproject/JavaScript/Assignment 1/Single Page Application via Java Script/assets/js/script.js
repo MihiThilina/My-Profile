@@ -98,22 +98,46 @@ $("#btnAddtoCart").click(function (e) {
   
   })
 
-     $("#updateItem").click(function(){
+  function updateRow(){
+    $(".updaterow").click(function(){
+        console.log('function works');
+       $("#ItemTable>tr").click(function(){
+           let itemCode = $(this).children(":eq(0)").text();
+           let itemName = $(this).children(":eq(1)").text();
+           let price = $(this).children(":eq(2)").text();
+           let  qtyOnHand = $(this).children(":eq(3)").text();
 
-        $("#ItemTable>tr").click(function(){
-            let itemCode = $(this).children(":eq(0)").text();
-            let itemName = $(this).children(":eq(1)").text();
-            let price = $(this).children(":eq(2)").text();
-            let  qtyOnHand = $(this).children(":eq(3)").text();
+           console.log(itemCode);
+           $("#itemcode").val(itemCode);
+           $("#itemNames").val(itemName);
+           $("#Itemprice").val(price);
+           $("#QtyonHand").val(qtyOnHand);
+       })
 
-            console.log(itemCode);
-            $("#itemcode").val(itemCode);
-            $("#itemNames").val(itemName);
-            $("#Itemprice").val(price);
-            $("#QtyonHand").val(qtyOnHand);
+   });
+  }
+
+        $("#updateItem").click(function(){
+
+            let itemCode = $("#itemcode").val();
+            let itemName =$("#itemNames").val();
+            let price =$("#Itemprice").val();
+            let  qtyOnHand =$("#QtyonHand").val();
+
+            for(var i = 0; i<ItemDB.length; i++){
+                if($("#itemcode").val()==ItemDB[i].id){
+                    ItemDB[i].id=itemCode;
+                    ItemDB[i].name=itemName;
+                    ItemDB[i].price=price;
+                    ItemDB[i].qty=qtyOnHand;
+                }
+            }
+
+            loadAllItems();
+            updateRow();
         })
 
-    });
+
   
  
 
@@ -139,13 +163,14 @@ $("#btnAddtoCart").click(function (e) {
             for(var i of ItemDB ){
                 let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.prices}</td><td>${i.qty}</td>
                 <td><button type="button" class="btn-sm  btnDeleteItem btn-danger">Delete</button>
-                <button type="button" id="updateItem" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-sm border btn-success" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-sm border btn-success updaterow" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="24" height="20"
                 viewBox="0 0 172 172"
                 style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
                 </tr>`;
                 $("#ItemTable").append(row);
             }
+            updateRow();
         }
 
                 function clear(){
