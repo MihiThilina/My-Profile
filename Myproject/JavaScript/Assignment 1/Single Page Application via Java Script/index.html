@@ -62,7 +62,7 @@
 
                   <div class="px-4 col-md-4 mt-3">
                     <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
-                    <input type="email" class="form-control rounded-3" style="height:33px; border: 1px solid #aaaaaa;" id="orderID">
+                    <input type="email" id="" class="form-control rounded-3" style="height:33px; border: 1px solid #aaaaaa;" id="orderID">
                   </div>
                   <div class="col-md-7 mt-3">
                     <label for="iDate" class="form-label" ><b>Date :</b></label>
@@ -70,27 +70,21 @@
                   </div>
                   <div class="form-group px-4 col-md-4 mt-3">
                     <label for="validationDefault01" class=""> <b>Customer Id :</b></label>
-                    <select class="form-control" id="custormerId" style="height:33px; border: 1px solid #aaaaaa;">
-                      <option>C-0001</option>
-                      <option>C-0002</option>
-                      <option>C-0003</option>
-                      <option>C-0004</option>
-                      <option>C-0005</option>
+                    <select class="form-control" id="cmbcustormerId" style="height:33px; border: 1px solid #aaaaaa;">
                     </select>
                   </div>
                   <div class="col-md-7 ">
                     <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
-                    <input type="text" 
-                    class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Name">
+                    <input type="text"  id="cusName" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Name">
                   </div>
                   <div class="col-md-4 px-4">
                     <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
-                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Salary">
+                    <input type="text"  id="CusSalary" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Salary">
                   </div>
       
                   <div class="col-md-7 px-1">
                     <label for="inputEmail4" class="form-label"><b>Address :</b></label>
-                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Address">
+                    <input type="text"  id="CusAddress" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Address">
                   </div>
                 </form>
               </div>
@@ -100,21 +94,22 @@
                 <form class="row g-2 pt-1 px-4 pb-2 "  style="background-color: rgba(248, 242, 242, 0.829); border:1px solid #9e9e9e; width: 110%; height:102.5%; border-radius:18px; position: relative; left: 50px;">
                   <h2 style="text-align: center;">Select Item</h2>
                   <div class="col-md-4 mt-3">
-                    <label for="inputEmail4" class="form-label"><b>Item Code :</b></label>
-                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="ItemCode">
+                    <label for="validationDefault01" class="form-label"> <b>Item Code :</b></label>
+                    <select class="form-control" id="cmbItemId" style="height:33px; border: 1px solid #aaaaaa;">
+                    </select>
                   </div>
                   <div class="col-md-8 px-4 mt-3">
                     <label for="inputEmail4" class="form-label"><b>Item Name :</b></label>
-                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="itemName">
+                    <input type="text" id="itNames" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="itemName">
                   </div>
                   <div class="col-md-4">
                     <label for="inputEmail4" class="form-label"><b>Price :</b></label>
-                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="price">
+                    <input type="text" id="itemprice" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="price">
                   </div>
                  
                   <div class="col-md-5 px-4">
                     <label for="inputEmail4" class="form-label"> <b>Qty On Hand :</b></label>
-                    <input type="text" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Qtyonhand">
+                    <input type="text" id="itemqty" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Qtyonhand">
                   </div>
                   <div class="col-4">
                     <label for="inputEmail4" class="form-label"><b>Order Qty :</b></label>
@@ -462,7 +457,12 @@
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/db/db.js"></script>
+<script src="db/db.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrderCotroller.js"></script>
+<script src="controller/PlaceOrderController.js"></script>
+
 
 </section>
 </div>
