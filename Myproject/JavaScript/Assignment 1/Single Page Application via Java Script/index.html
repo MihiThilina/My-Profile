@@ -62,7 +62,9 @@
 
                   <div class="px-4 col-md-4 mt-3">
                     <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
-                    <input type="email" id="" class="form-control rounded-3" style="height:33px; border: 1px solid #aaaaaa;" id="orderID">
+                   
+                      <h3 id="OrderId">O001</h3>
+                 
                   </div>
                   <div class="col-md-7 mt-3">
                     <label for="iDate" class="form-label" ><b>Date :</b></label>
@@ -75,16 +77,16 @@
                   </div>
                   <div class="col-md-7 ">
                     <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
-                    <input type="text"  id="cusName" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Name">
+                    <input type="text"  id="cusName" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Name">
                   </div>
                   <div class="col-md-4 px-4">
-                    <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
-                    <input type="text"  id="CusSalary" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Salary">
+                    <label for="inputEmail4" class="form-label"  ><b>Salary :</b></label>
+                    <input type="text"  id="CusSalary" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Salary">
                   </div>
       
-                  <div class="col-md-7 px-1">
-                    <label for="inputEmail4" class="form-label"><b>Address :</b></label>
-                    <input type="text"  id="CusAddress" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Address">
+                  <div class="col-md-7 px-1"> 
+                    <label for="inputEmail4" class="form-label"  ><b>Address :</b></label>
+                    <input type="text"  id="CusAddress" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Address">
                   </div>
                 </form>
               </div>
@@ -100,24 +102,24 @@
                   </div>
                   <div class="col-md-8 px-4 mt-3">
                     <label for="inputEmail4" class="form-label"><b>Item Name :</b></label>
-                    <input type="text" id="itNames" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="itemName">
+                    <input type="text" id="itNames" class="form-control" disabled style="height:33px;  border: 1px solid #aaaaaa;" id="itemName">
                   </div>
                   <div class="col-md-4">
-                    <label for="inputEmail4" class="form-label"><b>Price :</b></label>
-                    <input type="text" id="itemprice" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="price">
+                    <label for="inputEmail4" class="form-label"  ><b>Price :</b></label>
+                    <input type="text" id="itemprice" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="price">
                   </div>
                  
                   <div class="col-md-5 px-4">
-                    <label for="inputEmail4" class="form-label"> <b>Qty On Hand :</b></label>
-                    <input type="text" id="itemqty" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="Qtyonhand">
+                    <label for="inputEmail4" class="form-label"  > <b>Qty On Hand :</b></label>
+                    <input type="text" id="itemqty" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Qtyonhand">
                   </div>
                   <div class="col-4">
                     <label for="inputEmail4" class="form-label"><b>Order Qty :</b></label>
-                    <input type="number" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="orderQty">
+                    <input type="number" id="OrderQty" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="orderQty">
                   </div>
                  
                   <div class="col-6 mt-4 px-5">
-                    <button type="button" id="btnAddtoCart" class=" btn navbar-light shadow" style="width: 140%; border-radius:8px; position: relative; color:#ffff; background-color:#24BCD0; left: 60px;"><b>Add To Cart</b></button>
+                    <button type="button" id="btnAddtoCart"  class=" btn navbar-light shadow" style="width: 140%; border-radius:8px; position: relative; color:#ffff; background-color:#24BCD0; left: 60px;"><b>Add To Cart</b></button>
                   </div>
                 
                 </form>
@@ -139,7 +141,7 @@
                             <table class="table mt-2 border-1"  id="cartTable">
                               <thead>
                                 <tr>
-                                  <th class=" px-3">Order Id</th>
+                                  <th class=" px-3">Item Id</th>
                                   <th  class=" px-3">Item Name</th>
                                   <th  class=" px-3">Quantity</th>
                                   <th  class=" px-3">Price</th>
@@ -148,47 +150,8 @@
                                   
                                 </tr>
                               </thead>
-                              <tbody>
-                                <tr>
-                                  <th  class=" px-4">I001</th>
-                                  <td  class=" px-4">Detol</td>
-                                  <td  class=" px-4">2000</td>
-                                  <td  class=" px-4">1</td>
-                                  <td  class=" px-4">2000</td>
-                                  <td  class=" px-2"><button type="button" class="btn-sm border btn-danger">Delete</button>
-                                    <button type="button" class="btn-sm border btn-success" style="width: 19%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                      width="24" height="20"
-                                      viewBox="0 0 172 172"
-                                      style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th  class=" px-4">I001</th>
-                                  <td  class=" px-4">Detol</td>
-                                  <td  class=" px-4">2000</td>
-                                  <td  class=" px-4">1</td>
-                                  <td  class=" px-4">2000</td>
-                                  <td  class=" px-2"><button type="button" class="btn-sm border btn-danger">Delete</button>
-                                    <button type="button" class="btn-sm border btn-success" style="width: 19%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                      width="24" height="20"
-                                      viewBox="0 0 172 172"
-                                      style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button>
-                                  </td>
-                                </tr> <tr>
-                                  <th  class=" px-4">I001</th>
-                                  <td  class=" px-4">Detol</td>
-                                  <td  class=" px-4">2000</td>
-                                  <td  class=" px-4">1</td>
-                                  <td  class=" px-4">2000</td>
-                                  <td  class=" px-2">
-                                    <button type="button" id="btnDelete" class="btn-sm border btn-danger">Delete</button>
-                                    <button type="button" id="btnupdate" class="btn-sm border btn-success" style="width: 19%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                      width="24" height="20"
-                                      viewBox="0 0 172 172"
-                                      style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button>
-                                  </td>
-                                </tr>
-                               
+                              <tbody id="cartTabale">
+                              
                               </tbody>
                             </table>
                            </div> 
@@ -462,6 +425,7 @@
 <script src="controller/ItemController.js"></script>
 <script src="controller/OrderCotroller.js"></script>
 <script src="controller/PlaceOrderController.js"></script>
+<script src="model/Order.js"></script>
 
 
 </section>

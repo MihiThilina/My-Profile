@@ -11,6 +11,28 @@
 //     }
 // });
 
+// function generateOrderID() {
+//    try {
+//        let lastOrderId = Order[Order.length-1].id;
+//        let newOrderId = parseInt(lastOrderId.substring(1,4))+1;
+//        if (newOrderId < 10) {
+//            $("#OrderId").text("O00"+newOrderId);
+//        }else if (newOrderId<100) {
+//            $("#OrderId").text("O0"+newOrderId);
+//        } else {
+//            $("#OrderId").text("O"+newOrderId);
+//        }
+//    }catch (e) {
+//        $("#OrderId").text("O001");
+//    }
+
+// }
+
+$("#btnAddtoCart").click(function(){
+   addToCart();
+})
+
+
 $("#cmbItemId").click(function(){
     itemId = $("#cmbItemId").val();
     itemName =$("#itNames").val();
@@ -61,5 +83,23 @@ function addValuesToItems(value){
         });
 
 
-      
+        function addToCart(){
+            itemCode =$("#cmbItemId").val();
+            itemName =$("#itNames").val();
+            itemPrice=$("#itemprice").val();
+            itemQty=$("#itemqty").val();
+            orderQty =$("#OrderQty").val();
 
+            let row = `<tr><td>${itemCode}</td><td>${itemName}</td><td>${itemPrice}</td><td>${itemQty}</td><td>${orderQty}</td></tr>`
+        $("#cartTabale").append(row);
+             
+        }
+
+
+        function  buttondisabled(){
+            
+        }
+
+
+      
+         
