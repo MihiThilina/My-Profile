@@ -4,8 +4,8 @@
 
 
   $("#saveCustormer").click(function (e){
-    loadAllCustomers();
     saveCustormers();
+    loadAllCustomers();
   })
   
   function saveCustormers(){
@@ -28,6 +28,7 @@
    
   
   function loadAllCustomers(){
+    
         for(var i of customerDB){
           let row = `<tr><td>${i.id}</td><td>${i.address}</td><td>${i.Name}</td><td>${i.salarys}</td><td>${i.Number}</td>
           <td><button type="button" class="btn-sm  btnDeleteItem btn-danger">Delete</button>
@@ -37,7 +38,7 @@
           style=" right:5px; position: relative; fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M101.05,42.28333l-79.55,79.55v28.66667h28.66667l79.55,-79.55zM111.8,31.53333l17.2,-17.2l28.66667,28.66667l-17.2,17.2z"></path></g></g></svg></button></td>
           </tr>`;
            $("#custormerTable").append(row);
-        //   $("#custormerTable").empty();
+          
            console.log(row)
         }   
   }

@@ -1,436 +1,472 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    <meta charset="UTF-8">
-    <title>InterWest</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap/Style/style.css" rel="stylesheet">
-    <link href="assets/bootstrap/js/bootstrap.bundle.min.js" rel="stylesheet">
-    <link rel="stylesheet" href="assets/js/jquery-3.6.0.min.js">
-    <link href="assets/css/style.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>InterWest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/Style/style.css" rel="stylesheet">
+  <link href="assets/bootstrap/js/bootstrap.bundle.min.js" rel="stylesheet">
+  <link rel="stylesheet" href="assets/js/jquery-3.6.0.min.js">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <header>
 
-<!-- Header  -->
+  <!-- Header  -->
 
-<nav class="navbar navbar-expand-lg  navbar-light shadow p-3 mb-5" style="background-color:#FFF7E8">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><b><span style="color:#FF5C00;">I</span>nter<span style="color: #FF5C00;">W</span>est</b></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item" >
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item"  id="btn-placeorder">
-          <a class="nav-link" href="#">Orders</a>
-        </li>
-        <li class="nav-item" id="btn-item">
-          <a class="nav-link" href="#">Items</a>
-        </li>
-        <li class="nav-item" id="btn-customer">
-          <a class="nav-link" href="#">Others</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg  navbar-light shadow p-3 mb-5" style="background-color:#FFF7E8">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b><span style="color:#FF5C00;">I</span>nter<span
+            style="color: #FF5C00;">W</span>est</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item" id="btn-placeorder">
+            <a class="nav-link" href="#">Orders</a>
+          </li>
+          <li class="nav-item" id="btn-item">
+            <a class="nav-link" href="#">Items</a>
+          </li>
+          <li class="nav-item" id="btn-customer">
+            <a class="nav-link" href="#">Others</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<style>
-  body{
-    background-image: linear-gradient(to right top, #b3fffe, #c5fde9, #daf9db, #ecf4d5, #f9efd7, #faefd7, #fbeed6, #fceed6, #f3f2d1, #e4f6d1, #cffbd8, #b8ffe7);      }
-</style>
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #b3fffe, #c5fde9, #daf9db, #ecf4d5, #f9efd7, #faefd7, #fbeed6, #fceed6, #f3f2d1, #e4f6d1, #cffbd8, #b8ffe7);
+    }
+  </style>
 
 </header>
 
 
 <body>
-   <div id="background">
-      <main class="container-fluid placeorder">
-        <section class="row">
-          <div class="col-xl-8 col-12" >
-            <div class="row px-2">
-              <div class="col-12 col-xl-6">
-                
-                <form class="row g-2 pt-2 pb-3"  style="background-color: rgba(248, 242, 242, 0.829); border:1px solid #9e9e9e; width: 110%; border-radius:18px; left: 10px; position: relative; ">
-                  <h2 style="text-align: center;">Invoice Details</h2>
+  <div id="background">
+    <main class="container-fluid placeorder">
+      <section class="row">
+        <div class="col-xl-8 col-12">
+          <div class="row px-2">
+            <div class="col-12 col-xl-6">
 
-                  <div class="px-4 col-md-4 mt-3">
-                    <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
-                   
-                      <h3 id="OrderId">O001</h3>
-                 
-                  </div>
-                  <div class="col-md-7 mt-3">
-                    <label for="iDate" class="form-label" ><b>Date :</b></label>
-                    <input type="datetime-local" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="date">
-                  </div>
-                  <div class="form-group px-4 col-md-4 mt-3">
-                    <label for="validationDefault01" class=""> <b>Customer Id :</b></label>
-                    <select class="form-control" id="cmbcustormerId" style="height:33px; border: 1px solid #aaaaaa;">
-                    </select>
-                  </div>
-                  <div class="col-md-7 ">
-                    <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
-                    <input type="text"  id="cusName" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Name">
-                  </div>
-                  <div class="col-md-4 px-4">
-                    <label for="inputEmail4" class="form-label"  ><b>Salary :</b></label>
-                    <input type="text"  id="CusSalary" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Salary">
-                  </div>
-      
-                  <div class="col-md-7 px-1"> 
-                    <label for="inputEmail4" class="form-label"  ><b>Address :</b></label>
-                    <input type="text"  id="CusAddress" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Address">
-                  </div>
-                </form>
-              </div>
+              <form class="row g-2 pt-2 pb-3"
+                style="background-color: rgba(248, 242, 242, 0.829); border:1px solid #9e9e9e; width: 110%; border-radius:18px; left: 10px; position: relative; ">
+                <h2 style="text-align: center;">Invoice Details</h2>
 
-               <div class="col-12 col-xl-6">
-                
-                <form class="row g-2 pt-1 px-4 pb-2 "  style="background-color: rgba(248, 242, 242, 0.829); border:1px solid #9e9e9e; width: 110%; height:102.5%; border-radius:18px; position: relative; left: 50px;">
-                  <h2 style="text-align: center;">Select Item</h2>
-                  <div class="col-md-4 mt-3">
-                    <label for="validationDefault01" class="form-label"> <b>Item Code :</b></label>
-                    <select class="form-control" id="cmbItemId" style="height:33px; border: 1px solid #aaaaaa;">
-                    </select>
-                  </div>
-                  <div class="col-md-8 px-4 mt-3">
-                    <label for="inputEmail4" class="form-label"><b>Item Name :</b></label>
-                    <input type="text" id="itNames" class="form-control" disabled style="height:33px;  border: 1px solid #aaaaaa;" id="itemName">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputEmail4" class="form-label"  ><b>Price :</b></label>
-                    <input type="text" id="itemprice" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="price">
-                  </div>
-                 
-                  <div class="col-md-5 px-4">
-                    <label for="inputEmail4" class="form-label"  > <b>Qty On Hand :</b></label>
-                    <input type="text" id="itemqty" class="form-control" disabled style="height:33px; border: 1px solid #aaaaaa;" id="Qtyonhand">
-                  </div>
-                  <div class="col-4">
-                    <label for="inputEmail4" class="form-label"><b>Order Qty :</b></label>
-                    <input type="number" id="OrderQty" class="form-control" style="height:33px; border: 1px solid #aaaaaa;" id="orderQty">
-                  </div>
-                 
-                  <div class="col-6 mt-4 px-5">
-                    <button type="button" id="btnAddtoCart"  class=" btn navbar-light shadow" style="width: 140%; border-radius:8px; position: relative; color:#ffff; background-color:#24BCD0; left: 60px;"><b>Add To Cart</b></button>
-                  </div>
-                
-                </form>
-               </div>
-
-
-    
-               
-               
-               <div class="col-12  mx-5 border" style="background-color: rgba(248, 242, 242, 0.829); top: 21px; position: relative; border-radius: 10px;">
-                <div class="row ">
-                  <div class="col-8 mt-1" style="position: relative;  left:71px;  " >
-                      <label for="formGroupExampleInput" class="form-label px-2" style="top: 11px; left: 90%;position: relative;"><h5>Search :</h5></label>
-                  </div>
-                  <div class="col-3" style="position: relative; left:78px; top: 10px;">
-                      <input type="text" class="form-control" id="inputEmail4">
-                  </div>
-              </div>
-                            <table class="table mt-2 border-1"  id="cartTable">
-                              <thead>
-                                <tr>
-                                  <th class=" px-3">Item Id</th>
-                                  <th  class=" px-3">Item Name</th>
-                                  <th  class=" px-3">Quantity</th>
-                                  <th  class=" px-3">Price</th>
-                                  <th  class=" px-3">Total</th>
-                                  <th  class=" px-3">Option</th>
-                                  
-                                </tr>
-                              </thead>
-                              <tbody id="cartTabale">
-                              
-                              </tbody>
-                            </table>
-                           </div> 
-                          </div>
-                     </div>
-          
-        
-
-
-           <div class="col-xl-4 col-4 w-25" style="background-color: rgba(248, 242, 242, 0.829); left:100px; top:-10px; position: relative; border-radius:18px; border:1px solid #9e9e9e">
-               <div class="row">
-                     <div class="col mt-2">
-                      <div class="text-center">
-                        <img src="assets/images/17.png" class="rounded w-25" alt="...">
-                        <p class="mt-4 h4"><b>Check Out</b></p>
-                      </div>
-                     </div>
-               </div>
-               <div class="row">
-                <div class="col-12">
-                  <div class="col-md-12 mt-2 px-5">
-                    <label for="inputEmail4" class="form-label"><b>Chash :</b></label>
-                    <input type="email" class="form-control h-25" id="inputEmail4">
-                  </div>
-                  <div class="col-md-12 mt-2 px-5">
-                    <label for="inputEmail4" class="form-label"><b>Discount :</b></label>
-                    <input type="email" class="form-control h-25" id="inputEmail4">
-                  </div>
-                  <div class="col-md-12 mt-2  px-5">
-                    <label for="inputEmail4" class="form-label"><b>Balance :</b></label>
-                    <input type="" class="form-control h-25" id="inputEmail4">
-                  </div>
+                <div class="px-4 col-md-4 mt-3">
+                  <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
+                  <h1><span id="txtOrderId"></span></h1> 
                 </div>
+                <div class="col-md-7 mt-3">
+               <label for="iDate" class="form-label"><b>Date :</b></label>
+                  <input type="datetime-local" class="form-control" style="height:33px; border: 1px solid #aaaaaa;"
+                    id="date">
                 </div>
-                <div class="row">
-                  <div class="col-12 mt-4 px-5">
-                    <p class=
-                    "h2 px-3">Sub Total :</p>
-                    <p class="h2  px-3">Total :</p>
-                  </div> 
-                  </div>
-                <div class="row">
-                  <div class="col-6"></div>
-                  <div class="col-6">
-                    <button type="button" class="w-100 btn" style="border-radius:8px; background-color:#B8D935; color: #ffff; position: relative; right: 10px;" >Comfirm Order</button>
-                  </div>
-                </div>  
-           </div>
+                <div class="form-group px-4 col-md-4 mt-3">
+                  <label for="validationDefault01" class=""> <b>Customer Id :</b></label>
+                  <select class="form-control" id="cmbcustormerId" style="height:33px; border: 1px solid #aaaaaa;">
+                  </select>
+                </div>
+                <div class="col-md-7 ">
+                  <label for="inputEmail4" class="form-label"> <b>Name :</b></label>
+                  <input type="text" id="cusName" class="form-control" disabled
+                    style="height:33px; border: 1px solid #aaaaaa;" id="Name">
+                </div>
+                <div class="col-md-4 px-4">
+                  <label for="inputEmail4" class="form-label"><b>Salary :</b></label>
+                  <input type="text" id="CusSalary" class="form-control" disabled
+                    style="height:33px; border: 1px solid #aaaaaa;" id="Salary">
+                </div>
 
-        </section>
+                <div class="col-md-7 px-1">
+                  <label for="inputEmail4" class="form-label"><b>Address :</b></label>
+                  <input type="text" id="CusAddress" class="form-control" disabled
+                    style="height:33px; border: 1px solid #aaaaaa;" id="Address">
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12 col-xl-6" style="height: 350px;"> 
+
+              <form class="row g-2 pt-1 px-4 pb-2 "
+                style="background-color: rgba(248, 242, 242, 0.829); border:1px solid #9e9e9e; width: 110%; height:102.5%; border-radius:18px; position: relative; left: 50px;">
+                <h2 style="text-align: center;">Select Item</h2>
+                <div class="col-md-4 mt-3">
+                  <label for="validationDefault01" class="form-label"> <b>Item Code :</b></label>
+                  <select class="form-control" id="cmbItemId" style="height:33px; border: 1px solid #aaaaaa;">
+                  </select>
+                </div>
+                <div class="col-md-8 px-4 mt-3">
+                  <label for="inputEmail4" class="form-label"><b>Item Name :</b></label>
+                  <input type="text" id="itNames" class="form-control" disabled
+                    style="height:33px;  border: 1px solid #aaaaaa;" id="itemName">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail4" class="form-label"><b>Price :</b></label>
+                  <input type="text" id="itemprice" class="form-control" disabled
+                    style="height:33px; border: 1px solid #aaaaaa;" id="price">
+                </div>
+
+                <div class="col-md-5 px-4">
+                  <label for="inputEmail4" class="form-label"> <b>Qty On Hand :</b></label>
+                  <input type="text" id="itemqty" class="form-control" disabled
+                    style="height:33px; border: 1px solid #aaaaaa;" id="Qtyonhand">
+                </div>
+                <div class="col-4">
+                  <label for="inputEmail4" class="form-label"><b>Order Qty :</b></label>
+                  <input type="number" id="OrderQty" class="form-control"
+                    style="height:33px; border: 1px solid #aaaaaa;" id="orderQty">
+                </div>
+                <div class="col-3 " style="position: relative; left: 20px; width:100px; height: 130px;">
+                  <label for="inputEmail4" class="form-label"><b>Discount :</b></label>
+                  <input type="email"  style="height:33px; border: 1px solid #aaaaaa;" class="form-control h-25 " id="txtDiscount">
+                </div>
+
+                <div class="col-6 mt-4 px-5">
+                  <button type="button" id="btnAddtoCart" class=" btn navbar-light shadow"
+                    style="width: 140%; border-radius:8px; position: relative; color:#ffff; background-color:#24BCD0; left: 210px; top:-80px;"><b>Add
+                      To Cart</b></button>
+                </div>
+
+              </form>
+            </div>
+
+
+
+
+
+            <div class="col-12  mx-5 border"
+              style="background-color: rgba(248, 242, 242, 0.829); top: 21px; position: relative; border-radius: 10px;">
+              <div class="row ">
+              </div>
+              <table class="table mt-2 border-1" id="cartTable">
+                <thead>
+                  <tr>
+                    <th class=" px-3">Item Id</th>
+                    <th class=" px-3">Item Name</th>
+                    <th class=" px-3">Quantity</th>
+                    <th class=" px-3">Price</th>
+                    <th class=" px-3">Total</th>
+                    <th class=" px-3">Option</th>
+
+                  </tr>
+                </thead>
+                <tbody id="cartTabale">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-xl-4 col-4 w-25"
+          style="background-color: rgba(248, 242, 242, 0.829); height: 450px; left:100px; top:-10px; position: relative; border-radius:18px; border:1px solid #9e9e9e">
+          <div class="row">
+            <div class="col mt-2">
+              <div class="text-center">
+                <img src="assets/images/17.png" class="rounded w-25" alt="...">
+                <p class="mt-4 h4"><b>Check Out</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-4 px-5">
+              <p class="h2  px-3">Sub Total : <span id="txtsubTotal"></span></p>
+            </div>
+            <div class="col-12 mt-4 px-5">
+              <p class="h2  px-3">Total : <span id="txtTotal"></span></p>
+            </div>
+         
+          </div>
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6 pt-5">
+              <button type="button"  class="w-100 btn comfirmOrders"    style="border-radius:8px; background-color:#B8D935; color: #ffff; position: relative; right: 10px;">Comfirm
+                Order</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </main>
 
 
     <!-- -------------------------------------------------------------------- -->
 
     <section class="container-fluid customerDetails " style="position: relative; top: -20px;  ">
-      <div class="" style=" z-index: 10;" >
-      <div class="row shadow-none mb-4 rounded" style="background-image: linear-gradient(to right top, #fff4fa, #fdf4fc, #fbf4fd, #f8f5fe, #f5f5ff, #f1f5ff, #edf6ff, #e9f6ff, #e3f7ff, #dcf8fe, #d6f8fc, #d2f9f7);">
-          <div class="col-10 pt-2 px-4" >
-              <label for="formGroupExampleInput" class="form-label text-black"><h5>Customer Details</h5></label>
+      <div class="" style=" z-index: 10;">
+        <div class="row shadow-none mb-4 rounded"
+          style="background-image: linear-gradient(to right top, #fff4fa, #fdf4fc, #fbf4fd, #f8f5fe, #f5f5ff, #f1f5ff, #edf6ff, #e9f6ff, #e3f7ff, #dcf8fe, #d6f8fc, #d2f9f7);">
+          <div class="col-10 pt-2 px-4">
+            <label for="formGroupExampleInput" class="form-label text-black">
+              <h5>Customer Details</h5>
+            </label>
           </div>
 
           <div class="col-2 pt-1">
-              <div class="col-12"><button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal1" class="w-75  btn border text-black" style="background-color: rgb(7, 243, 66);">Add Customer </button></div>
-          </div>
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal1"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog  shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #ffedb7; width: 100%;">
-                 <div class="modal-content">
-                  <div class="modal-header shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #fff6dc">
-                    <h5 class="modal-title px-4" style="color: rgb(0, 0, 0);" id="exampleModalLabel">Customer Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div> 
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group px-2 p-2"  style="width: 100%; ">
-                        <label for="exampleInputEmail1">Customer Id</label>
-                        <input type="" class="form-control validationid" id="custormerID" aria-describedby="emailHelp" placeholder="C0001">
-                      </div>
-                      <div class="form-group px-2 p-2" style="width: 100%;">
-                        <label for="exampleInputEmail1">Address</label>
-                        <input type="email" class="form-control validationAddress" id="customerAddress"  aria-describedby="emailHelp" placeholder="Colombo">
-                      </div>
-                      <div class="form-group px-2 p-2"  style="width: 100%;">
-                        <label for="exampleInputEmail1">Name</label>
-                        <input type="email" class="form-control validationName" id="customerName" aria-describedby="emailHelp" placeholder="Thilina">
-                      </div>
-                      <div class="form-group px-2  p-2"  style="width: 100%;">
-                        <label for="exampleInputEmail1">Salary</label>
-                        <input type="email" class="form-control validationSalary"  id="custormerSalary" aria-describedby="emailHelp" placeholder="50000.00">
-                      </div>
-                      <div class="form-group px-2  p-2"  style="width: 100%;">
-                        <label for="exampleInputEmail1">Phone Number</label>
-                        <input type="email" class="form-control validationPhone" id="cusphoneNumber" aria-describedby="emailHelp" placeholder="0774914870">
-                      </div>
-                      <button type="submit"  id="saveCustormer" class="btn mt-5 " style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
-                    </form>  
-                  </div>
-              </div> 
+            <div class="col-12"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                class="w-75  btn border text-black" style="background-color: rgb(7, 243, 66);">Add Customer </button>
             </div>
-      </div>
-
-
-
-      </div>
-
-
-      <div class="row ">
-          <div class="col-8 mt-1" style="position: relative; left:94px;" >
           </div>
-          <div class="col-3" style="position: relative; left:94px; top: 10px; " >
-              <input type="text" class="form-control"  placeholder="Search" id="inputEmail4" style="background-color: rgba(248, 242, 242, 0.527);">
-          </div>
-      </div>
 
 
-      <div class="row p-5   px-5">
-          <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded" style="background-color: rgba(248, 242, 242, 0.829); top: -30px; position: relative;" >
-              <table class="table mt-5" id="custormerTable">
-                 <thead>
-                   <tr>
-                     <th scope="col">Customer Id</th>
-                     <th scope="col">Address</th>
-                     <th scope="col">Name</th>
-                     <th scope="col">Salary</th>
-                     <th scope="col">Phone Number</th>
-                     <th scope="col">Option</th>
-                   </tr>
-                 </thead>
-                 <tbody>
-                  
-                 </tbody>
-               </table>
-               </div>
-      </div>
-
-
-      <div class="col" style="position: relative; top: -70px;">
-        <nav class="mt-2">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <span class="page-link">Previous</span>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item" aria-current="page">
-                    <span class="page-link">2</span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" style="color: rgb(0, 255, 34);" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-
-
-  </section>
-
-   
-<!-- ------------------------------------------------------------- -->
-
-
-<section class="container-fluid itemDetails" style="position: relative; top: -20px;">
-  <div class="" style="z-index: 10;" >
-  <div class="row shadow-none mb-4 " style="background-image: linear-gradient(to right top, #fff4fa, #fdf4fc, #fbf4fd, #f8f5fe, #f5f5ff, #f1f5ff, #edf6ff, #e9f6ff, #e3f7ff, #dcf8fe, #d6f8fc, #d2f9f7);" >
-      <div class="col-10 pt-2 px-4" >
-          <label for="formGroupExampleInput" class="form-label px-2"><h5>Item Details</h5></label>
-      </div>
-
-      <div class="col-2 pt-1">
-          <div class="col-12"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="w-75  btn border" style="background-color: rgb(7, 243, 66);">Add Item</button></div>
-        </div>
-     
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog  shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #ffedb7; width: 100%;">
-                <div class="modal-content">
-                  <div class="modal-header shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #fff6dc">
-                    <h5 class="modal-title px-4" style="color: rgb(0, 0, 0);" id="exampleModalLabel">Item Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form id="itemform">
-                      <div class="form-group px-2 p-2"  style="width: 100%; ">
-                        <label for="exampleInputEmail1">Item Code</label>
-                        <input type="email" class="form-control validation1" id="itemcode" aria-describedby="emailHelp" placeholder="I-0001">
-                      </div>
-                      <div class="form-group px-2 p-2" style="width: 100%;">
-                        <label for="exampleInputEmail1">Item Name</label>
-                        <input type="email" class="form-control validation2" id="itemNames"  aria-describedby="emailHelp" placeholder="Thilina Bandara">
-                      </div>
-                      <div class="form-group px-2 p-2"  style="width: 100%;">
-                        <label for="exampleInputEmail1">Price</label>
-                        <input type="email" class="form-control validation3" id="Itemprice" aria-describedby="emailHelp" placeholder="10000.00">
-                      </div>
-                      <div class="form-group px-2  p-2"  style="width: 100%;">
-                        <label for="exampleInputEmail1">Order qty</label>
-                        <input type="email" class="form-control validation4" id="QtyonHand"  aria-describedby="emailHelp" placeholder="45">
-                      </div>
-                      <button type="submit"  class="btn mt-5 " id="saveItems" style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
-                      <button type="submit"  class="btn mt-2 " id="updateItem" style="width: 50%; background-color: rgb(56, 149, 255); position:relative; left:50%;">Update</button>
-                    </form>  
-                    
-                  </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog  shadow p-1 bg-rgb(212, 209, 4); rounded"
+              style="background-color: #ffedb7; width: 100%;">
+              <div class="modal-content">
+                <div class="modal-header shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #fff6dc">
+                  <h5 class="modal-title px-4" style="color: rgb(0, 0, 0);" id="exampleModalLabel">Customer Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body was-validation">
+                  <form>
+                    <div class="form-group px-2 p-2" style="width: 100%; ">
+                      <label for="exampleInputEmail1">Customer Id</label>
+                      <input type="" class="form-control validationid" id="custormerID" aria-describedby="emailHelp"
+                        placeholder="C0001">
+                    </div>
+                    <div class="form-group px-2 p-2" style="width: 100%;">
+                      <label for="exampleInputEmail1">Address</label>
+                      <input type="email" class="form-control validationAddress" id="customerAddress"
+                        aria-describedby="emailHelp" placeholder="Colombo">
+                    </div>
+                    <div class="form-group px-2 p-2" style="width: 100%;">
+                      <label for="exampleInputEmail1">Name</label>
+                      <input type="email" class="form-control validationName" id="customerName"
+                        aria-describedby="emailHelp" placeholder="Thilina">
+                    </div>
+                    <div class="form-group px-2  p-2" style="width: 100%;">
+                      <label for="exampleInputEmail1">Salary</label>
+                      <input type="email" class="form-control validationSalary" id="custormerSalary"
+                        aria-describedby="emailHelp" placeholder="50000.00">
+                    </div>
+                    <div class="form-group px-2  p-2" style="width: 100%;">
+                      <label for="exampleInputEmail1">Phone Number</label>
+                      <input type="email" class="form-control validationPhone" id="cusphoneNumber"
+                        aria-describedby="emailHelp" placeholder="0774914870">
+                    </div>
+                    <button type="submit" id="saveCustormer" class="btn mt-5 "
+                      style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
+                  </form>
+                </div>
               </div>
             </div>
-      </div>
+          </div>
 
 
 
-  </div>
+        </div>
 
 
-  <div class="row ">
-      <div class="col-8 mt-1" style="position: relative; left:94px;" >
-      </div>
-      <div class="col-3" style="position: relative; left:94px; top: 10px; " >
-        <input type="text" class="form-control"  placeholder="Search" id="inputEmail4" style="background-color: rgba(248, 242, 242, 0.527);">
-    </div>
-  </div>
+        <div class="row ">
+          <div class="col-8 mt-1" style="position: relative; left:94px;">
+          </div>
+          <div class="col-3" style="position: relative; left:94px; top: 10px; ">
+            <input type="text" class="form-control" placeholder="Search" id="inputEmail4"
+              style="background-color: rgba(248, 242, 242, 0.527);">
+          </div>
+        </div>
 
 
-  <div class="row p-5   px-5">
-      <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded" style="background-color: rgba(248, 242, 242, 0.829); top: -30px; position: relative;" >
-          <table class="table mt-5">
-             <thead>
-               <tr>
-                <th scope="col">Item Code</th>
-                 <th scope="col">Item Name</th>
-                 <th scope="col">Price</th>
-                 <th scope="col">Order Qty</th>
-                 <th scope="col">Option</th>
-               </tr>
-             </thead>
-             <tbody id="ItemTable">
-    
-             </tbody>
-           </table>
-           </div>
-  </div>
+        <div class="row p-5   px-5">
+          <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded"
+            style="background-color: rgba(248, 242, 242, 0.829); top: -30px; position: relative;">
+            <table class="table mt-5" id="custormerTable">
+              <thead>
+                <tr>
+                  <th scope="col">Customer Id</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Salary</th>
+                  <th scope="col">Phone Number</th>
+                  <th scope="col">Option</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
 
 
-  <div class="col" style="position: relative; top: -70px;">
-    <nav class="mt-2">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
+        <div class="col" style="position: relative; top: -70px;">
+          <nav class="mt-2">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
                 <span class="page-link">Previous</span>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item" aria-current="page">
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item" aria-current="page">
                 <span class="page-link">2</span>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
                 <a class="page-link" style="color: rgb(0, 255, 34);" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-</div>
-
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/script.js"></script>
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="db/db.js"></script>
-<script src="controller/CustomerController.js"></script>
-<script src="controller/ItemController.js"></script>
-<script src="controller/OrderCotroller.js"></script>
-<script src="controller/PlaceOrderController.js"></script>
-<script src="model/Order.js"></script>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
 
-</section>
-</div>
+
+    </section>
+
+
+    <!-- ------------------------------------------------------------- -->
+
+
+    <section class="container-fluid itemDetails" style="position: relative; top: -20px;">
+      <div class="" style="z-index: 10;">
+        <div class="row shadow-none mb-4 "
+          style="background-image: linear-gradient(to right top, #fff4fa, #fdf4fc, #fbf4fd, #f8f5fe, #f5f5ff, #f1f5ff, #edf6ff, #e9f6ff, #e3f7ff, #dcf8fe, #d6f8fc, #d2f9f7);">
+          <div class="col-10 pt-2 px-4">
+            <label for="formGroupExampleInput" class="form-label px-2">
+              <h5>Item Details</h5>
+            </label>
+          </div>
+
+          <div class="col-2 pt-1">
+            <div class="col-12"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="w-75  btn border" style="background-color: rgb(7, 243, 66);">Add Item</button></div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog  shadow p-1 bg-rgb(212, 209, 4); rounded"
+              style="background-color: #ffedb7; width: 100%;">
+              <div class="modal-content">
+                <div class="modal-header shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #fff6dc">
+                  <h5 class="modal-title px-4" style="color: rgb(0, 0, 0);" id="exampleModalLabel">Item Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="itemform">
+                    <div class="form-group px-2 p-2" style="width: 100%; ">
+                      <label for="exampleInputEmail1">Item Code</label>
+                      <input type="email" class="form-control validation1" id="itemcode" aria-describedby="emailHelp"
+                        placeholder="I-0001">
+                    </div>
+                    <div class="form-group px-2 p-2" style="width: 100%;">
+                      <label for="exampleInputEmail1">Item Name</label>
+                      <input type="email" class="form-control validation2" id="itemNames" aria-describedby="emailHelp"
+                        placeholder="Thilina Bandara">
+                    </div>
+                    <div class="form-group px-2 p-2" style="width: 100%;">
+                      <label for="exampleInputEmail1">Price</label>
+                      <input type="email" class="form-control validation3" id="Itemprice" aria-describedby="emailHelp"
+                        placeholder="10000.00">
+                    </div>
+                    <div class="form-group px-2  p-2" style="width: 100%;">
+                      <label for="exampleInputEmail1">Order qty</label>
+                      <input type="email" class="form-control validation4" id="QtyonHand" aria-describedby="emailHelp"
+                        placeholder="45">
+                    </div>
+                    <button type="submit" class="btn mt-5 " id="saveItems"
+                      style="width: 50%; background-color: rgb(56, 255, 56); position:relative; left:50%;">Save</button>
+                    <button type="submit" class="btn mt-2 " id="updateItem"
+                      style="width: 50%; background-color: rgb(56, 149, 255); position:relative; left:50%;">Update</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <div class="row ">
+          <div class="col-8 mt-1" style="position: relative; left:94px;">
+          </div>
+          <div class="col-3" style="position: relative; left:94px; top: 10px; ">
+            <input type="text" class="form-control" placeholder="Search" id="inputEmail4"
+              style="background-color: rgba(248, 242, 242, 0.527);">
+          </div>
+        </div>
+
+
+        <div class="row p-5   px-5">
+          <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded"
+            style="background-color: rgba(248, 242, 242, 0.829); top: -30px; position: relative;">
+            <table class="table mt-5">
+              <thead>
+                <tr>
+                  <th scope="col">Item Code</th>
+                  <th scope="col">Item Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Order Qty</th>
+                  <th scope="col">Option</th>
+                </tr>
+              </thead>
+              <tbody id="ItemTable">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="col" style="position: relative; top: -70px;">
+          <nav class="mt-2">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item" aria-current="page">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" style="color: rgb(0, 255, 34);" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <script src="assets/js/jquery-3.6.0.min.js"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="db/db.js"></script>
+      <script src="controller/CustomerController.js"></script>
+      <script src="controller/ItemController.js"></script>
+      <script src="controller/OrderCotroller.js"></script>
+      <script src="controller/PlaceOrderController.js"></script>
+      <script src="model/Order.js"></script>
+      <script src="model/Item.js"></script>
+      <script src="model/Customer.js"></script>
+      <script src="model/cart.js"></script>
+      
+
+
+    </section>
+  </div>
 </body>
+
 </html>
-
-
