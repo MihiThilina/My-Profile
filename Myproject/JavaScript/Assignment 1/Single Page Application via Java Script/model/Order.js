@@ -1,40 +1,40 @@
 function Orders(oid, cid, date, discount, tot) {
-    this.__oid = oid;
-    this.__cid = cid;
-    this.__date = date;
-    this.__discount = discount;
-    this.__tot = tot;
+    var __oid = oid;
+    var __cid = cid;
+    var __date = date;
+    var __discount = discount;
+    var __tot = tot;
 
     this.getOid = function () {
-        return this.__oid;
+        return __oid;
     }
     this.setOid = function (oid) {
         this.__oid = oid;
     }
 
     this.getCustID = function () {
-        return this.__cid;
+        return __cid;
     }
     this.setCustId = function (cid) {
         this.__cid = cid;
     }
 
     this.getDate = function () {
-        return this.__date;
+        return __date;
     }
     this.setDate = function (date) {
         this.__date = date;
     }
 
     this.getDiscount = function () {
-        return this.__discount;
+        return __discount;
     }
     this.setDiscount = function (discount) {
         this.__discount = discount;
     }
 
     this.getTot = function () {
-        return this.__tot;
+        return __tot;
     }
     this.setTot = function (tot) {
         this.__tot = tot;

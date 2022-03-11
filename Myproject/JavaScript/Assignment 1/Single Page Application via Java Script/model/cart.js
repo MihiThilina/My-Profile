@@ -1,10 +1,13 @@
 
-function cart(cartICode,cartIName,cartIPrice,orderQty,cartTotal) {
+function cart(cartICode,cartIName,cartIPrice,orderQty,cartTotal,discount,fulltoal) {
     var __cartICode=cartICode;
     var __cartIName=cartIName;
-    var __orderQty=orderQty;
     var __cartIPrice=cartIPrice;
+    var __orderQty=orderQty;
     var __total=cartTotal;
+    var __discount=discount;
+    var __fulltotal=fulltoal;
+    
     
     this.getcartICode=function () {
         return __cartICode;
@@ -35,5 +38,21 @@ function cart(cartICode,cartIName,cartIPrice,orderQty,cartTotal) {
     }
     this.setTotal=function (total) {
         __total=total;
+    }
+
+    this.getdiscount = function(){
+        return __discount;
+    }
+ 
+    this.setdiscount=function (discount) {
+        __discount=discount;
+    }
+
+    this.getfullTotal = function(){
+        return  __fulltotal;
+    }
+ 
+    this.setfullTotal =function (fulltoal) {
+        __fulltotal=fulltoal;
     }
 }

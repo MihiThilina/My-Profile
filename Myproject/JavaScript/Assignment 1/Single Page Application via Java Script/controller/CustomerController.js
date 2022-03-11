@@ -6,6 +6,8 @@
   $("#saveCustormer").click(function (e){
     saveCustormers();
     loadAllCustomers();
+    removeColorCustomer();
+    clearCustomer();
   })
   
   function saveCustormers(){
@@ -14,23 +16,17 @@
     let customerName =$("#customerName").val();
     let salary=$("#custormerSalary").val();
     let phoneNumber=$("#cusphoneNumber").val();
-     var customerObject = {
-         id : customerid,
-         address : customerAddress,
-         Name : customerName,
-         salarys : salary,
-         Number: phoneNumber
-     }
-     customerDB.push(customerObject);
+    
+
+     customerDB.push(new Customer(customerid,customerAddress,customerName,salary,phoneNumber));
      addValuesToCmbCustomers("<option>"+customerid+"</option>");
-     console.log(customerObject);
   }
    
   
   function loadAllCustomers(){
     
         for(var i of customerDB){
-          let row = `<tr><td>${i.id}</td><td>${i.address}</td><td>${i.Name}</td><td>${i.salarys}</td><td>${i.Number}</td>
+          let row = `<tr><td>${i.getCusID()}</td><td>${i.getCusAddress()}</td><td>${i.getCusName()}</td><td>${i.getCusSalary()}</td><td>${i.getPhoneNumber()}</td>
           <td><button type="button" class="btn-sm  btnDeleteItem btn-danger">Delete</button>
           <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-sm border btn-success updaterow" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="24" height="20"
@@ -43,38 +39,130 @@
         }   
   }
 
-  
-function setCustomerDetailsOnPlaceOrder(name, salary, address) {
-  $("#customerName").val(name);
-  $("#custormerSalary").val(salary);
-  $("#customerAddress").val(address);
-}
+    function clearCustomer(){
+      $("#custormerID").val("");
+      $("#customerAddress").val("");
+      $("#customerName").val("");
+      $("#custormerSalary").val("");
+      $("#cusphoneNumber").val("");
+    }
 
-
-
-  
 
     function updateCustomer(){
       //write the code
     }
 
-    function searchCustomer(){}
+    function searchCustomer(){
+
+    }
   
 
-//------------------------Customer Details----------------------------
+//------------------------Customer Details Validation----------------------------
+
+function CustomerRegex(pattern, value) {
+  return pattern.test(value);
+}
+
+   
+function CustomerValidation(){
+   let textfild =[$("#custormerID"),$("#customerAddress"),$("#customerName"),$("#custormerSalary"),$("#cusphoneNumber")];
+   let result = false;
+for (let index = 0; index <textfild.length; index++) {
+    if(textfild[index].css('border-color') === "rgb(255, 0, 0)"){
+                result = true; 
+    }
+}
+if(result){
+  $("#saveCustormer").attr("disabled",true);
+  console.log("disabled");
+}else{
+  $("#saveCustormer").attr("disabled",false);
+  console.log("enabled");
+}
+}
+
+$("#custormerID").on("keyup", function (event) {
+  setTimeout(function () {
+    CustomerValidation();
+     }, 150);
+  if (CustomerRegex(/^(C0-)[0-9]{1,3}$/, $("#custormerID").val())) {
+      $("#custormerID").css('border', '2px solid green');
+      $("#customerAddress").css('border', '2px solid red');
+  }else{
+      $("#custormerID").css({
+          'border': '2px solid red'
+      });
+  }
+});
 
 
-// var regExItemID = /^(C-)[0-9]{3,4}$/;
+$("#customerAddress").on("keyup", function (event) {
+  setTimeout(function () {
+    CustomerValidation();
+     }, 150);
+  if (CustomerRegex(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/, $("#customerAddress").val())) {
+          $("#customerAddress").css('border', '2px solid green');
+          $("#customerName").css('border', '2px solid red');
+  } else {
+      $("#customerAddress").css({
+          'border': '2px solid red'
+      });
+  }
+});
 
-//     $(".validationid").keyup(function () {
-//         let input = $("#custormerID").val();
-//         if (regExItemID.test(input)) {
-//             $("#custormerID").css('border', '2px solid green');
-//             $("#customerAddress").css('border', '2px solid red');
-//             $("#error").text("");
-//         } else{
-//             $("#custormerID").css('border', '2px solid red');
-//             $("#error").text("Wrong format : C00-001");
-//         }
-  
-//     });
+$("#customerName").on("keyup", function (event) {
+  setTimeout(function () {
+    CustomerValidation();
+     },150);
+  if (CustomerRegex(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/, $("#customerName").val())) {
+      $("#customerName").css('border', '2px solid green');
+      $("#custormerSalary").css('border', '2px solid red');
+     
+  } else {
+      $("#customerName").css({
+          'border': '2px solid red'
+      });
+  }
+});
+
+
+
+$("#custormerSalary").on("keyup", function (event) {
+  setTimeout(function () {
+    CustomerValidation();
+     },150);
+  if (CustomerRegex(/^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/, $("#custormerSalary").val())) {
+      $("#custormerSalary").css('border', '2px solid green');
+      $("#cusphoneNumber").css('border', '2px solid red');
+     
+  } else {
+      $("#custormerSalary").css({
+          'border': '2px solid red'
+      });
+  }
+});
+
+$("#cusphoneNumber").on("keyup", function (event) {
+  setTimeout(function () {
+    CustomerValidation();
+     }, 150);
+    if (CustomerRegex(/^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/, $("#cusphoneNumber").val())) {
+      $("#cusphoneNumber").css('border', '2px solid green');
+      
+    } else {
+      $("#cusphoneNumber").css({
+          'border': '2px solid red'
+      });
+    }
+});
+
+ 
+function removeColorCustomer(){
+  $("#custormerID","#customerAddress","#customerName","#custormerSalary","#cusphoneNumber").css({
+      'border': '1px solid  #CED4DA'
+  });
+
+}
+
+
+

@@ -4,7 +4,7 @@ $("#saveItems").click(function () {
     saveItem();
     loadAllItems();
     clear();
-
+    colorRemove();
 })
 
 function updateRow() {
@@ -27,25 +27,22 @@ function updateRow() {
 }
 
 $("#updateItem").click(function () {
-
     let itemCode = $("#itemcode").val();
     let itemName = $("#itemNames").val();
     let price = $("#Itemprice").val();
     let qtyOnHand = $("#QtyonHand").val();
 
-    for (var i = 0; i < ItemDB.length; i++) {
-        if ($("#itemcode").val() == ItemDB[i].id) {
-            ItemDB[i].id = itemCode;
-            ItemDB[i].name = itemName;
-            ItemDB[i].price = price;
-            ItemDB[i].qty = qtyOnHand;
+    for (var i = 0; i <ItemDB.length; i++) {
+        if ($("#itemcode").val() == ItemDB[i].getItemCode()) {
+            ItemDB[i].setItemCode() = itemCode;
+            ItemDB[i].setItemName()= itemName;
+            ItemDB[i].setItemPrice() = price;
+            ItemDB[i].setItemQty() = qtyOnHand;
         }
     }
-
     loadAllItems();
     updateRow();
 })
-
 
 
 
@@ -58,9 +55,16 @@ function saveItem() {
 
    
     ItemDB.push(new Item(itemCode,itemName,price,qtyOnHand));
+
+    // ItemDB.push(new Item("I0-001",
+    //     "Detole",
+    //     "100",
+    //     "100"));
+
     addValuesToItems("<option>" + itemCode + "</option>");
-    console.log(ItemDB);
+    
 }
+
 
 
 
@@ -95,7 +99,7 @@ function clear() {
 $("#ItemTable").on('click', '.btnDeleteItem', function () {
     var index = 0;
     for (var i = 0; i < ItemDB.length; i++) {
-        if ($("#itemcode").val() == ItemDB[i].id) {
+        if ($("#itemcode").val() == ItemDB[i].getItemCode()) {
             index = i;
         }
     }
@@ -107,75 +111,104 @@ $("#ItemTable").on('click', '.btnDeleteItem', function () {
     $(this).closest('tr').remove();
 })
 
+$("#itemcode,#itemNames,#Itemprice,#QtyonHand").on("keydown" , function(event){
+    if(event.key === "Enter"){
+        event.preventDefault();
+    }
+})
 
 
 //   ---------------------------------Validation  Item Details-----------------------
 
 
-var regExItemID = /^(I00-)[0-9]{3,4}$/;
-var regExItemName = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/
-var regExPrice = /^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/
-var regqty = /^[0-9]{3,4}$/;
 
 
+function ItemRegex(pattern, value) {
+    return pattern.test(value);
+}
 
+function ItemValidation(){
+     let textfild =[$("#itemcode"),$("#itemNames"),$("#Itemprice"),$("#QtyonHand")];
+     let result = false;
+  for (let index = 0; index < textfild.length; index++) {
+      if(textfild[index].css('border-color') === "rgb(255, 0, 0)"){
+                  result = true; 
+      }
+  }
+  if(result){
+    $("#saveItems").attr("disabled",true);
+    console.log("disabled");
+  }else{
+    $("#saveItems").attr("disabled",false);
+    console.log("enabled");
+  }
+}
 
-$(".validation1").keyup(function (event) {
-    let input = $("#itemcode").val();
-    if (regExItemID.test(input)) {
+$("#itemcode").on("keyup", function (event) {
+    setTimeout(function () {
+        ItemValidation();
+       }, 150);
+    if (ItemRegex(/^(I0-)[0-9]{1,3}$/, $("#itemcode").val())) {
         $("#itemcode").css('border', '2px solid green');
         $("#itemNames").css('border', '2px solid red');
-
-        // if(event.key=="Enter"){
-        //     $("#itemNames").focus();
-        //   }          
-
-    } else {
-        $("#itemcode").css('border', '2px solid red');
-
-    }
-
-});
-
-
-$(".validation2").keyup(function () {
-    let input = $("#itemNames").val();
-    if (regExItemName.test(input)) {
-        $("#itemNames").css('border', '2px solid green');
-        $("#Itemprice").css('border', '2px solid red');
-        $("#saveItems").attr("disabled", false)
-    } else {
-        $("#itemNames").css('border', '2px solid red');
-        $("#saveItems").attr("disabled", true)
-
-
+    }else{
+        $("#itemcode").css({
+            'border': '2px solid red'
+        });
     }
 });
 
-$(".validation3").keyup(function () {
-    let input = $("#Itemprice").val();
-    if (regExPrice.test(input)) {
+
+$("#itemNames").on("keyup", function (event) {
+    setTimeout(function () {
+        ItemValidation();
+       }, 150);
+    if (ItemRegex(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/, $("#itemNames").val())) {
+            $("#itemNames").css('border', '2px solid green');
+            $("#Itemprice").css('border', '2px solid red');
+    } else {
+        $("#itemNames").css({
+            'border': '2px solid red'
+        });
+    }
+});
+
+
+$("#Itemprice").on("keyup", function (event) {
+    setTimeout(function () {
+        ItemValidation();
+       },150);
+    if (ItemRegex(/^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/, $("#Itemprice").val())) {
         $("#Itemprice").css('border', '2px solid green');
-        $("#saveItems").attr("disabled", false)
-
-
-    } else {
-        $("#Itemprice").css('border', '2px solid red');
-        $("#saveItems").attr("disabled", true)
-    }
-
-});
-
-
-$(".validation4").keyup(function () {
-    let input = $("#QtyonHand").val();
-    if (regqty.test(input)) {
-        $("#QtyonHand").css('border', '2px solid green');
-        $("#error").text("");
-        $("#saveItems").attr("disabled", false)
-    } else {
         $("#QtyonHand").css('border', '2px solid red');
-        $("#saveItems").attr("disabled", true)
-
+       
+    } else {
+        $("#Itemprice").css({
+            'border': '2px solid red'
+        });
     }
 });
+
+$("#QtyonHand").on("keyup", function (event) {
+    setTimeout(function () {
+        ItemValidation();
+       }, 150);
+      if (ItemRegex(/^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/, $("#QtyonHand").val())) {
+        $("#QtyonHand").css('border', '2px solid green');
+        
+      } else {
+        $("#QtyonHand").css({
+            'border': '2px solid red'
+        });
+      }
+  });
+
+   
+  function colorRemove(){
+    $("#itemcode,#itemNames,#Itemprice,#QtyonHand").css({
+        'border': '1px solid  #CED4DA'
+    });
+
+  }
+
+

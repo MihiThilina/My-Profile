@@ -35,8 +35,13 @@
           <li class="nav-item" id="btn-item">
             <a class="nav-link" href="#">Items</a>
           </li>
-          <li class="nav-item" id="btn-customer">
-            <a class="nav-link" href="#">Others</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Others</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li id="btn-customer"><a class="dropdown-item" href="#">Customer Information</a></li>
+              <li  id="btn-Order-Information" ><a class="dropdown-item" href="#">Order Information</a></li>
+              <li><a class="dropdown-item" href="#">Seller</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -66,16 +71,18 @@
 
                 <div class="px-4 col-md-4 mt-3">
                   <label for="inputEmail4" class="form-label"><b>Order Id :</b></label>
-                  <h1><span id="txtOrderId"></span></h1> 
+                  <h1><span class="txtOrderId"></span></h1> 
+                  <!-- <input type="text" > -->
                 </div>
                 <div class="col-md-7 mt-3">
-               <label for="iDate" class="form-label"><b>Date :</b></label>
+               <label for="Date" class="form-label"><b>Date :</b></label>
                   <input type="datetime-local" class="form-control" style="height:33px; border: 1px solid #aaaaaa;"
-                    id="date">
+                    id="datetime">
                 </div>
                 <div class="form-group px-4 col-md-4 mt-3">
                   <label for="validationDefault01" class=""> <b>Customer Id :</b></label>
                   <select class="form-control" id="cmbcustormerId" style="height:33px; border: 1px solid #aaaaaa;">
+          
                   </select>
                 </div>
                 <div class="col-md-7 ">
@@ -333,6 +340,73 @@
 
     </section>
 
+    <!-- Order information -->
+    <section class="container-fluid Order_Imformation" style="position: relative; top: -20px;  ">
+      <div class="" style=" z-index: 10;">
+        <div class="row shadow-none mb-4 rounded"
+          style="background-image: linear-gradient(to right top, #fff4fa, #fdf4fc, #fbf4fd, #f8f5fe, #f5f5ff, #f1f5ff, #edf6ff, #e9f6ff, #e3f7ff, #dcf8fe, #d6f8fc, #d2f9f7);">
+          <div class="col-10 pt-2 px-4">
+            <label for="formGroupExampleInput" class="form-label text-black">
+              <h5>Order information</h5>
+            </label>
+          </div>
+        </div>
+
+
+        <div class="row ">
+          <div class="col-8 mt-1" style="position: relative; left:94px;">
+          </div>
+          <div class="col-3" style="position: relative; left:94px; top: 10px; ">
+            <input type="text" class="form-control" placeholder="Search" id="inputEmail4"
+              style="background-color: rgba(248, 242, 242, 0.527);">
+          </div>
+        </div>
+
+
+        <div class="row p-5   px-5">
+          <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded"
+            style="background-color: rgba(248, 242, 242, 0.829); top: -30px; position: relative;">
+            <table class="table mt-5">
+              <thead>
+                <tr>
+                  <th scope="col">Order Id</th>
+                  <th scope="col">Customer Id</th>
+                  <th scope="col">Date & Time</th>
+                  <th scope="col">Discount</th>      
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="OrderInfoTable">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="col" style="position: relative; top: -70px;">
+          <nav class="mt-2">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item" aria-current="page">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" style="color: rgb(0, 255, 34);" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+
+    </section>
+
 
     <!-- ------------------------------------------------------------- -->
 
@@ -352,6 +426,7 @@
                 class="w-75  btn border" style="background-color: rgb(7, 243, 66);">Add Item</button></div>
           </div>
 
+          
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -366,22 +441,22 @@
                   <form id="itemform">
                     <div class="form-group px-2 p-2" style="width: 100%; ">
                       <label for="exampleInputEmail1">Item Code</label>
-                      <input type="email" class="form-control validation1" id="itemcode" aria-describedby="emailHelp"
-                        placeholder="I-0001">
+                      <input type="email" class="form-control border-2 validation1" id="itemcode" aria-describedby="emailHelp" placeholder="I-0001">
+                      <span class="description_alert"></span>
                     </div>
                     <div class="form-group px-2 p-2" style="width: 100%;">
                       <label for="exampleInputEmail1">Item Name</label>
-                      <input type="email" class="form-control validation2" id="itemNames" aria-describedby="emailHelp"
+                      <input type="email" class="form-control  border-2 validation2" id="itemNames" aria-describedby="emailHelp"
                         placeholder="Thilina Bandara">
                     </div>
                     <div class="form-group px-2 p-2" style="width: 100%;">
                       <label for="exampleInputEmail1">Price</label>
-                      <input type="email" class="form-control validation3" id="Itemprice" aria-describedby="emailHelp"
+                      <input type="email" class="form-control  border-2  validation3" id="Itemprice" aria-describedby="emailHelp"
                         placeholder="10000.00">
                     </div>
                     <div class="form-group px-2  p-2" style="width: 100%;">
                       <label for="exampleInputEmail1">Order qty</label>
-                      <input type="email" class="form-control validation4" id="QtyonHand" aria-describedby="emailHelp"
+                      <input type="email" class="form-control border-2 validation4" id="QtyonHand" aria-describedby="emailHelp"
                         placeholder="45">
                     </div>
                     <button type="submit" class="btn mt-5 " id="saveItems"
