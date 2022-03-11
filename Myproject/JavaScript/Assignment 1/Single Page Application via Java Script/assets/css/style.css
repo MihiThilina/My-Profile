@@ -11,3 +11,9 @@
     display: none;
 }
 
+.btn:hover{
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+

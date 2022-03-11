@@ -15,14 +15,12 @@ function updateRow() {
             let itemName = $(this).children(":eq(1)").text();
             let price = $(this).children(":eq(2)").text();
             let qtyOnHand = $(this).children(":eq(3)").text();
-
-            console.log(itemCode);
+           // console.log(itemCode);
             $("#itemcode").val(itemCode);
             $("#itemNames").val(itemName);
             $("#Itemprice").val(price);
             $("#QtyonHand").val(qtyOnHand);
         })
-
     });
 }
 
@@ -52,17 +50,8 @@ function saveItem() {
     let itemName = $("#itemNames").val();
     let price = $("#Itemprice").val();
     let qtyOnHand = $("#QtyonHand").val();
-
-   
     ItemDB.push(new Item(itemCode,itemName,price,qtyOnHand));
-
-    // ItemDB.push(new Item("I0-001",
-    //     "Detole",
-    //     "100",
-    //     "100"));
-
-    addValuesToItems("<option>" + itemCode + "</option>");
-    
+    addValuesToItems("<option>" + itemCode + "</option>");  
 }
 
 
@@ -70,7 +59,7 @@ function saveItem() {
 
 function loadAllItems() {
     $("#ItemTable").empty();
-    for (var i of ItemDB) {
+    for(var i of ItemDB) {
         let row = `<tr><td>${i.getItemCode()}</td><td>${i.getItemName()}</td><td>${i.getItemPrice()}</td><td>${i.getItemQty()}</td>
                 <td><button type="button" class="btn-sm  btnDeleteItem btn-danger">Delete</button>
                 <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn-sm border btn-success updaterow" style="width: 11%;  "><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -83,7 +72,7 @@ function loadAllItems() {
     updateRow();
 }
 
-function clear() {
+function clear(){
     $("#itemcode").val("");
     $("#itemNames").val("");
     $("#Itemprice").val("");

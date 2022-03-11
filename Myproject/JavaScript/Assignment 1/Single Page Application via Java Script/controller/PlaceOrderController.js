@@ -1,6 +1,7 @@
 
 $(".txtOrderId").text(generateOrderNumber());
-$("#cmbItemId").append("<option> None </option>");
+$("#cmbItemId").append("<option> Select </option>");
+$("#cmbcustormerId").append("<option> Select </option>");
 
 function generateOrderNumber() {
     try {
@@ -160,7 +161,7 @@ function addToCart() {
           return;
         }
     }
-
+   
     Carts.push(new cart(itemCode,itemName,itemPrice,orderQty,total,disc,fulltoal));
     
 }

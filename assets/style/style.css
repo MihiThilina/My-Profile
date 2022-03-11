@@ -290,7 +290,7 @@ body {
     width: 10%;
     height: 8%;
     text-align: center;
-    right: 280px;
+    right: 272px;
     top: 170px;
 }
 #skills h2{
@@ -324,6 +324,12 @@ body {
     width: 12vw;
     border-radius: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#skills-flex-box div:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+  
 }
 #skills-flex-box div img{
     width: 10vw;
@@ -436,7 +442,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .assigment-cover-background > div > img:nth-child(4){
-
     width: 37%;
     position: absolute;
     bottom: 28px;
