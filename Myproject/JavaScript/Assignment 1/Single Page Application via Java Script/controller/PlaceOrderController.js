@@ -15,6 +15,7 @@ $("#btnAddtoCart").click(function () {
             addToCart();
             ReduceItemQty($("#OrderQty").val());
             loadCartTable();
+            clearAddtoCart();
         }
     }else{
         alert("type karala nane");
@@ -43,6 +44,7 @@ $(".comfirmOrders").click(function(){
    generateOrderNumber();
    saveAllOrders();
    loadAllConfirmOrder();
+   Carts=[];
    $("#cartTabale").empty();
    clearAll();
 });
@@ -104,9 +106,8 @@ function addValuesToItems(value) {
     let totals =$("#txtTotal").text();
      
     
-    for(var i of Carts){
-        OrderDB.push(new Orders(oId,cusid,date,i.getdiscount(),totals));
-    }
+    
+        OrderDB.push(new Orders(oId,cusid,date,discount,totals));
  }
 
  function saveOrderDetails(){ }
@@ -148,10 +149,9 @@ function addToCart() {
   let total = itemPrice * orderQty;
   let fulltoal = $("#txtTotal").text();
 
-   
+  // Carts =[];
    Calculatetotal($("#OrderQty").val(),$("#itemprice").val(),$("#txtDiscount").val());
-
-
+  
     for(var i in Carts){
         if(Carts[i].getcartICode()===itemCode){
           var newqty  =+Carts[i].getcartOQty() +  +orderQty;

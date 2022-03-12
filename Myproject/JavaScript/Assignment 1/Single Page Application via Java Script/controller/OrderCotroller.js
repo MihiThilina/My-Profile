@@ -1,4 +1,9 @@
 
+
+
+
+
+
 function loadAllConfirmOrder(){
     $("#OrderInfoTable").empty();
     for(var i of OrderDB){
@@ -15,6 +20,12 @@ function loadAllConfirmOrder(){
     }
   }
   
+
+
+
+
+
+
 
   $("#OrderSerachId").keyup(function(){
     if($("#OrderInfoTable").val() !== ""){
