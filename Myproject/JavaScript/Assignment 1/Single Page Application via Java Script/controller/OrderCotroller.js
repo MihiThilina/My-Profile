@@ -14,3 +14,23 @@ function loadAllConfirmOrder(){
    
     }
   }
+  
+
+  $("#OrderSerachId").keyup(function(){
+    if($("#OrderInfoTable").val() !== ""){
+        $("#ItemTable").empty();
+        let id = $("#OrderSerachId").val();
+        for(const i in OrderDB){
+            if(OrderDB[i].getOid()===id){
+                let row = `<tr>
+                <td>${OrderDB[i].getOid()}</td>
+                <td>${OrderDB[i].getCustID()}</td>
+                <td>${OrderDB[i].getDate()}</td>
+                <td>${OrderDB[i].getDiscount()}</td>
+                <td>${OrderDB[i].getTot()}</td>
+                </tr>`;
+                $("#OrderInfoTable").append(row);
+            }
+        }
+    }
+});

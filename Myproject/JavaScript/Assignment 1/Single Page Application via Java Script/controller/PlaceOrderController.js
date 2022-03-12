@@ -3,21 +3,7 @@ $(".txtOrderId").text(generateOrderNumber());
 $("#cmbItemId").append("<option> Select </option>");
 $("#cmbcustormerId").append("<option> Select </option>");
 
-function generateOrderNumber() {
-    try {
-        let lastOId =OrderDB[OrderDB.length - 1].getOid();
-        let newOId = parseInt(lastOId.substring(1, 4)) + 1;
-        if (newOId < 10) {
-            $(".txtOrderId").text("O00" + newOId);
-        } else if (newOId < 100) {
-            $(".txtOrderId").text("O0" + newOId);
-        } else {
-            $(".txtOrderId").text("O" + newOId);
-        }
-    } catch (e) {
-        $(".txtOrderId").text("O001");
-    }
-};
+
 
 $("#btnAddtoCart").click(function () {
     let itemQty =parseInt($("#itemqty").val());
@@ -35,6 +21,21 @@ $("#btnAddtoCart").click(function () {
     }
 });
 
+function generateOrderNumber() {
+    try {
+        let lastOId =OrderDB[OrderDB.length - 1].getOid();
+        let newOId = parseInt(lastOId.substring(1, 4)) + 1;
+        if (newOId < 10) {
+            $(".txtOrderId").text("O00" + newOId);
+        } else if (newOId < 100) {
+            $(".txtOrderId").text("O0" + newOId);
+        } else {
+            $(".txtOrderId").text("O" + newOId);
+        }
+    } catch (e) {
+        $(".txtOrderId").text("O001");
+    }
+};
 
 
 

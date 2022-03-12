@@ -1,7 +1,7 @@
 
  
   //-----------------Customer Details--------------------------------------------
-
+  CustormerSerach
 
   $("#saveCustormer").click(function (e){
     saveCustormers();
