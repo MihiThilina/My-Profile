@@ -13,17 +13,10 @@ body {
 /* 
 /---------------------------MENU BAR--------------------------/ */
 
-.top_bar {
-    justify-content: space-around;
-    z-index: 10;
-    position: fixed;
-    background-color: rgba(222, 222, 222, 1);
-    width: 100vw;
-}
 
 .nav-link {
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     flex-wrap: wrap;
     margin: 20px 0;
 }
@@ -39,6 +32,7 @@ body {
     color: black;
     font-size: 28px;
     letter-spacing: 1px;
+   
 }
 
 
@@ -89,78 +83,20 @@ body {
   }
    
 
-#home_rectangle{
-    width: 5vw;
-    border: 4px solid #a9a0a9;
-    height: 10vh;
-    transform: rotate(47deg);
-    background-color: white;
-}
-
-#home_rectangle li>a{
-   position: absolute;
-   transform: rotate(313deg);
-   top: 17px;
-   right: 0;
-   bottom: 17px;
-   left: 0;  
-}
-
 /* /-------------------------------INFO----------------------------/ */
 
 #hero-section{
     position: relative;
-    height: 713px;
+    height: 403px;
     top: 0;
 }
 
-#main_page {
-    background-image: url('../images/MainPic.jpg');
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-}
 
-#main_titleHello {
-    position: absolute;
-    left: 210px;
-    top: 38vh;
-    font-family: 'Rosarivo', serif;
-    font-size: 96px;
-}
-
-#main_titleName {
-    position: absolute;
-    left: 120px;
-    top: 55vh;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 96px;
-}
-
-#social-media-icon {
-    position: absolute;
-    left: 212px;
-    top: 75vh;
-}
-
-#social-media-icon img:nth-child(1):hover{
-    cursor: pointer;
-    transform: scale(1.6);
-    transition: 0.5s;
-    
-}
-
-#social-media-icon img{
-    padding: 6px;
-}
 /* /---------------------------------------ABOUT PAGE -----------------------------------------------/ */
 .about-section {
     position: relative;
     top: 0;
+    border: 1px solid darkblue;
     height:650px;
     display:flex;
     justify-content:center;
@@ -170,12 +106,12 @@ body {
 .about-section p {
     position:absolute;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    top: 430px;
-    left:200px;
-    right:200px;
+    top: 180px;
+    left: 600px;
+    width: 40%;
     bottom:0;
     line-height :30px;
-    text-align:center;
+    text-align:left;
 }
 
 #about-section-button{
@@ -186,9 +122,9 @@ body {
 
 .CONYACTbtn {
     position:relative;
-    top:262px;
-    left:24px;
-    background-color: #660058;
+    top:62px;
+    left:-445px;
+    background-color: #5E5E5E;
     border: none;
     color: white;
     height: 40px;
@@ -211,9 +147,9 @@ body {
 .DOWNLOADDbtn {
     position:relative;
     height: 40px;
-    top:270px;
-    left:25px;
-    background-color: #660058;
+    top:70px;
+    left:-445px;
+    background-color: #5E5E5E;
     border: none;
     color: white;
     padding: 13px 23px 12px 23px;
@@ -238,22 +174,39 @@ body {
     font-family: 'Rosarivo', serif;
     position: absolute;
     text-align: center;
-    top:50px;
+    top:20px;
+    right:150px;
     font-size: 30px;
     text-decoration: none;
     font-style: normal;
 }
 
-#profile_pic img {
+#profile_pic{
     position: absolute;
-    top: 18vh;
-    border-radius: 5% 40% 40% 40%;
+    background-color: #D3D3D3;
+    width: 25%;
+    height: 70%;
     display: block;
-    left:0;
-    right:0;
+    left:140px;
+    top: 83px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
+#profile_pic div{
+   text-align: center;
+}
+
+#profile_pic img{
+    width: 90%;
+    height: 60vh;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+
 /* 
 /------------------------------SKILLS-------------------------------------------/ */
 
