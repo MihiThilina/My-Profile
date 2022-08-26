@@ -211,7 +211,7 @@ body {
 /------------------------------SKILLS-------------------------------------------/ */
 
 .skills-section{
-    height: 500px;
+    height: 450px;
     position: relative;
     top: 0;
 }
@@ -280,7 +280,7 @@ body {
 /* /---------------------project/ */
 
 .project-section{
-    height: 900px;
+    height: 1000px;
     background-color:white;
     position: relative;
     top: 0;
@@ -305,16 +305,64 @@ body {
 }
 
 .projects{
-    border: 1px solid red;
     position: relative;
     width: 65%;
-    top: 150px;
+    top: 130px;
     height: 70%;
     margin: auto;
-
 }
 
+.first-side{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    top: 30px;
+    left:40px;
+}
 
+.first-side div{
+    width: 73%;
+    height: 60%;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.first-side div:nth-child(2){
+    width: 73%;
+    height: 50%;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.second-side{
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    top: 40px;
+    right:40px;
+}
+
+.second-side div{
+    width: 83%;
+    height: 20%;
+    position: relative;
+    top:10px;
+    padding: 100px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.second-side div:nth-child(2){
+    position: relative;
+    top: 30px;
+}
+
+.second-side div:nth-child(3){
+    position: relative;
+    top: 50px;
+}
 
 /* /-----------education/ */
 
