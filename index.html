@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@1&display=swap" rel="stylesheet">
@@ -98,9 +98,9 @@
         <section class="skills-section">
             <div>
                 <div>
-                        <dfn id="skills">
-                            <h2> Skills </h2>
-                        </dfn>
+                    <dfn id="skills">
+                        <h2> Skills </h2>
+                    </dfn>
                     </a>
                 </div>
             </div>
@@ -130,18 +130,18 @@
             </dfn>
 
             <div class="projects">
-                
+
                 <div class="first-side">
                     <div></div>
                     <div></div>
                 </div>
-                
+
                 <div class="second-side">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                
+
             </div>
 
         </section>
@@ -155,8 +155,67 @@
 
             </div>
 
+            <div class="education_leval">
+                <div class="first_div">
+                    <div>
+                        <section>
+                            <section style="position: relative; top:16px" class="icon_eduction">
+                                <img
+                                    src="data:image/png;base64,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">
+                            </section>
+                        </section>
+                        <p class="paragraph">2004</p>
+                        <div class="tagart">
+                            <h4>Honours in Fine Arts</h4>
+                        </div>
+                        <p style="color: #838383;" class="paragraph">Harvard University</p>
+                    </div>
+                    <div>
+                        <section>
+                            <section style="position: relative; top:16px" class="icon_eduction">
 
+                                <img
+                                    src="data:image/png;base64,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">
+                            </section>
+                            <p class="paragraph">2004</p>
+                            <div class="tagart">
+                                <h4>Honours in Fine Arts</h4>
+                            </div>
+                            <p style="color: #838383;" class="paragraph">Harvard University</p>
+                    </div>
+                </div>
+                <div class="second_div">
+                    <div>
+                        <section>
+                            <section style="position: relative; top:16px" class="icon_eduction">
 
+                                <img
+                                    src="data:image/png;base64,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">
+                            </section>
+                        </section>
+                        <p class="paragraph">2004</p>
+                        <div class="tagart">
+                            <h4>Honours in Fine Arts</h4>
+                        </div>
+
+                        <p style="color: #838383;" class="paragraph">Harvard University</p>
+                    </div>
+                    <div>
+                        <section>
+                            <section style="position: relative; top:16px" class="icon_eduction">
+
+                                <img
+                                    src="data:image/png;base64,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">
+                            </section>
+                        </section>
+                        <p class="paragraph">2004</p>
+                        <div class="tagart">
+                            <h4>Honours in Fine Arts</h4>
+                        </div>
+                        <p style="color: #838383;" class="paragraph">Harvard University</p>
+                    </div>
+                </div>
+            </div>
 
         </section>
         </section>
