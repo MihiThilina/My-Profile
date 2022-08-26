@@ -96,9 +96,9 @@ body {
 .about-section {
     position: relative;
     top: 0;
-    border: 1px solid darkblue;
     height:650px;
     display:flex;
+    background-color: #EFEFEF;
     justify-content:center;
     align-items:center;
 }
@@ -107,7 +107,7 @@ body {
     position:absolute;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     top: 180px;
-    left: 600px;
+    right: 200px;
     width: 40%;
     bottom:0;
     line-height :30px;
@@ -122,8 +122,8 @@ body {
 
 .CONYACTbtn {
     position:relative;
-    top:62px;
-    left:-445px;
+    top:170px;
+    left:-315px;
     background-color: #5E5E5E;
     border: none;
     color: white;
@@ -147,8 +147,8 @@ body {
 .DOWNLOADDbtn {
     position:relative;
     height: 40px;
-    top:70px;
-    left:-445px;
+    top:179px;
+    left:-315px;
     background-color: #5E5E5E;
     border: none;
     color: white;
@@ -174,8 +174,8 @@ body {
     font-family: 'Rosarivo', serif;
     position: absolute;
     text-align: center;
-    top:20px;
-    right:150px;
+    top:60px;
+    right:340px;
     font-size: 30px;
     text-decoration: none;
     font-style: normal;
@@ -199,10 +199,10 @@ body {
 }
 
 #profile_pic img{
-    width: 90%;
+    width: 97%;
     height: 60vh;
     position: relative;
-    top: 100px;
+    top: 40px;
     left: 50px;
 }
 
@@ -211,31 +211,9 @@ body {
 /------------------------------SKILLS-------------------------------------------/ */
 
 .skills-section{
-    height: 700px;
+    height: 500px;
     position: relative;
     top: 0;
-}
-
-.section-cover-pic{
-    width: 98.7vw;
-    height:20vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    position: relative;
-    top: 0;
-    left: 0
-}
-
-.Skills-pic{
-    height:40vh; 
-    background-repeat: no-repeat;
-    background-attachment: revert;
-    background-position: right;
-    position: absolute;
-    top: 30px;
-    box-shadow: black;
-    right:190px;
 }
 
 #skills{
@@ -252,15 +230,15 @@ body {
     letter-spacing: 4px; 
     font-style: normal;
     position: relative;
-    left: 9px;
-    top: -18px;
+    left: -1050px;
+    top: -120px;
 }
 
 
 /* /Skills Nav Bar/ */
 
 #skills-flex-box{
-    top: 200px;
+    top: 120px;
     height: 300px;
     position: relative;
     display: flex;
@@ -295,139 +273,9 @@ body {
     margin: auto;
 }
 
-/* /--------------------Assignment Section----------------------------------/ */
-
-
-.assignment-section{
-    height: 720px;
-    background-color:#EFEFEF;
-    position: relative;
-    top: 0;
-}
-.assignment-section p{
-    position: relative;
-    text-align: center;
-}
-#assignment-paragraph-topic{
-    font-size: 28px;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-}
-#assignment-paragraph{
-    position: absolute;
-    font-size: 26px;
-    letter-spacing: 3px;
-    text-align: left;
-    left: 50%;
-    top: 55%;
-}
-  
-#assigment{
-    font-family: 'Rosarivo', serif;
-    font-size: 30px;
-    font-style: normal;
-    position: absolute;
-    right: -15px;
-    top: 23%;
-    letter-spacing: 3px;
-    transform: rotate(90deg);
-}
-
-.vertical-line{
-    position:absolute;
-    right: 120px;
-    top: 48%;
-    height: 14%;
-    background-color: black;
-    border: 3px solid black;
-}
-
-.vertical-line div{
-    position:absolute;
-    top: 115%;
-    height: 14%;
-    right: -6px;
-    border-radius: 100%;
-    background-color: black;
-    border: 6px solid black;
-}
-
-.assigment-cover-background{
-    position: relative;
-    top:10%;
-    width:24%;
-    height: 60%;
-    background-color: #C4C4C4;
-}
-
-.assigment-cover-background div{
-    position: absolute;
-    top:10%;
-    left: 20%;
-    width:160%;
-    height: 120%;
-    background-color:white;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
-
-.assigment-cover-background > div > img:nth-child(1){
-    width: 37%;
-    position: absolute;
-    top: 28px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    left: 50px;
-}
-
-.assigment-cover-background > div > img:nth-child(2){
-    width: 37%;
-    position: absolute;
-    top: 28px;
-    right: 50px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-.assigment-cover-background > div > img:nth-child(3){
-    width: 37%;
-    position: absolute;
-    bottom: 28px;
-    left: 50px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-.assigment-cover-background > div > img:nth-child(4){
-    width: 37%;
-    position: absolute;
-    bottom: 28px;
-    right: 50px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-#assigments img:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: 0.5s;
-}
 
 
 
-
-
-/* #first-rectangle img:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-     transition: 0.5s;
- }
-  */
-.view-button{
-    position: absolute;
-    bottom: 140px;
-    right: 575px;
-    padding: 13px 23px 12px 23px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow:0 1px 2px #5e5d5b;
-    border: none;
-    background-color:#C4C4C4;
-}
 
 /* /---------------------project/ */
 
@@ -447,7 +295,7 @@ body {
     letter-spacing: 3px;
 }
 
-#project{
+#topic_project{
     font-family: 'Rosarivo', serif;
     font-size: 28px;
     font-style: normal;
@@ -456,53 +304,14 @@ body {
     position:relative;
 }
 
-
-/* -------------------------------------------- */
-
-.project-section nav{
-    position: absolute;
-    width: 80%;
-    right: 10%;
-    top: 22%;
-    bottom: 10%;
-    background-color: #C4C4C4;
-}
-
-.navigation-bar1{
-    position: absolute;
-    right: 2%;
-    top: 30px;
-    height: 8%;
-    width: 4%;
-    background-color: black;
-}
-.navigation-bar1 div{
-    width: 0;
-    height: 0;
+.projects{
+    border: 1px solid red;
     position: relative;
-    left: 14px;
-    top: 13px;
-	border-top: 10px solid transparent;
-	border-left: 20px solid white;
-	border-bottom: 10px solid transparent;
-}
-.navigation-bar2{
-    position: absolute;
-    right: 7%;
-    top: 50px;
-    height: 8%;
-    width: 4%;
-    background-color: black;
-}
-.navigation-bar2 div{
-    width: 0;
-	height: 0;
-    position: relative;
-    left: 10px;
-    top: 13px;
-	border-top: 10px solid transparent;
-	border-right: 20px solid white;
-	border-bottom:10px solid transparent;
+    width: 65%;
+    top: 150px;
+    height: 70%;
+    margin: auto;
+
 }
 
 
@@ -511,10 +320,11 @@ body {
 
 
 .education-section{
-    height: 1000px;
+    height: 500px;
     background-color:#EFEFEF;
     position: relative;
     top: 0;
+    border: 1px solid darkblue;
 }
 
 #education{
@@ -528,78 +338,10 @@ body {
     letter-spacing: 4px;
 }
 
-.timeline-section{
-	min-height: 100vh;
-	padding: 100px 15px;
-}
-.timeline-items{
-  
-	max-width: 80%;
-	margin:auto;
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-}
-.timeline-items::before{
-	content: '';
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	position: absolute;
-	width: 4px;
-	height: 100%;
-	background-color: #DEDEDE;
-	left: calc(50% - 1px);
-}
-.timeline-item{
-  
-	margin-bottom: 40px;
-	width: 100%;
-	position: relative;
-}
-.timeline-item:last-child{
-	margin-bottom: 0;
-}
-.timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
-	text-align: right;
-}
-.timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);
-}
-.timeline-dot{
-	height: 16px;
-	width: 16px;
-	background-color: #660058;
-	position: absolute;
-	left: calc(50% - 8px);
-	border-radius: 50%;
-	top:10px;
-}
-.timeline-date{
-	font-size: 23px;
-    font-weight: 1000;
-	color: #2e2e2e;
-	margin:6px 0 15px;
-}
-.timeline-date:hover{
-    cursor: pointer;
-    color: #8f6900;
-}
- .timeline-content{
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	padding: 30px;
-	border-radius: 5px;
-}
 
-.timeline-content h3{
-    font-size: 20px;
-	color: black;
-	margin:0 0 10px;
-	text-transform: capitalize;
-	font-weight: 1500;
-}
 /* /------------------------contact-section/ */
 .contact-section{
+    border: 1px solid red;
     height: 250px;
     background-color:white;
     position: relative;
@@ -625,101 +367,14 @@ body {
  /* /footer section/ */
 
 .footer-section{
+    height: 100px;
+    background-color: #D7D7D7;
+    position: relative;  
+}
+
+.footer-section h5 {
   
-    height: 350px;
-    background-color: #1B1B1B;
-    position: relative;
-    top: 0;
-
 }
-#links{
-    display: flex;
-    justify-content: center;
-    top:25%;
-    position:relative;
-}
-#links div{
-    height: 48px;
-    width: 48px; 
-    border-radius:50%;
-    background-color: #C4C4C4;
-    margin: 15px;  
-}
-
-#links div img{
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-}
-.footer-section h5{
-    text-align: center;
-}
-.first{
-    position: relative;
-    top: 32%;
-    color: #EFEFEF;
-    font-size: 14px;
-    font-family: 'Rosarivo', serif;
-}
-.secound{
-    position: relative;
-    color: #EFEFEF;
-    top: 38%;
-    font-size: 14px;
-    font-family: 'Rosarivo', serif;
-    
-}
-
-
-
-#name-Thilina{
-    text-align: center;
-    list-style: none;
-    position: relative;
-    top: 10%;
-}
-
-
-
-#name-Thilina a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 60px;  
-    letter-spacing: 8px;
-   
-}
-
-
-.side-line{
-    position: absolute;
-    width: 80%;
-    height: 6px;
-    top: 35%;
-    left: 10%;
-    background-color: #2F2C2C;
-    filter: drop-shadow(0 0 0.75rem black);
-}
-
-.nav-link2{
-    text-decoration: none;
-    justify-content: center;
-    display: flex;
-   
-}
-.nav-link2 li{
-   
-    margin: 15px;
-    list-style: none;
-}
-.nav-link2 li>a{
-    font-size: 18px;
-    text-decoration: none;
-    color: #EFEFEF;
-    position: relative;
-    top: 300%;
-}
-
 
 
 
