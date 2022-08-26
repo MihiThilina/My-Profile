@@ -517,9 +517,15 @@ body {
 }
 
 .footer-section h5 {
-  
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
 }
 
+.footer-{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
 
 
 
