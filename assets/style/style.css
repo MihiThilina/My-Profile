@@ -211,9 +211,10 @@ body {
 /------------------------------SKILLS-------------------------------------------/ */
 
 .skills-section{
-    height: 450px;
+    height: 480px;
     position: relative;
     top: 0;
+    
 }
 
 #skills{
@@ -221,8 +222,9 @@ body {
     width: 10%;
     height: 8%;
     text-align: center;
-    right: 272px;
+    right: 32px;
     top: 170px;
+    
 }
 #skills h2{
     font-family: 'Rosarivo', serif;
@@ -238,8 +240,8 @@ body {
 /* /Skills Nav Bar/ */
 
 #skills-flex-box{
-    top: 120px;
-    height: 300px;
+    top: 130px;
+    height: 140px;
     position: relative;
     display: flex;
     align-items: center; 
@@ -250,9 +252,12 @@ body {
 #skills-flex-box div{
     background-color: white;
     display: flex;
-    height: 26vh;
-    margin: 40px;
-    width: 12vw;
+    height: 13vh;
+    border: 1px solid rgb(129, 72, 72);
+    margin: 30px;
+    position: relative;
+    top: -5px;
+    width: 8vw;
     border-radius: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
@@ -263,8 +268,8 @@ body {
   
 }
 #skills-flex-box div img{
-    width: 10vw;
-    height: 20vh;
+    width: 5vw;
+    height: 10vh;
     position: relative;
     top: 0;
     bottom: 0;
@@ -288,7 +293,7 @@ body {
 .project-section h4{
     position: relative;
     text-align: center;
-    top: 80px;
+    top: 30px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 16px;
 
@@ -299,7 +304,7 @@ body {
     font-family: 'Rosarivo', serif;
     font-size: 28px;
     font-style: normal;
-    top:100px; 
+    top:40px; 
     text-align: center;
     position:relative;
 }
@@ -311,7 +316,48 @@ body {
     height: 70%;
     margin: auto;
 }
+/* ------------- */
 
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.project-filter{
+    display: flex;
+    position: absolute;
+    top: 109px;
+    left: 400px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(237,237,237,0.6);
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.project-filter li{
+    margin: 10px;
+    padding: 5px 20px;
+    color: #9b9b9b;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.project-filter-active{
+    background-color: #f0f0f0;
+    color: #272727;
+}
+
+
+
+
+/* ----------------- */
 .first-side{
     width: 45%;
     height: 90%;
@@ -320,12 +366,24 @@ body {
     left:40px;
 }
 
+
+
 .first-side div{
     width: 73%;
     height: 60%;
     margin: auto;
-    border: 1px solid red;
 }
+.first-side div:nth-child(1) img:nth-child(1){
+    position: absolute;
+   top: 50px;
+   left:70px;
+}
+.first-side img{
+  position: absolute;
+   top: 20px;
+   left:10px;
+}
+
 
 .first-side div:nth-child(2){
     width: 73%;
@@ -333,7 +391,6 @@ body {
     position: relative;
     top: 20px;
     margin: auto;
-    border: 1px solid red;
 }
 
 .second-side{
@@ -344,15 +401,21 @@ body {
     right:40px;
 }
 
+
 .second-side div{
     width: 83%;
     height: 20%;
     position: relative;
     top:10px;
     padding: 100px;
-    margin: auto;
-    border: 1px solid red;
 }
+
+.second-side  img{
+   position: absolute;
+   top: 5px;
+   left: 65px;
+}
+
 
 .second-side div:nth-child(2){
     position: relative;
@@ -401,7 +464,7 @@ body {
 }
 .tagart{
     position: relative;
-    width: 230px;
+    width: 250px;
     height: 60px;
     left: 180px;
     top: -50px;
@@ -445,7 +508,6 @@ body {
 }
 
 .first_div div:nth-child(2){
-    
     width: 50%;
     height: 100%;
 }

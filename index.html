@@ -72,9 +72,9 @@
             </dfn>
 
             <div id="profile_pic">
-                <div>
+                <!-- <div>
                     <a id="photo" href="#photo"><img src="assets/images/Myimg.jpg" alt="My pic" width="250"></a>
-                </div>
+                </div> -->
             </div>
             <p><b>I am Mihithilina Bandara. I am currently studying
                     Software Engineering at IJSE, Panadura. I have
@@ -100,7 +100,7 @@
             <div>
                 <div>
                     <dfn id="skills">
-                        <h2> Skills </h2>
+                        <h2> Skills  </h2>
                     </dfn>
                     </a>
                 </div>
@@ -112,11 +112,18 @@
                     <div><img src="assets/images/mysql-.png"></div>
                     <div><img src="assets/images/Nodejs.png"></div>
                     <div><img src="assets/images/html-5.png"> </div>
-
-
                     <div><img src="assets/images/hibernate2.png"></div>
-                    <div><img src="assets/images/adobe-illustrator-logo.png"></div>
+                    <div><img src="assets/images/expressjs.png"></div>
                 </section>
+                <section id="skills-flex-box">
+                    <div><img src="assets/images/mongodb.png"> </div>
+                    <div><img src="assets/images/tomcat.png"></div>
+                    <div><img src="assets/images/github-ic.png"></div>
+                    <div><img src="assets/images/spring-framework-.png"> </div>
+                    <div><img src="assets/images/react.png"></div>
+                    <div><img src="assets/images/npm-logo-png-transparent.png"></div>
+                </section>
+                
             </nav>
         </section>
 
@@ -130,17 +137,50 @@
                 <h2> PROJECT </h2>
             </dfn>
 
+            <ul class="project-filter">
+                <li class="list project-filter-active" data-filter="all">All</li>
+                <li class="list" data-filter="app">Appliction</li>
+                <li class="list" data-filter="websiteClone">Website Clones</li>
+                <li class="list" data-filter="html/css/js">HTML/CSS</li>
+                <li class="list" data-filter="bootstrap">Bootstrap 5</li>
+            </ul>
+
             <div class="projects">
 
                 <div class="first-side">
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <!-- 1 (all)-->
+                        <a href="" class="project-box app">
+                            <img style="width:300px; height: 270px;" src="assets/images/image5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <!-- 1 (all)-->
+                        <a href="" class="project-box web">
+                            <img style="width:300px; height: 270px;" src="assets/images/image5.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
 
                 <div class="second-side">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <!-- 1 (all)-->
+                        <a href="" class="project-box desing">
+                            <img style="width:240px; height:190px;" src="assets/images/image5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <!-- 1 (all)-->
+                        <a href="" class="project-box ai">
+                            <img style="width:240px; height: 190px;" src="assets/images/image5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <!-- 1 (all)-->
+                        <a href="" class="project-box app">
+                            <img style="width:240px; height: 190px;" src="assets/images/image5.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -165,11 +205,11 @@
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFdklEQVRoge2ZW2xUVRiFv/9MkSmhCJIQRXgBNFG5WAQ6JaCiRgwRFQwNAU2g0wrxAsQHLtEA6oOSeCEQCSmd1luAaAQ1gSCKFYF2pkYLKrwJ0QAJJPWG2hboWT4wU06HtnPOzFR9YL3MnL33//9rzd5n7X3OwFVcRU6w3khaV6twWDxhYhmAjPWtRtW0hdaa71p5FXD0fV1z7k8WIFYDN6Z1n5V4XQPYMLnMWvJVMy8CMhBPR16F5CTAs1RWAEPTuk/LWAfQU3+uSysrAUGXSm8urUACciXSG0J8Cch34Xzm61FAb7tKPvJ3KeDftsNc6nUS8F/4eK717f9APB1B+FhDtWaasZmufBpeaXXYko1PH4ypqMBYLwg54o2SqB0JmqOuVuGwS6XByi75icUWj+kMMMTT0W6w6m+HjblsMPFqLcVYn7yU4CMHXshWSD+XZwQvAyFP1xlH0Jg2PiRYFnaprKtVOFsBEkeAi8lLM5glaGqIaUcipnFByIddKgXL0sgDJGz3BvUd1J9F3W73OSyj+lqNccRaxCw6G0bGGcmwfE4J1v36F1XmMyCnc0t8i8YSYo0fIRnOV6cE67w/6BX7gEfICq50gN4VYsQllvohnkK3O3FvWuvX1RrdbiwH5gNOD0Mz1sl4FqqrVbjQpTuSWc9IMu8GoLK7Ma4omVxh6SbTCb4Oc/GY5Lk8TQ73SIZ7LR0CduDyYqTSvutqQGABLQ6FmR5iuhLixyTkEneMRBAhgQVEomZ+CbUaVQA9Ck6z6bTZVhpHIV6KVNianAWkkElI8tP3/uKtZXC7C2sMHvFwbYlErV9qTE8O4AvTFlpradQ2tjiMFCwBTnm6h6aRPyVY0uIwsjRqGY8qJVE7Uhq12QbFnuZC75icBaSQElJUxAiMRXQWclZipVvETX6Ip6On81NBtoS7w21ldh6oqqvVO4XtzAFoCfFBb7zUgiwExN/TgMhj9kemcUnC7wbNTVswPoGXkJ1ncdAY32jjyaAhgQVIPH/oLY0MGpcJiSrdDDwXNC6bm7go1M6e+reV6RWib8S3aBgOu4H+QWOzdaFRzkUa6mt0V5bxHWis1r04NMjIalazcaELQB9guCO+SMS0zRxenbTQDgdJ0lCj8eay3DXmcPmHTOX2Db8COrZ0M2ZLxLj0HO0I5stlfiKmJsF+g6/M4QSi2blAM4Dbh8EYg9svMsJC3Im4GzEu7RxwBodyXHZ5auZNQBMwPpl2rGNMELwpMdOjsBgoFiyTe6nNLbjcicCcbml9gstTiMc7RBnf+iHm6x4QbPZ8X2WiX0m5PQRMFew0gro3GLQJdkpMiUTt4ZAxEGN1xwCXTR01pU5z5b32dZirW6uCwuF8A4wFMPFjqJ17JiyynwGaajWwTdwHTAFuNZcRcrgOUZSscg7RjHECcRQ4WHCRzycsst8BGms03BVfAiOSpJp+KmJiWZm1S7JEDVuBuR5K2yJRm+dbAEAipnGCA5AkBScdsWBShe3zm6MrxGOaBmwFrk82nQuJyRMr7AeARI2mS+zpInR6JGp7fdtoSdSOmDEPOJ9sGuYan8Vj2hrfojuCEq+vVnE8pm3APg/58zjMTZEHQJdmvQuMgSz+oYnHNAX4kM5v80AcxmG/if3Acbk0u9fSXHqMtoNDuLZPmBskRpkxETGDlClcxhmJR0sr7JC3sbsZMOOBknL7NKu/mBprNLxdbDJ4MJv4KyA+RjwdqbSTV3RJ1ljDdkGZp3l7STnzzExZCUghHtMUwbMOzBD0DRJr0CZjlwuvTS63+p7GSrLGWu6XGA18H4naXk+e3NHhQmIqxi2IkRiDvC5kLr/I4ThwDHGgr8O+4oX2Wz7qX8VV5IB/ANb7XdlaMiMHAAAAAElFTkSuQmCC">
                             </section>
                         </section>
-                        <p class="paragraph">2004</p>
+                        <p class="paragraph">2019</p>
                         <div class="tagart">
-                            <h4>Honours in Fine Arts</h4>
+                            <h4>GCE Advanced Level</h4>
                         </div>
-                        <p style="color: #838383;" class="paragraph">Harvard University</p>
+                        <p style="color: #838383;" class="paragraph">St Joseph Vaz College</p>
                     </div>
                     <div>
                         <section>
@@ -178,11 +218,11 @@
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFdklEQVRoge2ZW2xUVRiFv/9MkSmhCJIQRXgBNFG5WAQ6JaCiRgwRFQwNAU2g0wrxAsQHLtEA6oOSeCEQCSmd1luAaAQ1gSCKFYF2pkYLKrwJ0QAJJPWG2hboWT4wU06HtnPOzFR9YL3MnL33//9rzd5n7X3OwFVcRU6w3khaV6twWDxhYhmAjPWtRtW0hdaa71p5FXD0fV1z7k8WIFYDN6Z1n5V4XQPYMLnMWvJVMy8CMhBPR16F5CTAs1RWAEPTuk/LWAfQU3+uSysrAUGXSm8urUACciXSG0J8Cch34Xzm61FAb7tKPvJ3KeDftsNc6nUS8F/4eK717f9APB1B+FhDtWaasZmufBpeaXXYko1PH4ypqMBYLwg54o2SqB0JmqOuVuGwS6XByi75icUWj+kMMMTT0W6w6m+HjblsMPFqLcVYn7yU4CMHXshWSD+XZwQvAyFP1xlH0Jg2PiRYFnaprKtVOFsBEkeAi8lLM5glaGqIaUcipnFByIddKgXL0sgDJGz3BvUd1J9F3W73OSyj+lqNccRaxCw6G0bGGcmwfE4J1v36F1XmMyCnc0t8i8YSYo0fIRnOV6cE67w/6BX7gEfICq50gN4VYsQllvohnkK3O3FvWuvX1RrdbiwH5gNOD0Mz1sl4FqqrVbjQpTuSWc9IMu8GoLK7Ma4omVxh6SbTCb4Oc/GY5Lk8TQ73SIZ7LR0CduDyYqTSvutqQGABLQ6FmR5iuhLixyTkEneMRBAhgQVEomZ+CbUaVQA9Ck6z6bTZVhpHIV6KVNianAWkkElI8tP3/uKtZXC7C2sMHvFwbYlErV9qTE8O4AvTFlpradQ2tjiMFCwBTnm6h6aRPyVY0uIwsjRqGY8qJVE7Uhq12QbFnuZC75icBaSQElJUxAiMRXQWclZipVvETX6Ip6On81NBtoS7w21ldh6oqqvVO4XtzAFoCfFBb7zUgiwExN/TgMhj9kemcUnC7wbNTVswPoGXkJ1ncdAY32jjyaAhgQVIPH/oLY0MGpcJiSrdDDwXNC6bm7go1M6e+reV6RWib8S3aBgOu4H+QWOzdaFRzkUa6mt0V5bxHWis1r04NMjIalazcaELQB9guCO+SMS0zRxenbTQDgdJ0lCj8eay3DXmcPmHTOX2Db8COrZ0M2ZLxLj0HO0I5stlfiKmJsF+g6/M4QSi2blAM4Dbh8EYg9svMsJC3Im4GzEu7RxwBodyXHZ5auZNQBMwPpl2rGNMELwpMdOjsBgoFiyTe6nNLbjcicCcbml9gstTiMc7RBnf+iHm6x4QbPZ8X2WiX0m5PQRMFew0gro3GLQJdkpMiUTt4ZAxEGN1xwCXTR01pU5z5b32dZirW6uCwuF8A4wFMPFjqJ17JiyynwGaajWwTdwHTAFuNZcRcrgOUZSscg7RjHECcRQ4WHCRzycsst8BGms03BVfAiOSpJp+KmJiWZm1S7JEDVuBuR5K2yJRm+dbAEAipnGCA5AkBScdsWBShe3zm6MrxGOaBmwFrk82nQuJyRMr7AeARI2mS+zpInR6JGp7fdtoSdSOmDEPOJ9sGuYan8Vj2hrfojuCEq+vVnE8pm3APg/58zjMTZEHQJdmvQuMgSz+oYnHNAX4kM5v80AcxmG/if3Acbk0u9fSXHqMtoNDuLZPmBskRpkxETGDlClcxhmJR0sr7JC3sbsZMOOBknL7NKu/mBprNLxdbDJ4MJv4KyA+RjwdqbSTV3RJ1ljDdkGZp3l7STnzzExZCUghHtMUwbMOzBD0DRJr0CZjlwuvTS63+p7GSrLGWu6XGA18H4naXk+e3NHhQmIqxi2IkRiDvC5kLr/I4ThwDHGgr8O+4oX2Wz7qX8VV5IB/ANb7XdlaMiMHAAAAAElFTkSuQmCC">
                             </section>
                         </section>
-                        <p class="paragraph">2004</p>
+                        <p class="paragraph">2021</p>
                         <div class="tagart">
-                            <h4>Honours in Fine Arts</h4>
+                            <h4>Computer Science</h4>
                         </div>
-                        <p style="color: #838383;" class="paragraph">Harvard University</p>
+                        <p style="color: #838383;" class="paragraph">IJSE</p>
                     </div>
                 </div>
                 <div class="second_div">
@@ -235,6 +275,30 @@
     <footer class="footer-section">
         <h5 class="footer-">© 2022 Thilina | All rights reserved.</h5>
     </footer>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).on('click', '.project-filter li', function () {
+            $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+        })
+
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const val =$(this).attr('data-filter');
+                if(val =='all'){
+                    $('.project-box').show('1000');
+                }else{
+                    $('.project-box').not('.'+val).hide('1000');
+                    $('.project-box').filter('.'+val).show('1000');                    
+                }
+            })
+        })
+
+
+    </script>
+
+
 </body>
 
 </html>
