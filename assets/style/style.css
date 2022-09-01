@@ -6,24 +6,32 @@
 }
 
 body {
-    max-width:100vw;
+    max-width: 100vw;
 
 }
-header{
+
+header {
     height: 9vh;
 }
 
 /* 
 /---------------------------MENU BAR--------------------------/ */
-
+.top_bar {
+    z-index: 12;
+    position: absolute;
+    left: 60px;
+}
 
 .nav-link {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
     margin: 6px 0;
-
+    background-color: transparent;
+    position: relative;
+    top: 10px;
 }
+
 
 .nav-link li {
     font-family: 'Rasa', serif;
@@ -34,7 +42,7 @@ header{
 .nav-link li a {
     text-decoration: none;
     color: black;
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 1px;
 }
 
@@ -47,21 +55,23 @@ header{
     color: var(--color);
     position: relative;
     font-size: 0;
-   
-  }
-  .underline span {
+
+}
+
+.underline span {
     background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: var(--background-size, 100%) 2.5px;
     transition: background-size 0.2s linear var(--background-delay, 0.1s);
-    font-size: 26px;
+    font-size: 20px;
     line-height: 20px;
     transform: translateZ(0);
-  }
-  .underline svg {
+}
+
+.underline svg {
     vertical-align: top;
-    display:inline-flex;
+    display: inline-flex;
     top: 5px;
     line-height: 1;
     width: 13px;
@@ -76,8 +86,9 @@ header{
     stroke-dasharray: 7.95 30;
     stroke-dashoffset: var(--stroke-dashoffset, 46);
     transition: stroke-dashoffset var(--stroke-duration, 0.15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
-  }
-  .underline:hover {
+}
+
+.underline:hover {
     --line: #53b304;
     --background-size: 0%;
     --background-delay: 0s;
@@ -85,67 +96,59 @@ header{
     --stroke-duration: 0.3s;
     --stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
     --stroke-delay: 0.195s;
-  }
-   
+}
+
 
 /* /-------------------------------INFO----------------------------/ */
 
-#hero-section{
+#hero-section {
     position: relative;
-    height: 403px;
-    top: 0; 
+    height: 649px;
+    /* border: 1px solid red; */
+    top: -70px;
 }
 
-#hero-section img{
+#hero-section img {
     width: 100%;
+    height: 100vh;
 }
 
-#hero_div{
+#hero-section h2 {
     position: absolute;
-    background-color: #d3d3d3a1;
-    width: 45%;
-    height: 80%;
-    display: block;
-    right:400px;
-    top: 43px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-/* /---------------------------------------ABOUT PAGE -----------------------------------------------/ */
-.about-section {
-    position: relative;
-    top: 0;
-    height:650px;
-    display:flex;
-    background-color: #EFEFEF;
-    justify-content:center;
-    align-items:center;
-}
-
-.about-section p {
-    position:absolute;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    top: 180px;
-    right: 200px;
-    width: 40%;
-    bottom:0;
-    line-height :30px;
-    text-align:left;
+    left: 220px;
+    top: 250px;
+    width: 40vw;
+    font-size: 39px;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 2;
 }
 
-#about-section-button{
-    margin:auto;
-    position:absolute;
-    left:70%;
+#hero-section p {
+    position: absolute;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    left: 220px;
+    top: 340px;
+    width: 40vw;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 2;
+}
+
+#section-button {
+    margin: auto;
+    position: absolute;
+    left: 503px;
+    top: 260px;
+    z-index: 11;
 }
 
 .CONYACTbtn {
-    position:relative;
-    top:170px;
-    left:-315px;
+    position: relative;
+    top: 171.6px;
+    left: -315px;
     background-color: #5E5E5E;
     border: none;
     color: white;
@@ -155,22 +158,25 @@ header{
     font-size: 16px;
     cursor: pointer;
     margin: 4px 2px;
-    border-radius:10px;
-    -webkit-border-radius:10px;
-    box-shadow:0 1px 2px #5e5d5b;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 1px 2px #5e5d5b;
 }
 
-.DOWNLOADDbtn img{
+
+.DOWNLOADDbtn img {
     position: relative;
-    top:-3px;
+    top: -3px;
     left: -10px;
-    height: 3vh;;
+    height: 3vh;
+    ;
 }
+
 .DOWNLOADDbtn {
-    position:relative;
+    position: relative;
     height: 40px;
-    top:179px;
-    left:-315px;
+    top: 179px;
+    left: -315px;
     background-color: #5E5E5E;
     border: none;
     color: white;
@@ -178,100 +184,84 @@ header{
     font-size: 16px;
     cursor: pointer;
     margin: 4px 28px;
-    border-radius:10px;
-    -webkit-border-radius:10px;
-    box-shadow:0 1px 2px #5e5d5b;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 1px 2px #5e5d5b;
 }
 
-.DOWNLOADDbtn span{
+.DOWNLOADDbtn span {
     position: relative;
     top: -10px;
 }
-.CONYACTbtn span{
+
+.CONYACTbtn span {
     position: relative;
     top: -2px;
 }
 
-#about {
-    font-family: 'Rosarivo', serif;
-    position: absolute;
-    text-align: center;
-    top:60px;
-    right:340px;
-    font-size: 30px;
-    text-decoration: none;
-    font-style: normal;
-}
 
-#profile_pic{
-    position: absolute;
-    background-color: #D3D3D3;
-    width: 25%;
-    height: 70%;
-    display: block;
-    left:140px;
-    top: 83px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-#profile_pic div{
-   text-align: center;
-}
-
-#profile_pic img{
-    width: 97%;
-    height: 60vh;
-    position: relative;
-    top: 40px;
-    left: 50px;
-}
 
 
 /* 
 /------------------------------SKILLS-------------------------------------------/ */
 
-.skills-section{
-    height: 480px;
+.skills-section {
+    height: 702px;
     position: relative;
     top: 0;
-    
+
 }
 
-#skills{
-    position: absolute;
-    width: 10%;
-    height: 8%;
+.small-p{
     text-align: center;
-    right: 32px;
-    top: 170px;
-    
-}
-#skills h2{
-    font-family: 'Rosarivo', serif;
-    font-size: 50px;
-    letter-spacing: 4px; 
-    font-style: normal;
+    background-color: #eeecec;
+    border-radius: 10px;
+    height: 28px;
+    width: 180px;
+    margin: auto;
+    padding: auto;
     position: relative;
-    left: -1050px;
-    top: -120px;
+    top: 130px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.skills-section p {
+    font-size: 10px;
+    letter-spacing: 4px;
+    font-style: normal;
+    font-weight: 0;
+    position: relative;
+    top: 8px;
+}
+
+.skills-section h2 {
+    font-family: 'Rosarivo', serif;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-weight: 0;
 }
 
 
 /* /Skills Nav Bar/ */
 
-#skills-flex-box{
-    top: 130px;
+#skills-flex-box {
+    top: 200px;
     height: 140px;
     position: relative;
     display: flex;
-    align-items: center; 
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
-#skills-flex-box div{
+#skills-flex-box div {
     background-color: white;
     display: flex;
     height: 13vh;
@@ -283,13 +273,15 @@ header{
     border-radius: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-#skills-flex-box div:hover{
+
+#skills-flex-box div:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: 0.5s;
-  
+
 }
-#skills-flex-box div img{
+
+#skills-flex-box div img {
     width: 5vw;
     height: 10vh;
     position: relative;
@@ -306,13 +298,15 @@ header{
 
 /* /---------------------project/ */
 
-.project-section{
+.project-section {
     height: 1000px;
-    background-color:white;
+    background-color: white;
     position: relative;
     top: 0;
+
 }
-.project-section h4{
+
+.project-section h4 {
     position: relative;
     text-align: center;
     top: 30px;
@@ -322,44 +316,46 @@ header{
     letter-spacing: 3px;
 }
 
-#topic_project{
+#topic_project {
     font-family: 'Rosarivo', serif;
     font-size: 28px;
     font-style: normal;
-    top:40px; 
+    top: 40px;
     text-align: center;
-    position:relative;
+    position: relative;
 }
 
-.projects{
+.projects {
     position: relative;
     width: 65%;
     top: 130px;
     height: 70%;
     margin: auto;
 }
+
 /* ------------- */
 
-a{
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-.project-filter{
+.project-filter {
     display: flex;
     position: absolute;
     top: 109px;
     left: 400px;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(237,237,237,0.6);
+    border: 1px solid rgba(237, 237, 237, 0.6);
     flex-wrap: wrap;
     margin: 20px;
 }
 
-.project-filter li{
+.project-filter li {
     margin: 10px;
     padding: 5px 20px;
     color: #9b9b9b;
@@ -371,7 +367,7 @@ ul{
 }
 
 
-.project-filter-active{
+.project-filter-active {
     background-color: #f0f0f0;
     color: #272727;
 }
@@ -380,97 +376,66 @@ ul{
 
 
 /* ----------------- */
-.first-side{
-    width: 45%;
-    height: 90%;
-    position: relative;
-    top: 30px;
-    left:40px;
-}
-
-
-
-.first-side div{
-    width: 73%;
-    height: 60%;
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    height: 600px;
     margin: auto;
-}
-.first-side div:nth-child(1) img:nth-child(1){
-    position: absolute;
-   top: 50px;
-   left:70px;
-}
-.first-side img{
-  position: absolute;
-   top: 20px;
-   left:10px;
+   
 }
 
-
-.first-side div:nth-child(2){
-    width: 73%;
-    height: 50%;
-    position: relative;
-    top: 20px;
-    margin: auto;
-}
-
-.second-side{
-    width: 45%;
-    height: 90%;
-    position: absolute;
-    top: 40px;
-    right:40px;
+.project-box{
+    width: 280px;
+    height: 210px;
+    padding: 10px;
+    border: 1px solid #1a1414;
+    margin: 19px;
 }
 
 
-.second-side div{
-    width: 83%;
-    height: 20%;
-    position: relative;
-    top:10px;
-    padding: 100px;
-}
-
-.second-side  img{
-   position: absolute;
-   top: 5px;
-   left: 65px;
+.project-box img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 
-.second-side div:nth-child(2){
-    position: relative;
-    top: 30px;
-}
 
-.second-side div:nth-child(3){
-    position: relative;
-    top: 50px;
-}
+
+
+
+
+
+
+
+
 
 /* /-----------education/ */
 
 
-.education-section{
+.education-section {
     height: 500px;
-    background-color:#EFEFEF;
+    background-color: #EFEFEF;
     position: relative;
     top: 0;
 }
 
-#education{
+#education {
     font-family: 'Rosarivo', serif;
     font-size: 28px;
     font-style: normal;
     position: relative;
-    position: absolute ;
-    top: 5%;
-    left: 2%;
+    position: absolute;
+    top: 9%;
+    left: 42%;
     letter-spacing: 4px;
 }
 
-.education_leval{
+.education_leval {
     position: relative;
     width: 68%;
     top: 80px;
@@ -479,12 +444,13 @@ ul{
     padding: auto;
 }
 
-.paragraph{
+.paragraph {
     position: relative;
-      left: 180px;
+    left: 180px;
     top: -60px;
 }
-.tagart{
+
+.tagart {
     position: relative;
     width: 250px;
     height: 60px;
@@ -492,13 +458,13 @@ ul{
     top: -50px;
 }
 
-.tagart h4{
+.tagart h4 {
     position: relative;
     top: 6px;
     font-size: 25px;
 }
 
-.first_div{
+.first_div {
     width: 100%;
     height: 35%;
     margin: auto;
@@ -507,13 +473,13 @@ ul{
     display: flex;
 }
 
-.first_div h3{
+.first_div h3 {
     position: relative;
     left: 40px;
 }
 
-.first_div section{
-    
+.first_div section {
+
     width: 20%;
     height: 60%;
     position: relative;
@@ -523,32 +489,36 @@ ul{
 
 
 
-.first_div div:nth-child(1){
-  
-  width: 50%;
-  height: 100%;
-}
+.first_div div:nth-child(1) {
 
-.first_div div:nth-child(2){
     width: 50%;
     height: 100%;
 }
 
-.second_div{
+.first_div div:nth-child(2) {
+    width: 50%;
+    height: 100%;
+}
+
+.second_div {
     width: 100%;
     height: 35%;
-  
+
     margin: auto;
     position: relative;
     top: 70px;
     display: flex;
 }
-.second_div h3{
+
+.second_div h3 {
+
     position: relative;
     left: 40px;
 }
 
-.second_div section{
+
+
+.second_div section {
     width: 20%;
     height: 60%;
     position: relative;
@@ -556,12 +526,13 @@ ul{
     top: 30px;
 }
 
-.second_div div:nth-child(1){
+.second_div div:nth-child(1) {
 
     width: 50%;
     height: 100%;
 }
-.second_div div:nth-child(2){
+
+.second_div div:nth-child(2) {
 
     width: 50%;
     height: 100%;
@@ -569,35 +540,35 @@ ul{
 
 
 /* /------------------------contact-section/ */
-.contact-section{
+.contact-section {
     height: 250px;
-    background-color:white;
+    background-color: white;
     position: relative;
     top: 0;
 }
 
-.contact-section h2{
+.contact-section h2 {
     position: relative;
     letter-spacing: 4px;
-    top:30%;
+    top: 30%;
     font-family: 'Rosario', sans-serif;
     text-align: center;
 }
 
-.contact-section h4{
+.contact-section h4 {
     position: relative;
     letter-spacing: 4px;
-    top:40%;
+    top: 40%;
     text-align: center;
     font-family: 'Rosario', sans-serif;
 }
 
- /* /footer section/ */
+/* /footer section/ */
 
-.footer-section{
+.footer-section {
     height: 100px;
     background-color: #D7D7D7;
-    position: relative;  
+    position: relative;
 }
 
 .footer-section h5 {
@@ -605,17 +576,8 @@ ul{
     font-size: 18px;
 }
 
-.footer-{
+.footer- {
     position: absolute;
     top: 40px;
     left: 50px;
 }
-
-
-
-
-
-
-
-
-
