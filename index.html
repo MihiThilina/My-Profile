@@ -32,7 +32,7 @@
 
     <!-- MENU BAR -->
     <header>
-        <div class="top_bar">
+        <div class="navbar">
             <nav>
                 <ul class="nav-link">
                     <li><a href="#Home" class="underline"><b>Home</b></a></li>
@@ -51,44 +51,32 @@
                 </ul>
             </nav>
         </div>
+        <div class="top_bar">
+         
+        </div>
     </header>
     <main>
         <!-- INFO -->
 
         <section id="hero-section">
             <dfn id="Home"></dfn>
-            <img src="assets/images/bd3e87a8b899835125b0c020485de03f.jpg" alt="">
-            <div class="myimg">
-            </div>
-            <h2><span>hello</span> i'm Thilina</h2>
-            <p><b>
-                    I am a developer and designer. Contact us if you
-                    need software for any of your projects or
-                    businesses. I will do your project soon.</b></p>
-        </section>
-        <div class="btn" id="section-button">
-            <button class=" DOWNLOADDbtn" target="_blank"> <img src="assets/images/idownload.png"> <span>Download
-                    CV</span></button>
-            <button class=" CONYACTbtn"> <span>Contact Me</span></button>
-        </div>
-
-        <!-- ABOUT -->
-        <!-- <section class="about-section">
-            <dfn id="about">
-                <h2> ABOUT </h2>
-            </dfn>
-
-            <div id="profile_pic">
+            <div class="mainBackground">
                 <div>
-                    <a id="photo" href="#photo"><img src="assets/images/Myimg.jpg" alt="My pic" width="260px"></a>
+                    <h2><span>Hello</span> i'm Thilina</h2>
+                    <p><b>Full Stack Developer |</b></p>
+                    <div class="btn" id="section-button">
+                        <button class=" DOWNLOADDbtn" target="_blank"> <img src="assets/images/idownload.png">
+                            <span>Download
+                                CV</span></button>
+                        <button class=" CONYACTbtn"> <span>Contact Me</span></button>
+                    </div>
                 </div>
+                <div>
+                    <img class="myimg" src="assets/images/Myimg_prev_ui.png" alt="">
+                </div>
+                <div></div>
             </div>
-        
-
-            
-        </section> -->
-
-
+        </section>
         <!-- SKILLS -->
         <section class="skills-section">
             <div>
@@ -146,7 +134,7 @@
             <div class="projects">
                 <!-- 1 (all)-->
                 <a href="" class="project-box app">
-                <img src="assets/images/project9.PNG" alt="">
+                    <img src="assets/images/project9.PNG" alt="">
                 </a>
 
                 <!-- 2 (all)-->
@@ -170,49 +158,13 @@
                     <img src="assets/images/project3.PNG" alt="">
                 </a>
 
-                 <!-- 6 (all)
+                <!-- 6 (all)
                  <a href="" class="project-box html-css app">
                     <img src="assets/images/project8.PNG" alt="">
                 </a> -->
 
             </div>
 
-        </section>
-
-        <!-- Education -->
-        <section class="Services-section">
-            <div>
-                <dfn id="Services">
-                    <h2>Services</h2>
-                </dfn>
-            </div>
-
-            <div class="service-box">
-                <div>
-                    <section class="icon-service">
-                        <img src="data:image/png;base64,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">
-                    </section>
-                    <h4>User interface design</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
-
-                </div>
-                <div>
-                    <section class="icon-service">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACUklEQVRoge2Yv2tUQRDHP7l4Nicq4Wy9CAELvTJHwGtsbOI/4NmkCmdAa/0HFLRTTJfOH2AlKIJgGoN/gBERUoSkOwwiIREkEbXYWe7xuJe3b3eeD7n9wPHgbuY7+7jZ2ZmFSCQSiYwRE0C76kVo0AX+AK+0BGtaQgXpyfNTRfFVqAM7mH/kv06vq5iXWNcUrSK1rsnzWQWxmQM6CjoNYB/4DbQc7DsSW4UWMAB+ALOBWj1MWq052M5KzAFuL30kJ4CPEvw9cDxQ77Vo3XCwrQOrYv8ZOOUbtAa8FKFN4IyvkNAEDuTTdPSZAjZkDW+ASZ/AD0RgF7jgI5BiCb9D8DzwXXzvFw26II6/gPmizhmsiWYvz3AEV4BD8V90deoCP8XppkfQUZzFVKp9zL7z4Zas6QC4nGd8DvgqDiueAUdxRzSfBOosi843YCbL6CSm99GqUEnWRTc0TevAO9H6ApxOG0wyLI2buFcVF9qiuyMLCSVZyd4Cx5I/PkK3QiW5J9qPFTWTleyh/bIvXxxiqoMmE8CW6HeVtZOVrF9203gJ015sAx9KjgWUl1q2ytxV1ISM1IJyNntZA9SRmx30y28ZA1Ru+bVoHohPRed2oE4SpwPRotGiNIA9TFsy7amRplCLYgltGq8zTFENvJpGS0gbX2SAyiOojQf/wcpngMpCZbACv1HXd4BKozbqWopePoQMUElULx8srtdBLYYDVEMhrup1UBG0BqjK0RqgKkV7gCqEZhtvN/cLzOH1T9F8kYvyfK6oWRltzFQYiUQikfHgLyEMs4WOVdUKAAAAAElFTkSuQmCC">
-                    </section>
-                    <h4>Web development</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration  </p>
-
-                </div>
-                <div>
-                    <section class="icon-service">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACC0lEQVRoge2XP2/TQBiHf+/5T6VKXRiIBBIfgCX4zmoTpYUvAAsgwUKFOiHgq/AhyID4CKyUKVIu7UDFAmo3lI0CS1zHL4tBVZxE5BLXF+uexT7f3fv+Htk3GHA4HPPwqg6wACKKor1Go5EOh8NfhckqEpkQx/EbIcRH3/e/NJvNm5PzayPCzPfy260gCNTk/NqIAKC/N8xcyL1OInNxIrZRGxG/6gAAIKVUQoi7zPxea/3dpEblIu12+1qSJIfMvMnMjwF0TOpU/mmlaXoLwCYAENFt0zqVi6wKJ2IbTsQ2nIhtlC4ipdxTSu2W3adUkTiOnxLRIYBPUsonZfYq+43s/GskRKvMRu6M2IYTsQ0nYhu1ETH+1Y3jeDvLstdE9EFr/W6VoUwwfiPM3CWiZwC6URTdWGEmI5b5tBr51fN9//oqwixDbc6IE7ENJ2Ib9RdRSgVXGWRZCiKdTmdLKXUE4LeU8nkFmYwoiIxGo10AdwCERPTi6iOZURBh5o1Lw43JeVup72EnIl60SJqmC+9ZZu+0jAWRLMtOAFzkG47m1DvOrz/CMDydtoCZjy8Np9YSQpwBOM+Hg//od8HMnwt1Jh8MBoOvAFpEtB8EwatZVZMkecjMB57n7fR6vZ/T1mit3zLzAwD3+/1+d8aac8/ztpn5YDweP5rVLwzDl0S0D6Cltf42a93a8wcr1IrZYAbg2AAAAABJRU5ErkJggg==">
-                    </section>
-                    <h4>SEO</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </p>
-                </div>
-            </div>
-            
         </section>
 
 

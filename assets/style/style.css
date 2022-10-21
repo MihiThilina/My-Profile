@@ -17,9 +17,8 @@ header {
 /* 
 /---------------------------MENU BAR--------------------------/ */
 .top_bar {
-    z-index: 12;
     position: absolute;
-    left: 60px;
+    z-index: 1;
 }
 
 .nav-link {
@@ -31,12 +30,16 @@ header {
     position: relative;
     top: 10px;
 }
+.top_bar img{
+    position: absolute;
+    width: 8%;
+    border: 1px solid red;
+}
 
 
 .nav-link li {
     font-family: "Roboto";
     list-style: none;
-    
     margin: 20px 20px;
 }
 
@@ -104,23 +107,46 @@ header {
 
 #hero-section {
     position: relative;
-    height: 649px;
-    /* border: 1px solid red; */
-    top: -70px;
+    height: 756px;
+    top: -100px;
 }
 
-#hero-section img {
+.mainBackground {
+
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+}
+
+.mainBackground div:nth-child(1) {
+    background-color: #f6f8fe;
+    width: 60%;
+}
+
+.mainBackground div:nth-child(2) {
+    width: 20%;
+    background-color: #f7c0c4;
+}
+
+.mainBackground div:nth-child(3) {
+    width: 20%;
+    background-color: #f6f8fe;
+}
+
+.myimg{
+    position: absolute;
+    width: 39vw;
+    top: 157px;
 }
 
 #hero-section h2 {
     position: absolute;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     left: 220px;
-    top: 250px;
+    top: 340px;
     width: 40vw;
-    font-size: 39px;
+    font-size: 70px;
+    font-weight: bolder;
     letter-spacing: 1px;
     text-align: justify;
     line-height: 2;
@@ -129,20 +155,19 @@ header {
 #hero-section p {
     position: absolute;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    left: 220px;
-    top: 340px;
+    left: 223px;
+    top: 487px;
     width: 40vw;
-    font-size: 13px;
+    font-size: 23px;
     letter-spacing: 1px;
     text-align: justify;
     line-height: 2;
 }
-   
+
 
 
 
 #section-button {
-    margin: auto;
     position: absolute;
     left: 503px;
     top: 260px;
@@ -151,8 +176,8 @@ header {
 
 .CONYACTbtn {
     position: relative;
-    top: 171.6px;
-    left: -315px;
+    top: 300px;
+    left: -79px;
     background-color: #474648;
     border: none;
     color: white;
@@ -179,7 +204,7 @@ header {
 .DOWNLOADDbtn {
     position: relative;
     height: 40px;
-    top: 179px;
+    top: 347.9px;
     left: -315px;
     background-color: #474648;
     border: none;
@@ -210,12 +235,16 @@ header {
 /------------------------------SKILLS-------------------------------------------/ */
 
 .skills-section {
-    height: 582px;
+    height: 382px;
+    width: 70vw;
+    margin: auto;
     position: relative;
-    top: 0;
+    top:10px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.small-p{
+.small-p {
     text-align: center;
     background-color: #eeecec;
     border-radius: 10px;
@@ -224,7 +253,7 @@ header {
     margin: auto;
     padding: auto;
     position: relative;
-    top: 60px;
+    top: 20px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -247,7 +276,7 @@ header {
     font-style: normal;
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 20px;
     font-weight: 0;
 }
 
@@ -255,7 +284,7 @@ header {
 /* /Skills Nav Bar/ */
 
 #skills-flex-box {
-    top: 100px;
+    top: 40px;
     height: 140px;
     position: relative;
     display: flex;
@@ -273,6 +302,7 @@ header {
     position: relative;
     top: -5px;
     width: 8vw;
+    border: 1px solid red;
     border-radius: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
@@ -302,10 +332,11 @@ header {
 /* /---------------------project/ */
 
 .project-section {
-    height:800px;
+    height: 800px;
     background-color: white;
     position: relative;
-    top: 0;
+    top: 100px;
+    border: 1px solid red;
 }
 
 .project-section h4 {
@@ -377,7 +408,7 @@ ul {
 
 
 /* ----------------- */
-.projects{
+.projects {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,7 +418,7 @@ ul {
     margin: auto;
 }
 
-.project-box{
+.project-box {
     width: 280px;
     height: 210px;
     padding: 10px;
@@ -397,7 +428,7 @@ ul {
 
 
 .project-box img {
-    width:100%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     justify-content: center;
@@ -424,6 +455,7 @@ ul {
     background-color: #ffffff;
     position: relative;
     top: 0;
+    border: 1px solid red;
 }
 
 #Services {
@@ -432,28 +464,29 @@ ul {
     font-style: normal;
     position: relative;
     position: absolute;
-    top: 1%;
+    top: 10%;
     left: 42%;
     letter-spacing: 4px;
 }
 
 
-.service-box{
-    width: 80vw;
+.service-box {
+    width: 70vw;
     height: 67vh;
     margin: auto;
     display: flex;
 }
 
-.service-box div{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.service-box div {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     width: 30%;
     position: relative;
-    top: 50px;
-    height:350px;
+    top: 140px;
+    height: 350px;
     margin: auto;
 }
-.service-box div:hover{
+
+.service-box div:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
@@ -463,10 +496,12 @@ ul {
     -o-transform: scale(1.1);
     background-color: #474648;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 
 }
 
-.service-box div h4{
+.service-box div h4 {
     text-align: center;
     margin: auto;
     font-size: 20px;
@@ -474,7 +509,7 @@ ul {
     top: 70px;
 }
 
-.service-box div p{
+.service-box div p {
     position: relative;
     top: 100px;
     font-family: sans-serif;
@@ -486,7 +521,8 @@ ul {
     justify-content: center;
     line-height: 1;
 }
-.icon-service{
+
+.icon-service {
     height: 30%;
     position: relative;
     top: 40px;
@@ -496,10 +532,10 @@ ul {
     border-radius: 50%;
 }
 
-.icon-service img{
+.icon-service img {
     margin: auto;
     position: relative;
-    left: 30px;
+    left: 25px;
     top: 25px;
 }
 
