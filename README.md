@@ -4,6 +4,7 @@
 <h2>Portfolio</h2>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/90233553/187842141-88269913-b3f3-4668-adee-d57f9415b6fe.PNG"/>
+![1](https://user-images.githubusercontent.com/90233553/197266395-d8157fc0-9fcd-4185-9f14-505f28626e8f.PNG)
+
 </p>
 
