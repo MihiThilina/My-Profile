@@ -3,7 +3,4 @@
 
 <h2>Portfolio</h2>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/90233553/187842141-88269913-b3f3-4668-adee-d57f9415b6fe.PNG"/>
-</p>
-
+![1](https://user-images.githubusercontent.com/90233553/197266495-feeee2c5-2841-4d76-85a6-35eb87f1ee87.PNG)
